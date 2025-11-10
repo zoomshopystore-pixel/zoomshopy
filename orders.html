@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Orders | ZoomShopy</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style> 
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5faff;
+  color: #1b1b1b;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: #008CFF;
+  padding: 15px;
+  border-bottom: 2px solid #d9ecff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Logo */
+.amazon-logo,
+.amazon-mobile-logo {
+  height: 40px;
+}
+
+/* Main Orders Section */
+.orders-grid {
+  max-width: 900px;
+  margin: 25px auto;
+  padding: 10px;
+}
+
+/* ORDER CARD */
+.order-container {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #d9ecff;
+  margin-bottom: 25px;
+  padding: 18px;
+  box-shadow: 0 3px 10px rgba(0, 140, 255, 0.08);
+}
+
+/* Order Header */
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #d9ecff;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.order-header div {
+  margin-bottom: 8px;
+}
+
+.order-header-label {
+  font-size: 13px;
+  color: #6d6d6d;
+}
+
+/* PRODUCT LIST (STACKED) */
+.order-details-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* PRODUCT ITEM */
+.product-box {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px;
+  background: #f8fbff;
+  border-radius: 10px;
+  border: 1px solid #e6f4ff;
+}
+
+/* Product Image */
+.product-image-container img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Product Info */
+.product-details {
+  flex: 1;
+}
+
+.product-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.product-quantity {
+  font-size: 13px;
+  color: #6d6d6d;
+  margin-bottom: 4px;
+}
+
+.product-price {
+  font-size: 14px;
+  font-weight: 600;
+  color: #008CFF;
+}
+
+/* Track Button */
+.track-package-button {
+  background: #008CFF;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 7px;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 6px;
+  transition: 0.3s;
+}
+
+.track-package-button:hover {
+  background: #0077D9;
+}
+
+.empty-orders {
+  text-align: center;
+  padding: 50px 20px;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+
+.shop-now-btn {
+  margin-top: 15px;
+  padding: 12px 22px;
+  border: none;
+  background: skyblue;
+  color: white;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.shop-now-btn:hover {
+  background: rgb(100, 162, 186);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== MOBILE FIX ===== */
+@media (max-width: 600px) {
+
+  .order-container {
+    padding: 14px;
+  }
+
+  .product-box {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .product-image-container img {
+    width: 65px;
+    height: 65px;
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+
+  .track-package-button {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+
+  /* ===== FIX ORDER HEADER ON MOBILE ===== */
+  .order-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    text-align: left;
+  }
+
+  .order-header > div {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+  }
+
+  .order-header-label {
+    font-weight: 600;
+    margin-right: 10px;
+  }
+}
+
+.amazon-mobile-logo {
+  display: none !important;
+}
+
+.amazon-logo {
+  display: block !important;
+}
+
+
+
+     </style>
+</head>
+<body>
+  <div class="main">
+    <div class="page-title">
+      Your Orders
+      <a href="amazon.html">
+        <img class="amazon-logo" src="images/zoom.shop.jpeg" alt="ZoomShopy Logo">
+        <img class="amazon-mobile-logo" src="images/zoom.shopy.mobile.png" alt="ZoomShopy Mobile Logo">
+      </a>
+    </div>
+
+    <div class="orders-grid" id="ordersGrid"></div>
+  </div>
+</body>
+
+<script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
+  import { getFirestore, collection, query, where, getDocs } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
+
+  // ✅ Firebase config
+  const firebaseConfig = {
+  apiKey: "AIzaSyDiidI7VfMw5fN0SfKDeQwrLK4HAFfhg78",
+  authDomain: "zoom-shopy.firebaseapp.com",
+  projectId: "zoom-shopy",
+  storageBucket: "zoom-shopy.appspot.com",
+  messagingSenderId: "521524635595",
+  appId: "1:521524635595:web:c93b6caf4d77ec8525b84e",
+  measurementId: "G-86JY1J7HSV"
+};
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+  const ordersGrid = document.getElementById("ordersGrid");
+
+  // ✅ Wait for login first
+  onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+      window.location.href = "signin.html";
+      return;
+    }
+
+    // ✅ Function restored
+    async function loadOrders() {
+      ordersGrid.innerHTML = `<p style="text-align:center;">⏳ Loading your orders...</p>`;
+
+      const ordersRef = collection(db, "orders");
+      const q = query(ordersRef, where("userId", "==", user.uid)); // Only this user
+      const snapshot = await getDocs(q);
+
+      if (snapshot.empty) {
+       ordersGrid.innerHTML = `
+  <div class="empty-orders">
+    <h2>🛍️ No Orders Found</h2>
+    <p>Your recent orders will appear here once you make a purchase.</p>
+
+    <button class="shop-now-btn" onclick="window.location.href='amazon.html'">
+      Shop Now
+    </button>
+  </div>
+`;
+        return;
+      }
+
+      let html = "";
+      snapshot.forEach(doc => {
+        const order = doc.data();
+        const items = order.cartItems || [];
+        const orderDate = new Date(order.timestamp?.seconds * 1000 || Date.now()).toLocaleDateString();
+        const orderId = doc.id;
+
+        html += `
+        <div class="order-container">
+          <div class="order-header">
+            <div>
+              <div class="order-header-label">Order Placed:</div>
+              <div>${orderDate}</div>
+            </div>
+            <div>
+              <div class="order-header-label">Total:</div>
+              <div>${new Intl.NumberFormat(undefined, {
+                style: "currency",
+                currency: order.totals.currency
+              }).format(order.totals.totalLocal)}</div>
+            </div>
+            <div>
+              <div class="order-header-label">Order ID:</div>
+              <div>${orderId}</div>
+            </div>
+          </div>
+          <div class="order-details-grid">
+        `;
+
+        items.forEach(item => {
+          html += `
+            <div class="product-box">
+              <div class="product-image-container">
+                <img src="${item.image || 'images/placeholder.png'}" alt="${item.name}">
+              </div>
+
+              <div class="product-details">
+                <div class="product-name">${item.name}</div>
+                <div class="product-quantity">Quantity: ${item.quantity}</div>
+                <div class="product-price">
+                  ${new Intl.NumberFormat(undefined, {
+                    style: "currency",
+                    currency: order.totals.currency
+                  }).format(item.priceLocal)}
+                </div>
+
+                <div class="product-actions">
+                  <button class="track-package-button"
+                    onclick="window.location.href='tracking.html?orderId=${orderId}&productId=${item.productId}'">
+                    Track package
+                  </button>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+
+        html += `</div></div>`;
+      });
+
+      ordersGrid.innerHTML = html;
+    }
+
+    // ✅ Now call it (AFTER login is confirmed)
+    loadOrders();
+  });
+</script>
+
+</script>
+
+
+</body>
+</html>

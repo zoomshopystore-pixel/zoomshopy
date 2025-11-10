@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Submitted Successfully | ZoomShopy</title>
+  <style>
+    body {
+      background-color: #e0f7ff;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      color: #333;
+    }
+
+    /* 🔹 Logo at top right */
+    .header-logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+
+    .header-logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .header-logo img {
+      width: 130px; /* Adjust size to your liking */
+      height: auto;
+      border-radius: 20%;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .header-logo img:hover {
+      transform: scale(1.05);
+    }
+
+    .success-box {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .success-box h1 {
+      color: #00bfff;
+      margin-bottom: 20px;
+    }
+
+    .success-box p {
+      font-size: 17px;
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+
+    .go-orders-btn {
+      background-color: #00bfff;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .go-orders-btn:hover {
+      background-color: #009acd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🔹 Logo that links to home -->
+  <div class="header-logo">
+    <a href="amazon.html">
+      <img src="images/zoom.shop.jpeg" alt="ZoomShopy Logo">
+    </a>
+  </div>
+
+  <div class="success-box">
+    <h1>✅ Order Submitted Successfully!</h1>
+    <p>
+      Thank you for shopping with us.  
+      Unfortunately, we’ve currently paused all on-site payments to ensure your safety and protect you from Hackers.  
+      <br><br>
+      Our support team will personally reach out to you on WhatsApp shortly to confirm your order and receive your payment.  
+      <br><br>
+      We truly appreciate your trust and patience during this process.  
+      <br><br>
+      <strong>Thank you for understanding ❤️</strong>
+    </p>
+    <button class="go-orders-btn" onclick="window.location.href='orders.html'">
+      Go to My Orders
+    </button>
+    
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ZoomShopy — Sign In</title>
+  <style>
+    body {
+      font-family: Inter, Roboto, Arial;
+      background: #f3f7fb;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      width: 95%;
+      max-width: 380px;
+      background: #fff;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 8px 30px rgba(20,20,20,0.06);
+      text-align: center;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      border-radius: 8px;
+      border: 0;
+      background: #00b4ff;
+      color: #fff;
+      font-size: 15px;
+      cursor: pointer;
+    }
+    .muted {
+      color: #666;
+      margin-top: 10px;
+      font-size: 14px;
+    }
+    a {
+      color: #00b4ff;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="card" role="main">
+    <h2>Sign in to ZoomShopy</h2>
+
+    <input id="email" type="email" placeholder="Email address" autocomplete="email" />
+    <input id="password" type="password" placeholder="Password" autocomplete="current-password" />
+    <button id="signin-btn">Sign In</button>
+
+    <p class="muted">
+      <a href="forgetpassword.html">Forgot Password?</a>
+    </p>
+
+    <p class="muted">
+      Don't have an account? <a href="signup.html">Sign up</a>
+    </p>
+
+    <div id="status" class="muted" aria-live="polite"></div>
+  </div>
+
+  <script>
+    // ✅ Handle Sign-In
+    document.getElementById('signin-btn').addEventListener('click', () => {
+      const email = document.getElementById('email').value.trim().toLowerCase();
+      const password = document.getElementById('password').value.trim();
+
+      if (!email || !password) {
+        alert('Please fill in all fields.');
+        return;
+      }
+
+      const users = JSON.parse(localStorage.getItem('zoomshopy_users')) || [];
+      const user = users.find(u => u.email.toLowerCase() === email);
+
+      if (!user) {
+        alert('User not found. Please sign up first.');
+        return;
+      }
+
+      if (user.password === password) {
+        const currentUser = { email: user.email };
+        localStorage.setItem('zoomshopy_current_user', JSON.stringify(currentUser));
+        alert('✅ Sign in successful!');
+        window.location.href = 'amazon.html';
+      } else {
+        alert('❌ Incorrect password.');
+      }
+    });
+  </script>
+</body>
+</html>

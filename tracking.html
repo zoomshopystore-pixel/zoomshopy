@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Track Package | ZoomShopy</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #e0f7ff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .main {
+      max-width: 700px;
+      margin: 60px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h2 {
+      color: #00bfff;
+    }
+
+    .product-image {
+      width: 120px;
+      border-radius: 10%;
+      margin: 20px 0;
+    }
+
+    .status {
+      font-weight: bold;
+      margin-top: 20px;
+      color: green;
+    }
+
+    .back-btn {
+      background-color: #00bfff;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 20px;
+    }
+
+    .back-btn:hover {
+      background-color: #009acd;
+    }
+    /* 🔹 Logo at top right */
+.header-logo {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-logo img {
+  width: 130px;       /* Adjust size */
+  height: auto;
+  border-radius: 10%; /* Rounded corners */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-logo img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+}
+
+  </style>
+</head>
+<body>
+  <!-- 🔹 Top-right ZoomShopy Logo -->
+<div class="header-logo">
+  <a href="amazon.html">
+    <img src="images/zoom.shop.jpeg" alt="ZoomShopy Logo">
+  </a>
+</div>
+
+  <div class="main">
+    <h2>Tracking Details</h2>
+    <div id="tracking-info"></div>
+    <button class="back-btn" onclick="window.location.href='orders.html'">Back to Orders</button>
+  </div>
+
+  <script type="module">
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+  import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
+  import { getFirestore, doc, getDoc } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
+
+  // ✅ Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyDiidI7VfMw5fN0SfKDeQwrLK4HAFfhg78",
+    authDomain: "zoom-shopy.firebaseapp.com",
+    projectId: "zoom-shopy",
+    storageBucket: "zoom-shopy.appspot.com",
+    messagingSenderId: "521524635595",
+    appId: "1:521524635595:web:c93b6caf4d77ec8525b84e",
+    measurementId: "G-86JY1J7HSV"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const auth = getAuth(app);
+  const db = getFirestore(app);
+
+  const params = new URLSearchParams(window.location.search);
+  const orderId = params.get("orderId");
+  const productId = params.get("productId");
+  const trackingDiv = document.getElementById("tracking-info");
+
+  onAuthStateChanged(auth, async (user) => {
+    if (!user) {
+      window.location.href = "signin.html"; // Force login first
+      return;
+    }
+
+    loadTracking(user.uid);
+  });
+
+  async function loadTracking(uid) {
+    try {
+      const docRef = doc(db, "orders", orderId);
+      const docSnap = await getDoc(docRef);
+
+      if (!docSnap.exists()) {
+        trackingDiv.innerHTML = `<p>Order not found.</p>`;
+        return;
+      }
+
+      const orderData = docSnap.data();
+
+      // Ensure only owner can view
+      if (orderData.userId !== uid) {
+        trackingDiv.innerHTML = `<p style="color:red;">Unauthorized access.</p>`;
+        return;
+      }
+
+      const productList = orderData.cartItems || [];
+      const product = productList.find(p => p.productId === productId) || productList[0];
+
+      trackingDiv.innerHTML = `
+        <img src="${product.image}" class="product-image">
+        <p><strong>Product:</strong> ${product.name}</p>
+        <p><strong>Quantity:</strong> ${product.quantity}</p>
+        <p><strong>Status:</strong> <span class="status">Shipped</span></p>
+        <p><strong>Expected Delivery:</strong> ${
+          product.deliveryOption?.deliveryDate || new Date().toDateString()
+        }</p>
+      `;
+    } catch (error) {
+      console.error("🔥 Error loading tracking:", error);
+      trackingDiv.innerHTML = `<p style="color:red;">Error loading tracking details.</p>`;
+    }
+  }
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ZoomShopy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/shared/general.css">
+    <link rel="stylesheet" href="styles/shared/amazon-header.css">
+    <link rel="stylesheet" href="styles/pages/amazon.css">
+
+    <style>
+     /* 🌟 UNIVERSAL NAVIGATION BAR (Shared Style) */
+.nav-bar {
+  background-color: rgb(19, 25, 33);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ---------- HEADER ENHANCEMENTS (for desktop) ---------- */
+.amazon-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.nav-account-location {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.amazon-header-middle-section {
+  flex: 1;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 350px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 520px;
+  height: 36px;
+  font-size: 15px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 10px 0 0 4px;
+  outline: none;
+  
+}
+
+.search-button {
+  height: 36px;
+  width: 45px;
+  background-color: skyblue;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.logout-icon {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+  position: relative;
+  top: 6px;
+}
+
+.logout-icon:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+/* 🌟 MOBILE SIDEBAR (inherits from .nav-bar) */
+.sidebar {
+  position: fixed;
+  top: 60px; /* below header */
+  left: 0;
+  width: 250px;
+  height: calc(100vh - 60px);
+  background-color: rgb(19, 25, 33);
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  z-index: 900;
+  padding-top: 10px;
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-menu li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+  background-color: rgba(135, 206, 235, 0.15);
+  color: skyblue;
+}
+
+/* 📱 Mobile only */
+@media (max-width: 600px) {
+  .amazon-header {
+    justify-content: space-between;
+  }
+}
+
+/* Hide sidebar on desktop */
+@media (min-width: 601px) {
+  .sidebar {
+    display: none;
+  }
+}
+/* 🍔 Hamburger Button */
+.hamburger-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+  display: none; /* Hidden on desktop by default */
+}
+
+.hamburger-icon {
+  width: 28px;
+  height: 28px;
+  filter: invert(1); /* white icon for dark header */
+}
+
+/* 📱 Mobile View Adjustments */
+@media (max-width: 600px) {
+  /* Show hamburger on small screens */
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .amazon-logo {
+  display: block;
+  width: 180px; /* 👈 slightly larger on desktop */
+  height: auto;
+}
+
+.amazon-mobile-logo {
+  display: none; /* hide mobile logo */
+}
+
+/* Adjust for smaller screens */
+@media (max-width: 768px) {
+  .amazon-logo {
+    width: 150px; /* 👈 make it bigger on phones */
+  }
+}
+
+
+}
+/* 🧭 Adjust search bar spacing relative to hamburger */
+@media (max-width: 600px) {
+  .amazon-header-middle-section {
+    margin-right: 20px; /* moves search bar slightly left */
+  }
+
+  .search-bar {
+    max-width: 180px; /* optional: makes it a little smaller on mobile */
+  }
+
+  .hamburger-btn {
+    margin-left: 8px; /* adds a little space to the left of the hamburger */
+  }
+}
+/* 📱 Mobile: make search bar longer and sit right beside the logo */
+@media (max-width: 600px) {
+  .amazon-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 8px;
+    gap: 6px;
+  }
+
+  /* hide right section */
+  .amazon-header-right-section {
+    display: none !important;
+  }
+
+  /* 🔧 logo and search sit together tightly */
+  .amazon-header-left-section {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    gap: 4px; /* smaller space between logo and search */
+    margin-right: 0;
+  }
+
+  .amazon-logo {
+  display: block;
+  width: 160px;
+  height: auto;
+}
+
+.amazon-mobile-logo {
+  display: none;
+}
+
+/* Show and enlarge mobile logo on small screens */
+@media (max-width: 768px) {
+  .amazon-logo {
+    display: none; /* hide desktop logo on mobile */
+  }
+
+  .amazon-mobile-logo {
+    display: block;
+    width: 50px; /* 👈 increase this value to make it even bigger */
+    height: auto;
+  }
+}
+
+
+  /* make search bar stretch as much as possible */
+  .amazon-header-middle-section {
+    flex: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* 🔥 aligns search right next to logo */
+    margin: 0;
+  }
+
+  .search-bar {
+    flex: 100%;
+    width: 100%;
+    height: 30px;
+    font-size: 14px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 6px 0 0 6px;
+    background-color: #fff;
+  }
+
+  .search-button {
+    height: 30px;
+    width: 45px;
+    background-color: skyblue;
+    border: none;
+    border-radius: 0 6px 6px 0;
+  }
+
+  /* 🍔 Hamburger stays on the far right */
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    margin-left: 4px; /* slight gap from search */
+  }
+
+  .hamburger-icon {
+    width: 26px;
+    height: 26px;
+    filter: brightness(0) invert(1); /* 🔥 makes any icon white */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+  }
+}
+/* 🍔 HAMBURGER BUTTON */
+.hamburger-btn {
+  display: none; /* hidden on desktop */
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.hamburger-icon {
+  width: 26px;
+  height: 26px;
+  filter: invert(1); /* white icon */
+}
+
+/* show hamburger only on mobile */
+@media (max-width: 600px) {
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+/* 🍔 HAMBURGER BUTTON — hidden on desktop */
+.hamburger-btn {
+  display: none; /* completely hidden on large screens */
+  position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 6px;
+}
+
+.hamburger-icon {
+  width: 26px;
+  height: 26px;
+  filter: invert(1); /* white icon on dark header */
+}
+
+/* ✅ Show hamburger only on small screens (mobile) */
+@media (max-width: 600px) {
+  .hamburger-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* 🔴 Make mobile hamburger cart badge red */
+@media (max-width: 600px) {
+  .hamburger-btn .cart-badge {
+    background-color: red !important;
+    color: white !important;
+    font-weight: 700;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+  }
+}
+
+  .promo-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;       /* keep image full and centered */
+    object-position: center; /* show main part of image */
+  }
+
+
+/* 🧭 Ensure "Shop Now" scrolls correctly below fixed header */
+#products {
+  scroll-margin-top: 80px; /* same or slightly larger than your fixed header height */
+}
+
+html, body {
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+#products {
+  scroll-margin-top: 80px;
+}
+
+.currency-selector {
+  margin-left: 12px; /* 🧭 Small space between logo and dropdown */
+  padding: 5px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: white;
+  cursor: pointer;
+  height: 32px;
+  vertical-align: middle;
+}
+
+
+/* ✅ Floating Add-to-Cart Notification */
+.added-popup {
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  background: #0a8f08;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+  transform: translateY(-15px);
+  z-index: 99999;
+}
+
+.added-popup.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ✅ Popup modal Add-to-Cart Button Styling */
+#modal-add-cart-btn {
+  width: 100%;
+  background: skyblue;
+  border: none;
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+#modal-add-cart-btn:hover {
+  background: #ff7c00;
+}
+
+
+    </style>
+  </head>
+
+  <body>
+    <div id="added-message" class="added-popup">✅ Added to Cart</div>
+
+<!-- 🌟 DESKTOP HEADER -->
+<div class="amazon-header nav-bar">
+  <div class="amazon-header-left-section">
+    <a href="amazon.html" class="header-link">
+      <img class="amazon-logo" src="images/zoom.shop.jpeg">
+      <img class="amazon-mobile-logo" src="images/zoom.shopy-mobile.png">
+    </a>
+
+  </div>
+
+  <div class="amazon-header-middle-section">
+    <input class="search-bar" type="text" placeholder="Search">
+    <button class="search-button">
+      <img class="search-icon" src="images/icons/search-icon.png">
+    </button>
+  </div>
+
+  <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+  <img src="images/icons/hamburger-menu.png" alt="Menu" class="hamburger-icon">
+  <span class="cart-badge js-cart-quantity">0</span>
+</button>
+
+
+  <div class="amazon-header-right-section">
+    <!-- 👤 Sign In + Location Section -->
+    <div class="nav-account-location">
+      <div class="nav-signin js-user-login">
+        <img src="images/icons/sign-up.jpeg" alt="Sign in Icon" class="signin-icon">
+        <div class="signin-texts">
+          <span class="hello-text">Hello, sign in</span><br>
+          <span class="account-text">Account & Lists ▼</span>
+        </div>
+      </div>
+
+      <div class="nav-location js-location-display">
+        <img src="images/icons/location.jpeg" alt="Location Icon" class="nav-icon">
+        <span class="nav-location-text">Detecting...</span>
+      </div>
+    </div>
+
+    <!-- Orders -->
+    <a class="orders-link header-link" href="orders.html">
+      <span class="returns-text">Returns</span>
+      <span class="orders-text">& Orders</span>
+    </a>
+
+    <!-- Cart -->
+    <a class="cart-link header-link" href="checkout.html">
+      <img class="cart-icon" src="images/icons/cart-icon.png">
+      <div class="cart-quantity js-cart-quantity">0</div>
+      <div class="cart-text">Cart</div>
+    </a>
+
+    <!-- 👇 Logout -->
+    <img
+      id="logoutIcon"
+      src="images/icons/logout(3).webp"
+      class="logout-icon"
+      alt="Logout"
+      onclick="logoutUser()">
+  </div>
+</div>
+
+<!-- 🌟 MOBILE SIDEBAR MENU -->
+<div class="sidebar nav-bar" id="mobileSidebar">
+  <div class="sidebar-content">
+    <ul class="sidebar-menu">
+      <!-- 👋 User Greeting -->
+      <li class="mobile-user-greeting">
+        👋 <span class="mobile-user-name">Hello, Guest</span>
+      </li>
+
+      <li><a href="amazon.html">🏠 Home</a></li>
+      <li><a href="orders.html">📦 Orders & Returns</a></li>
+
+      <!-- 🛒 Cart link with live red badge -->
+      <li>
+        <a href="checkout.html">
+          🛒 Cart <span class="cart-badge js-cart-quantity">0</span>
+        </a>
+      </li>
+
+      <!-- 🔑 Sign In -->
+      <li><a href="signin.html">🔑 Sign In</a></li>
+
+      <!-- 📍 Location -->
+      <li>
+        <a href="#" class="detect-location js-location-display">
+          📍 <span class="nav-location-text">Detecting...</span>
+        </a>
+      </li>
+
+      <!-- 🚪 Logout -->
+      <li><a href="#" onclick="logoutUser()">🚪 Logout</a></li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+    <!-- 🔥 Promotional Banner -->
+<div class="promo-banner">
+  <img src="images/banner.jpeg" alt="50% Off Deals" class="promo-image">
+  <div class="promo-text">
+    <h1>Save up to <span>50% OFF</span></h1>
+    <p>On exclusive ZoomShopy deals — Limited time only!</p>
+    <button class="promo-button" id="shop-now-btn">Shop Now</button>
+  </div>
+</div>
+
+    
+      <div id="products" class="main">
+  <div class="products-grid js-product-grid"></div>
+</div>
+
+<script>
+function showAddedMessage() {
+  const msg = document.getElementById("added-message");
+  if (!msg) return;
+
+  msg.classList.add("show");
+
+  setTimeout(() => {
+    msg.classList.remove("show");
+  }, 1400);
+}
+</script>
+
+
+
+    
+    <script type="module" src="scripts/amazon.js"></script>
+
+ <script type="module">
+import { products, getProduct } from './data/products.js';
+import { addToCart } from './data/cart.js';
+import { convertPrice } from './scripts/currency.js'; // ✅ correct function
+import { updateCartBadge } from './data/cart.js';
+
+
+
+const modal = document.getElementById("product-modal");
+const closeModal = document.querySelector(".close-modal");
+
+const modalImg = document.getElementById("modal-product-image");
+const modalName = document.getElementById("modal-product-name");
+const modalPrice = document.getElementById("modal-product-price");
+const modalQty = document.getElementById("modal-quantity");
+const modalAddBtn = document.getElementById("modal-add-cart-btn");
+
+let selectedProduct = null;
+
+// ✅ Load currency + rates
+const selectedCurrency = localStorage.getItem("zoomshopy_currency") || "USD";
+const rates = JSON.parse(localStorage.getItem("zoomshopy_rates")) || { USD: 1 };
+
+document.addEventListener("click", (event) => {
+  const img = event.target.closest("img.product-image");
+  if (!img) return;
+
+  const id = img.dataset.id;
+  selectedProduct = getProduct(id);
+
+  modalImg.src = selectedProduct.image;
+  modalName.textContent = selectedProduct.name;
+
+  // ✅ Convert and format price correctly
+  const { symbol, converted } = convertPrice(selectedProduct.priceCents, rates, selectedCurrency);
+  modalPrice.textContent = `${symbol}${converted}`;
+
+  modal.style.display = "flex";
+});
+
+closeModal.onclick = () => modal.style.display = "none";
+window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; }
+
+modalAddBtn.addEventListener("click", () => {
+  addToCart(selectedProduct.id, Number(modalQty.value));
+  showAddedMessage();
+  modal.style.display = "none";
+});
+</script>
+
+
+
+
+    <script>
+  /* ---------- 🌍 GEOLOCATION SCRIPT (Desktop + Mobile) ---------- */
+  function detectUserLocation() {
+    const locationTexts = document.querySelectorAll('.js-location-display .nav-location-text');
+
+    if (!navigator.geolocation) {
+      locationTexts.forEach(el => (el.textContent = 'Location Unavailable'));
+      return;
+    }
+
+    navigator.geolocation.getCurrentPosition(
+      async (position) => {
+        const { latitude, longitude } = position.coords;
+        try {
+          const res = await fetch(
+            `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`
+          );
+          const data = await res.json();
+          const city = data.city || data.locality || data.principalSubdivision || 'Unknown';
+
+          // ✅ Update city in BOTH desktop and mobile
+          locationTexts.forEach(el => (el.textContent = city));
+        } catch {
+          locationTexts.forEach(el => (el.textContent = 'Error detecting'));
+        }
+      },
+      () => {
+        locationTexts.forEach(el => (el.textContent = 'Permission denied'));
+      }
+    );
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    detectUserLocation();
+
+    // 🧭 Handle Sign In redirect
+    const loginBtn = document.querySelector('.js-user-login');
+    if (loginBtn) {
+      loginBtn.addEventListener('click', () => {
+        window.location.href = 'signin.html';
+      });
+    }
+
+    // ✅ Show logged-in user's name on desktop
+    const userData = JSON.parse(localStorage.getItem('zoomshopy_current_user'));
+    if (userData) {
+      const userText = document.querySelector('.nav-signin .signin-texts');
+      if (userText) {
+        userText.innerHTML = `
+          <span class="hello-text">Hello, ${userData.name || 'User'}</span><br>
+          <span class="account-text">Account ▼</span>
+        `;
+      }
+    }
+  });
+</script>
+
+
+  <script>
+document.getElementById("shop-now-btn").addEventListener("click", function() {
+  document.querySelector("#products").scrollIntoView({
+    behavior: "smooth"
+  });
+});
+</script>
+
+
+</script>
+
+    <script>
+    // Hide or show logout icon based on login status
+const logoutIcon = document.getElementById('logoutIcon');
+const currentUser = localStorage.getItem('zoomshopy_current_user');
+
+if (currentUser) {
+  logoutIcon.style.display = 'inline-block';
+} else {
+  logoutIcon.style.display = 'none';
+}
+
+// Logout function
+function logoutUser() {
+  localStorage.removeItem('zoomshopy_current_user');
+  window.location.href = 'signin.html';
+}
+
+
+    // Logout function
+    function logoutUser() {
+      localStorage.removeItem('zoomshopy_current_user');
+      window.location.href = 'signin.html';
+    }
+    </script>
+
+    <script>
+  const hamburgerBtn = document.getElementById('hamburgerBtn');
+  const mobileSidebar = document.getElementById('mobileSidebar');
+
+  if (hamburgerBtn && mobileSidebar) {
+    hamburgerBtn.addEventListener('click', () => {
+      mobileSidebar.classList.toggle('active');
+    });
+  }
+</script>
+
+<script>
+  // ✅ Update both desktop & mobile user UI
+ function updateUserUI() {
+  const user = JSON.parse(localStorage.getItem("zoomshopy_current_user"));
+
+  // ✅ Desktop elements (unchanged)
+  const helloText = document.querySelector(".hello-text");
+  const accountText = document.querySelector(".account-text");
+
+  // ✅ Mobile Sidebar Elements (ONLY MOBILE)
+  const mobileUserName = document.querySelector(".mobile-user-name");
+  const mobileSignInItem = document.querySelector('.sidebar-menu a[href="signin.html"]')?.parentElement;
+  const mobileLogoutItem = Array.from(document.querySelectorAll('.sidebar-menu a')).find(
+    a => a.getAttribute('onclick')?.includes('logoutUser')
+  )?.parentElement;
+
+  if (user && user.email) {
+    const userName = user.name || user.email.split("@")[0];
+
+    // ✅ Desktop stays the same
+    if (helloText) helloText.textContent = `Hello, ${userName}`;
+    if (accountText) accountText.textContent = "Account ▼";
+
+    // ✅ Mobile greeting
+    if (mobileUserName) mobileUserName.textContent = `Hello, ${userName}`;
+
+    // ✅ Hide Sign-In only on mobile
+    if (mobileSignInItem) mobileSignInItem.style.display = "none";
+
+    // ✅ Show Logout only on mobile
+    if (mobileLogoutItem) mobileLogoutItem.style.display = "block";
+
+  } else {
+    // 🚫 Not logged in (Desktop Default)
+    if (helloText) helloText.textContent = "Hello, Guest";
+    if (accountText) accountText.textContent = "Sign In ▼";
+
+    // ✅ Mobile Greeting
+    if (mobileUserName) mobileUserName.textContent = "Hello, Guest";
+
+    // ✅ Show Sign-In on mobile
+    if (mobileSignInItem) mobileSignInItem.style.display = "block";
+
+    // ✅ Hide Logout on mobile
+    if (mobileLogoutItem) mobileLogoutItem.style.display = "none";
+  }
+}
+
+document.addEventListener("DOMContentLoaded", updateUserUI);
+
+
+  // ✅ Logout handler
+  function logoutUser() {
+    localStorage.removeItem("zoomshopy_current_user");
+    updateUserUI(); // instantly refresh UI
+    window.location.href = "signin.html";
+  }
+
+  // ✅ Run on load
+  document.addEventListener("DOMContentLoaded", updateUserUI);
+
+  // ✅ Detect login changes from other tabs
+  window.addEventListener("storage", e => {
+    if (e.key === "zoomshopy_current_user") updateUserUI();
+  });
+</script>
+
+
+
+<!-- PRODUCT POPUP MODAL -->
+<div id="product-modal" class="product-modal">
+  <div class="product-modal-content">
+    <span class="close-modal">&times;</span>
+
+    <img id="modal-product-image" src="" alt="">
+    <h2 id="modal-product-name"></h2>
+    <p id="modal-product-price"></p>
+
+    <label>Quantity:
+      <input id="modal-quantity" type="number" min="1" value="1">
+    </label>
+
+    <button id="modal-add-cart-btn">Add to Cart</button>
+  </div>
+</div>
+
+
+  </body>
+</html>
