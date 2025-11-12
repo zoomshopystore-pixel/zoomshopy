@@ -38,13 +38,17 @@ export async function renderPaymentSummary() {
   let shippingPriceCents = 0;
 
   // ✅ Calculate totals
-  cart.forEach((cartItem) => {
-    const product = getProduct(cartItem.productId);
-    productPriceCents += product.priceCents * cartItem.quantity;
+    cart.forEach((cartItem) => {
+      const product = getProduct(cartItem.productId);  // ✅ FIXED
 
-    const deliveryOption = getDeliveryOption(cartItem.deliveryOptionId);
-    shippingPriceCents += deliveryOption.priceCents;
-  });
+      if (!product) return; // ✅ Prevent crashes if product not found
+
+      productPriceCents += product.priceCents * cartItem.quantity;
+
+      const deliveryOption = getDeliveryOption(cartItem.deliveryOptionId);
+      shippingPriceCents += deliveryOption.priceCents;
+    });
+
 
   const getTotalQuantity = () =>
     cart.reduce((total, item) => total + item.quantity, 0);

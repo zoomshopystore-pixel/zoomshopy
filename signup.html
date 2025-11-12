@@ -166,9 +166,26 @@
         // save current user (minimal)
         localStorage.setItem("zoomshopy_current_user", JSON.stringify({ email: pendingUser.email }));
         setStatus('Welcome! Redirecting...', '#0a7');
+        // ✅ Check if there is a product waiting to be added (pending from modal)
+        const pendingAdd = JSON.parse(localStorage.getItem("zoomshopy_pending_add"));
 
-        // redirect to your homepage (you said it's amazon.html)
-        setTimeout(() => window.location.href = "amazon.html", 700);
+        if (pendingAdd) {
+          let cart = JSON.parse(localStorage.getItem("zoomshopy_cart")) || [];
+          const existingItem = cart.find(item => item.id === pendingAdd.productId);
+
+          if (existingItem) {
+            existingItem.quantity += pendingAdd.quantity;
+          } else {
+            cart.push({ id: pendingAdd.productId, quantity: pendingAdd.quantity });
+          }
+
+          localStorage.setItem("zoomshopy_cart", JSON.stringify(cart));
+          localStorage.removeItem("zoomshopy_pending_add"); // clear pending
+        }
+
+        // ✅ Now redirect to homepage
+        setTimeout(() => window.location.href = "zoomshopy.html", 700);
+
       } else {
         setStatus('Invalid code. Try again.', 'red');
       }
@@ -231,8 +248,8 @@
         }
 
         document.getElementById('statusMessage').textContent = `Welcome ${user.displayName || user.email}!`;
-        // redirect to your homepage (amazon.html)
-        setTimeout(() => window.location.href = "amazon.html", 600);
+        // redirect to your homepage (zoomshopy.html)
+        setTimeout(() => window.location.href = "zoomshopy.html", 600);
       } catch (err) {
         console.error("Google Sign-Up Error:", err);
 

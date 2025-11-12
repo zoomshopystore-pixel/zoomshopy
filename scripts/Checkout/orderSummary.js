@@ -32,17 +32,22 @@ export async function renderOrderSummary() {
     `;
 
     document.getElementById('viewProductsBtn').addEventListener('click', () => {
-      window.location.href = 'amazon.html';
+      window.location.href = 'zoomshopy.html';
     });
     return;
   }
 
-  // ✅ Render cart items
-  cart.forEach((cartItem) => {
-    const productId = cartItem.productId;
-    const matchingProduct = getProduct(productId);
-    const deliveryOptionId = cartItem.deliveryOptionId;
-    const deliveryOption = getDeliveryOption(deliveryOptionId);
+ // ✅ Render cart items
+cart.forEach((cartItem) => {
+  const productId = cartItem.productId;
+  const matchingProduct = getProduct(productId);
+
+  // ✅ Prevent crash if bad item is in cart
+  if (!matchingProduct) return;
+
+  const deliveryOptionId = cartItem.deliveryOptionId;
+  const deliveryOption = getDeliveryOption(deliveryOptionId);
+
 
     // 🕒 Delivery date
     const today = dayjs();
@@ -99,15 +104,17 @@ export async function renderOrderSummary() {
     });
   });
 
-  // ✅ Delivery option change
-  document.querySelectorAll('.js-delivery-option').forEach((element) => {
-    element.addEventListener('click', () => {
-      const { productId, deliveryOptionId } = element.dataset;
-      updateDeliveryOption(productId, deliveryOptionId);
-      renderOrderSummary();
-      renderPaymentSummary();
-    });
+  document.querySelectorAll('.js-delivery-option').forEach((radio) => {
+  radio.addEventListener('change', () => {
+    const productId = radio.dataset.productId;
+    const deliveryOptionId = radio.dataset.deliveryOptionId;
+
+    updateDeliveryOption(productId, deliveryOptionId);
+    renderOrderSummary();
+    renderPaymentSummary();
   });
+});
+
 
   // ✅ Quantity Update Buttons
   document.querySelectorAll('.js-update-link').forEach((button) => {
@@ -157,24 +164,28 @@ function deliveryOptionsHTML(matchingProduct, cartItem, rates, localCurrency, sy
       deliveryOption.priceCents === 0
         ? 'FREE'
         : `${symbol}${((deliveryOption.priceCents / 100) * rate).toLocaleString(undefined, {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2
-  })} -`;
-
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+          })} -`;
 
     const isChecked = deliveryOption.id === cartItem.deliveryOptionId;
 
     html += `
-      <div class="delivery-option js-delivery-option"
-        data-product-id="${matchingProduct.id}"
-        data-delivery-option-id="${deliveryOption.id}">
-        <input type="radio" ${isChecked ? 'checked' : ''} class="delivery-option-input"
-          name="delivery-option-${matchingProduct.id}">
+      <label class="delivery-option">
+        <input 
+          type="radio" 
+          class="js-delivery-option"
+          name="delivery-option-${matchingProduct.id}"
+          value="${deliveryOption.id}"
+          data-product-id="${matchingProduct.id}"
+          data-delivery-option-id="${deliveryOption.id}"
+          ${isChecked ? 'checked' : ''}
+        >
         <div>
           <div class="delivery-option-date">${dateString}</div>
           <div class="delivery-option-price">${deliveryPrice} Shipping</div>
         </div>
-      </div>
+      </label>
     `;
   });
   return html;

@@ -1,5 +1,5 @@
 // amazon.js
-import { cart, addToCart } from '../data/cart.js';
+import { cart, addToCart, updateCartBadge } from '../data/cart.js';
 import { products } from '../data/products.js';
 import { formatCurrency } from './utils/money.js'; // fallback
 import { setupCurrency } from '../scripts/currencySetup.js';
@@ -69,11 +69,12 @@ function updateAllProductPrices(rates, currencyCode) {
 function handleAddToCart(productId, quantity = 1) {
   const currentUser = localStorage.getItem('zoomshopy_current_user');
   if (!currentUser) {
-    localStorage.setItem('zoomshopy_pending_product', JSON.stringify({ productId, quantity }));
+    localStorage.setItem('zoomshopy_pending_add', JSON.stringify({ productId, quantity }));
     window.location.href = 'signin.html';
     return;
   }
-  addToCart(productId, quantity);
+  addToCart(productId, quantity, "1"); // ✅ default delivery option
+
 }
 
 // ---------------------------
@@ -205,7 +206,7 @@ function handleAddToCart(productId, quantity = 1) {
     const qty = Number(productContainer.querySelector('.js-quantity-selector')?.value) || 1;
 
     handleAddToCart(productId, qty);
-    updateCartQuantity();
+    updateCartBadge();
 
     // show "Added" briefly
     const addedMessage = productContainer.querySelector('.added-to-cart');
@@ -228,7 +229,7 @@ function updateCartQuantity() {
 }
 
 // ensure badge updated on load
-document.addEventListener('DOMContentLoaded', updateCartQuantity);
+document.addEventListener('DOMContentLoaded', updateCartBadge);
 
 // ---------------------------
 // Search & renderFilteredProducts (keeps currency behavior)
@@ -325,5 +326,10 @@ document.addEventListener("click", function(e) {
     if (searchInput) searchInput.value = "";
   }
 });
+
+if (window.location.search.includes("added=1")) {
+  updateCartQuantity();
+}
+
 
 

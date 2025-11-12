@@ -76,33 +76,64 @@
   </div>
 
   <script>
-    // ✅ Handle Sign-In
-    document.getElementById('signin-btn').addEventListener('click', () => {
-      const email = document.getElementById('email').value.trim().toLowerCase();
-      const password = document.getElementById('password').value.trim();
+  document.getElementById('signin-btn').addEventListener('click', () => {
+    const email = document.getElementById('email').value.trim().toLowerCase();
+    const password = document.getElementById('password').value.trim();
 
-      if (!email || !password) {
-        alert('Please fill in all fields.');
-        return;
-      }
+    if (!email || !password) {
+      return; // no alert, just stop
+    }
 
-      const users = JSON.parse(localStorage.getItem('zoomshopy_users')) || [];
-      const user = users.find(u => u.email.toLowerCase() === email);
+    const users = JSON.parse(localStorage.getItem('zoomshopy_users')) || [];
+    const user = users.find(u => u.email.toLowerCase() === email);
 
-      if (!user) {
-        alert('User not found. Please sign up first.');
-        return;
-      }
+    if (!user) {
+      // User does not exist → go to signup
+      window.location.href = "signup.html";
+      return;
+    }
 
-      if (user.password === password) {
-        const currentUser = { email: user.email };
-        localStorage.setItem('zoomshopy_current_user', JSON.stringify(currentUser));
-        alert('✅ Sign in successful!');
-        window.location.href = 'amazon.html';
-      } else {
-        alert('❌ Incorrect password.');
-      }
-    });
-  </script>
+    if (user.password !== password) {
+      return; // wrong password → silently ignore (or you can show minimal message)
+    }
+
+    // ✅ Save logged in user
+   localStorage.setItem("zoomshopy_current_user", JSON.stringify({
+  email: user.email,
+  name: user.name
+}));
+
+
+    // ✅ Check if we need to auto-add product from modal
+const pendingAdd = JSON.parse(localStorage.getItem("zoomshopy_pending_add"));
+
+if (pendingAdd && pendingAdd.productId) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  const productId = String(pendingAdd.productId); // ✅ standardize ID
+
+ const existingItem = cart.find(item => String(item.productId) === productId);
+
+if (existingItem) {
+  existingItem.quantity += Number(pendingAdd.quantity);
+} else {
+  cart.push({
+    productId: productId,
+    quantity: Number(pendingAdd.quantity),
+    deliveryOptionId: "1"
+  });
+}
+
+  localStorage.setItem("cart", JSON.stringify(cart));
+  localStorage.removeItem("zoomshopy_pending_add");
+}
+
+
+    // ✅ Redirect back to shop
+    // ✅ Redirect back to shop and force UI refresh so cart loads correctly
+window.location.href = "zoomshopy.html?added=1";
+
+  });
+</script>
+
 </body>
 </html>

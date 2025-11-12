@@ -459,7 +459,7 @@ html, body {
 <!-- 🌟 DESKTOP HEADER -->
 <div class="amazon-header nav-bar">
   <div class="amazon-header-left-section">
-    <a href="amazon.html" class="header-link">
+    <a href="zoomshopy.html" class="header-link">
       <img class="amazon-logo" src="images/zoom.shop.jpeg">
       <img class="amazon-mobile-logo" src="images/zoom.shopy-mobile.png">
     </a>
@@ -528,7 +528,7 @@ html, body {
         👋 <span class="mobile-user-name">Hello, Guest</span>
       </li>
 
-      <li><a href="amazon.html">🏠 Home</a></li>
+      <li><a href="zoomshopy.html">🏠 Home</a></li>
       <li><a href="orders.html">📦 Orders & Returns</a></li>
 
       <!-- 🛒 Cart link with live red badge -->
@@ -620,6 +620,9 @@ document.addEventListener("click", (event) => {
   const id = img.dataset.id;
   selectedProduct = getProduct(id);
 
+  modalAddBtn.setAttribute("data-product-id", selectedProduct.id);
+
+
   modalImg.src = selectedProduct.image;
   modalName.textContent = selectedProduct.name;
 
@@ -634,10 +637,30 @@ closeModal.onclick = () => modal.style.display = "none";
 window.onclick = (e) => { if (e.target === modal) modal.style.display = "none"; }
 
 modalAddBtn.addEventListener("click", () => {
-  addToCart(selectedProduct.id, Number(modalQty.value));
-  showAddedMessage();
+  const currentUser = JSON.parse(localStorage.getItem("zoomshopy_current_user"));
+  const productId = modalAddBtn.getAttribute("data-product-id");
+  const quantity = Number(modalQty.value);
+
+  // If user is not logged in → Save pending product & redirect
+  if (!currentUser) {
+    localStorage.setItem("zoomshopy_pending_add", JSON.stringify({
+      productId: productId,
+      quantity: quantity
+    }));
+
+    window.location.href = "./signin.html";
+    return;
+  }
+
+  // ✅ Use your real cart system
+  addToCart(productId, quantity);
+
   modal.style.display = "none";
+  showAddedMessage(); // ✅ Show confirmation
 });
+
+
+
 </script>
 
 
@@ -833,7 +856,6 @@ document.addEventListener("DOMContentLoaded", updateUserUI);
     <button id="modal-add-cart-btn">Add to Cart</button>
   </div>
 </div>
-
 
   </body>
 </html>

@@ -20,7 +20,8 @@ export let cart;
         let matchingItem;
 
         cart.forEach((cartItem) => {
-          if (productId === cartItem.productId) {
+          if (String(productId) === String(cartItem.productId)) {
+
             matchingItem = cartItem;
           }
         });
@@ -29,7 +30,7 @@ export let cart;
           matchingItem.quantity += quantity;
         } else {
           cart.push({
-            productId: productId,
+           productId: String(productId),
             quantity: quantity,
             deliveryOptionId: '1'
           });
@@ -55,20 +56,16 @@ export let cart;
         saveToStorage();
       }
 
-      export function updateDeliveryOption(productId, deliveryOptionId) {
-        let matchingItem;
+            export function updateDeliveryOption(productId, deliveryOptionId) {
+        let matchingItem = cart.find(item => item.productId === productId); // ✅ CORRECT
 
-        cart.forEach((cartItem) => {
-          if (productId === cartItem.productId) {
-            matchingItem = cartItem;
-          }
-        });
+        if (!matchingItem) return;
 
-        if (matchingItem) {
-          matchingItem.deliveryOptionId = deliveryOptionId;
-          saveToStorage();
-        }
+        matchingItem.deliveryOptionId = deliveryOptionId;
+        saveToStorage();
       }
+
+
 
       // ✅ Still useful for manual edits on checkout page
       export function updateQuantity(productId, newQuantity) {
