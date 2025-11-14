@@ -96,7 +96,7 @@
 
 <script type="module">
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
-  import { getFirestore, collection, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
+  import { getFirestore, collection, addDoc, doc, updateDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-firestore.js";
   import { getAuth } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-auth.js";
   import { products } from "./data/products.js";
 
@@ -215,84 +215,88 @@
     else { status.textContent=''; }
     return ok;
   }
+    document.getElementById('submitOrder').addEventListener('click', async () => {
+      const status = document.getElementById('statusMessage');
 
-  // Submit order: save to Firestore with BOTH USD and local prices per item and include currency
-  document.getElementById('submitOrder').addEventListener('click', async () => {
-    const btn = document.getElementById('submitOrder');
-    const status = document.getElementById('statusMessage');
+      if (!validateForm()) return;
 
-    if (!validateForm()) return;
-
-    // check login (firebase auth or local storage)
-    let user = auth.currentUser;
-    if (!user) {
-      const stored = safeJSON(localStorage.getItem('zoomshopy_current_user'), null);
-      if (stored && stored.email) user = { uid: stored.uid || stored.email, email: stored.email, name: stored.name };
-    }
-    if (!user) { alert('Please sign in'); window.location.href='signin.html'; return; }
-
-    btn.disabled = true; btn.textContent = 'Submitting...'; status.style.color='#00bfff'; status.textContent='';
-
-    // create cartItems payload with both USD and local values
-    const payloadItems = displayItems.map(it => {
-      // decide local price: if pendingOrder item had local price, use it; else compute from ratio (if pendingOrder.totalAmount exists)
-      let localPrice = it.localPrice;
-      if (localPrice === null && pendingOrder && pendingOrder.totalAmount) {
-        // compute conversion factor = pendingOrder.totalAmount / usdTotal
-        const factor = Number(pendingOrder.totalAmount) / (usdTotal || 1);
-        localPrice = (it.usdPrice * factor);
+      const currentUser = JSON.parse(localStorage.getItem('zoomshopy_current_user')) || {};
+      if (!currentUser.email) {
+        alert("Please sign in before submitting an order.");
+        return;
       }
 
-      return {
-        productId: it.productId,
-        name: it.name,
-        image: it.image,
-        quantity: it.quantity,
-        priceUsd: Number((it.usdPrice).toFixed(2)),
-        priceLocal: localPrice !== null ? Number((localPrice).toFixed(2)) : null
+      const pendingOrder = JSON.parse(localStorage.getItem('pendingOrder') || '{}');
+      if (!pendingOrder || !pendingOrder.cartItems?.length) {
+        alert("No pending order found. Please go back to cart.");
+        return;
+      }
+
+      // ✅ Map cart items and include both USD and local prices
+      const cartItems = pendingOrder.cartItems.map(item => ({
+        productId: item.productId,
+        name: item.name,
+        image: item.image || '',
+        quantity: item.quantity,
+        priceUsd: Number(item.priceUsd || 0),
+        priceLocal: Number(item.price || 0),
+        deliveryOption: item.deliveryOption || null
+      }));
+
+      // ✅ Calculate totals including shipping
+      const totalUsd = cartItems.reduce((sum, item) => {
+        const productTotal = (item.priceUsd || 0) * item.quantity;
+        const shipping = item.deliveryOption?.priceUsd || 0;
+        return sum + productTotal + shipping;
+      }, 0);
+
+      const totalLocal = cartItems.reduce((sum, item) => {
+        const productTotal = (item.priceLocal || 0) * item.quantity;
+        const shipping = item.deliveryOption?.price || 0;
+        return sum + productTotal + shipping;
+      }, 0);
+
+      const orderDoc = {
+        userId: currentUser.uid || currentUser.email,
+        user: {
+          name: document.getElementById('name').value,
+          email: document.getElementById('email').value,
+          phone: document.getElementById('phone').value
+        },
+        shipping: {
+          country: document.getElementById('country').value,
+          state: document.getElementById('state').value,
+          zipcode: document.getElementById('zipcode').value,
+          address: document.getElementById('address').value,
+          whatsapp: document.getElementById('whatsapp').value || ''
+        },
+        cartItems,
+        totals: {
+          totalUsd: Number(totalUsd.toFixed(2)),
+          totalLocal: Number(totalLocal.toFixed(2)),
+          currency: pendingOrder.currency
+        },
+        timestamp: serverTimestamp()
       };
+
+      try {
+        await addDoc(collection(db, 'orders'), orderDoc);
+
+        // Cleanup
+        localStorage.removeItem('pendingOrder');
+        localStorage.removeItem('cart');
+
+        status.style.color = 'green';
+        status.textContent = '✅ Order submitted! Redirecting...';
+        setTimeout(() => window.location.href = 'order-success.html', 1400);
+
+      } catch (err) {
+        console.error('Firestore save error:', err);
+        status.style.color = 'red';
+        status.textContent = '❌ Failed to submit order. Try again.';
+      }
     });
 
-    const orderDoc = {
-      userId: user.uid,
-      user: { name: document.getElementById('name').value, email: document.getElementById('email').value, phone: document.getElementById('phone').value },
-      cartItems: payloadItems,
-      totals: {
-        totalUsd: Number(usdTotal.toFixed(2)),
-        totalLocal: pendingOrder && pendingOrder.totalAmount ? Number(Number(pendingOrder.totalAmount).toFixed(2)) : null,
-        currency: localCurrency
-      },
-      shipping: {
-        country: document.getElementById('country').value,
-        state: document.getElementById('state').value,
-        zipcode: document.getElementById('zipcode').value,
-        address: document.getElementById('address').value,
-        whatsapp: document.getElementById('whatsapp').value || ''
-      },
-      timestamp: serverTimestamp()
-    };
-
-    try {
-      await addDoc(collection(db, 'orders'), orderDoc);
-
-      // cleanup
-      localStorage.removeItem('cart');
-      localStorage.removeItem('pendingOrder');
-
-      const cartQtyEls = document.querySelectorAll('.js-cart-quantity');
-      cartQtyEls.forEach(e => e.textContent = '0');
-
-      status.style.color = 'green';
-      status.textContent = '✅ Order submitted — redirecting...';
-      setTimeout(() => window.location.href = 'order-success.html', 1400);
-    } catch (err) {
-      console.error('Firestore save error', err);
-      status.style.color = 'red';
-      status.textContent = '❌ Failed to submit order — try again.';
-    } finally {
-      btn.disabled = false; btn.textContent = 'Submit Order';
-    }
-  });
 
 </script>
 

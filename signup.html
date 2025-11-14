@@ -1,274 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>ZoomShopy — Sign Up</title>
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #00b4ff, #7dd3fc);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .signup-container {
-      background: white;
-      padding: 40px;
-      border-radius: 10px;
-      width: 350px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-    h2 { text-align: center; color: #00b4ff; margin-bottom: 20px; }
-    .form-group { margin-bottom: 15px; }
-    label { display: block; font-weight: bold; margin-bottom: 6px; }
-    input {
-      width: 100%; padding: 10px; border: 1px solid #ccc;
-      border-radius: 6px; outline: none;
-    }
-    .btn {
-      width: 100%; background-color: #00b4ff; color: white;
-      padding: 10px; border: none; border-radius: 6px;
-      cursor: pointer; font-size: 16px; margin-top: 10px;
-    }
-    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
-    .switch-text { text-align: center; margin-top: 15px; }
-    .switch-text a { color: #00b4ff; cursor: pointer; }
-    .otp-section { display: none; margin-top: 20px; }
-    .google-btn { background-color: white; color: #444; border: 1px solid #ccc; display: flex; align-items: center; justify-content: center; gap: 10px; margin-top: 10px; padding: 10px; }
-    .google-btn img { width: 20px; }
-    .status { text-align:center; margin-top:10px; font-weight:600; color:#444; }
-  </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ZoomShopy — Sign Up</title>
+<style>
+  body{font-family:Inter,Roboto,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background:#f3f7fb;}
+  .card{background:white;padding:30px;border-radius:12px;width:350px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+  input,button{width:100%;padding:10px;margin:10px 0;border-radius:6px;border:1px solid #ccc;font-size:14px;}
+  button{background:#00b4ff;color:white;border:none;cursor:pointer;}
+  .google-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:white;border:1px solid #ccc;color:#444;}
+  .status{margin-top:10px;font-weight:600;color:#444;}
+  .otp-section{display:none;}
+</style>
 </head>
 <body>
 
-  <div class="signup-container" role="main">
-    <h2>Sign Up</h2>
+<div class="card">
+  <h2>Sign Up</h2>
 
-    <div class="form-section">
-      <div class="form-group">
-        <label for="email">Email Address</label>
-        <input type="email" id="email" placeholder="Enter your email" autocomplete="email">
-      </div>
-
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" placeholder="Enter your password" autocomplete="new-password">
-      </div>
-
-      <button class="btn" id="send-otp-btn" type="button">Sign Up</button>
-
-      <div class="divider" style="text-align:center;margin:15px 0;">or</div>
-
-      <button class="google-btn" id="google-signup-btn" type="button" aria-label="Sign up with Google">
-        <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google"> Sign Up with Google
-      </button>
-
-      <div id="statusMessage" class="status" aria-live="polite"></div>
-    </div>
-
-    <div class="otp-section" id="otp-section" aria-hidden="true">
-      <div class="form-group">
-        <label for="otp">Enter Verification Code</label>
-        <input type="text" id="otp" placeholder="Enter the 6-digit code" inputmode="numeric">
-      </div>
-      <button class="btn" id="verify-otp-btn" type="button">Verify Code</button>
-    </div>
-
-    <div class="switch-text">
-      Already have an account? <a href="signin.html">Sign In</a>
-    </div>
+  <div class="form-section">
+    <input id="email" type="email" placeholder="Email" />
+    <input id="password" type="password" placeholder="Password" />
+    <button id="signup-btn">Sign Up</button>
+    <div class="divider">or</div>
+    <button id="google-signup-btn" class="google-btn">
+      <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="20" /> Continue with Google
+    </button>
+    <p>Already have an account? <a href="signin.html">Sign In</a></p>
   </div>
 
-  <!-- EmailJS (non-module) -->
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <div class="otp-section" id="otp-section">
+    <input id="otp" type="text" placeholder="Enter OTP" />
+    <button id="verify-otp-btn">Verify OTP</button>
+  </div>
 
-  <script>
-    // EmailJS initialization (unchanged)
-    (function() {
-      if (window.emailjs) emailjs.init("kYmWGGTZcdWGSv-Uq"); // your PUBLIC key
-    })();
+  <div class="status" id="status"></div>
+</div>
 
-    // OTP flow variables
-    let generatedOTP = null;
-    let pendingUser = null;
+<!-- Firebase -->
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+import { getAuth, createUserWithEmailAndPassword, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
 
-    // Small helper to show user status messages
-    function setStatus(msg, color = '#444') {
-      const el = document.getElementById('statusMessage');
-      if (!el) return;
-      el.textContent = msg;
-      el.style.color = color;
-    }
-
-    // SEND OTP button
-    document.getElementById("send-otp-btn").addEventListener("click", () => {
-      setStatus('');
-      const email = document.getElementById("email").value.trim();
-      const password = document.getElementById("password").value.trim();
-
-      if (!email || !password) {
-        setStatus('Please enter both email and password.', 'red');
-        return;
-      }
-
-      let users = JSON.parse(localStorage.getItem("zoomshopy_users")) || [];
-      if (users.some(u => u.email.toLowerCase() === email.toLowerCase())) {
-        setStatus('Account already exists. Please sign in instead.', 'red');
-        return;
-      }
-
-      // generate OTP and store pending user
-      generatedOTP = Math.floor(100000 + Math.random() * 900000);
-      pendingUser = { email, password, otp: String(generatedOTP) };
-
-      const params = {
-        email,
-        passcode: generatedOTP,
-        time: new Date(Date.now() + 15 * 60000).toLocaleTimeString()
-      };
-
-      // disable button while sending
-      const btn = document.getElementById('send-otp-btn');
-      btn.disabled = true;
-      setStatus('Sending verification code...');
-
-      emailjs.send("service_d381wf6", "template_jw4wcej", params)
-        .then(() => {
-          setStatus(`Verification code sent to ${email}`, '#0a7');
-          document.querySelector(".form-section").style.display = "none";
-          const otpSection = document.getElementById("otp-section");
-          otpSection.style.display = "block";
-          otpSection.setAttribute('aria-hidden', 'false');
-        })
-        .catch((err) => {
-          console.error("EmailJS Error:", err);
-          setStatus('Failed to send verification email. Please try again.', 'red');
-        })
-        .finally(() => btn.disabled = false);
-    });
-
-    // VERIFY OTP
-    document.getElementById("verify-otp-btn").addEventListener("click", () => {
-      setStatus('');
-      const enteredOTP = document.getElementById("otp").value.trim();
-      if (!enteredOTP) { setStatus('Enter the verification code.', 'red'); return; }
-
-      if (enteredOTP === String(generatedOTP)) {
-        let users = JSON.parse(localStorage.getItem("zoomshopy_users")) || [];
-        // ensure we don't duplicate an email (case-insensitive)
-        if (!users.some(u => u.email.toLowerCase() === pendingUser.email.toLowerCase())) {
-          users.push(pendingUser);
-          localStorage.setItem("zoomshopy_users", JSON.stringify(users));
-        }
-        // save current user (minimal)
-        localStorage.setItem("zoomshopy_current_user", JSON.stringify({ email: pendingUser.email }));
-        setStatus('Welcome! Redirecting...', '#0a7');
-        // ✅ Check if there is a product waiting to be added (pending from modal)
-        const pendingAdd = JSON.parse(localStorage.getItem("zoomshopy_pending_add"));
-
-        if (pendingAdd) {
-          let cart = JSON.parse(localStorage.getItem("zoomshopy_cart")) || [];
-          const existingItem = cart.find(item => item.id === pendingAdd.productId);
-
-          if (existingItem) {
-            existingItem.quantity += pendingAdd.quantity;
-          } else {
-            cart.push({ id: pendingAdd.productId, quantity: pendingAdd.quantity });
-          }
-
-          localStorage.setItem("zoomshopy_cart", JSON.stringify(cart));
-          localStorage.removeItem("zoomshopy_pending_add"); // clear pending
-        }
-
-        // ✅ Now redirect to homepage
-        setTimeout(() => window.location.href = "zoomshopy.html", 700);
-
-      } else {
-        setStatus('Invalid code. Try again.', 'red');
-      }
-    });
-  </script>
-
-  <!-- Firebase Google Sign-Up (module) -->
-  <script type="module">
-    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
-    import { getAuth, GoogleAuthProvider, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
-
-    // Your firebase config (same as you used)
-    const firebaseConfig = {
+const firebaseConfig = {
   apiKey: "AIzaSyDiidI7VfMw5fN0SfKDeQwrLK4HAFfhg78",
   authDomain: "zoom-shopy.firebaseapp.com",
   projectId: "zoom-shopy",
   storageBucket: "zoom-shopy.appspot.com",
   messagingSenderId: "521524635595",
-  appId: "1:521524635595:web:c93b6caf4d77ec8525b84e",
-  measurementId: "G-86JY1J7HSV"
+  appId: "1:521524635595:web:c93b6caf4d77ec8525b84e"
 };
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+const status = document.getElementById("status");
 
-    const app = initializeApp(firebaseConfig);
-    const auth = getAuth(app);
-    const provider = new GoogleAuthProvider();
+let generatedOTP = null;
+let pendingUserEmail = null;
+let pendingUserPassword = null;
 
-    // Guard to prevent double popups
-    let googleAuthInProgress = false;
+// Signup with email/password
+document.getElementById("signup-btn").addEventListener("click", async () => {
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+  if(!email || !password){ status.textContent="Enter email & password"; status.style.color="red"; return; }
 
-    const googleBtn = document.getElementById("google-signup-btn");
-    googleBtn.addEventListener("click", async (e) => {
-      // user gesture present (click) — good for popup permission
-      if (googleAuthInProgress) return;
-      googleAuthInProgress = true;
-      googleBtn.disabled = true;
-      document.getElementById('statusMessage').textContent = 'Opening Google sign-in...';
+  // Generate OTP
+  generatedOTP = Math.floor(100000 + Math.random()*900000);
+  pendingUserEmail = email;
+  pendingUserPassword = password;
 
-      try {
-        const result = await signInWithPopup(auth, provider);
-        const user = result.user;
+  try {
+    await emailjs.send(
+      "service_d381wf6",
+      "template_jw4wcej",
+      { email: email, passcode: generatedOTP, time: new Date(Date.now()+15*60000).toLocaleTimeString() },
+      "kYmWGGTZcdWGSv-Uq"
+    );
+    status.textContent = `OTP sent to ${email}`; status.style.color="green";
+    document.querySelector(".form-section").style.display="none";
+    document.getElementById("otp-section").style.display="block";
+  } catch(err) {
+    console.error(err);
+    status.textContent="Failed to send OTP. Check your email."; status.style.color="red";
+  }
+});
 
-        // Save a minimal current-user object locally (so other parts of your app can detect logged-in state)
-        localStorage.setItem("zoomshopy_current_user", JSON.stringify({
-          email: user.email,
-          name: user.displayName || null,
-          photo: user.photoURL || null,
-          uid: user.uid || null
-        }));
+// Verify OTP
+document.getElementById("verify-otp-btn").addEventListener("click", async () => {
+  const enteredOTP = document.getElementById("otp").value.trim();
+  if(String(enteredOTP) !== String(generatedOTP)){ status.textContent="Invalid OTP"; status.style.color="red"; return; }
 
-        // If you want to also persist in your zoomshopy_users array (optional)
-        try {
-          let users = JSON.parse(localStorage.getItem("zoomshopy_users")) || [];
-          if (!users.some(u => u.email && u.email.toLowerCase() === user.email.toLowerCase())) {
-            users.push({ email: user.email, password: null, google: true });
-            localStorage.setItem("zoomshopy_users", JSON.stringify(users));
-          }
-        } catch (err) {
-          // ignore localStore write errors
-          console.warn('Could not update local users list', err);
-        }
+  try {
+    const userCredential = await createUserWithEmailAndPassword(auth, pendingUserEmail, pendingUserPassword);
+    localStorage.setItem("zoomshopy_current_user", JSON.stringify({ uid:userCredential.user.uid, email:userCredential.user.email }));
+    status.textContent="Signup successful! Redirecting..."; status.style.color="green";
+    setTimeout(()=>window.location.href="zoomshopy.html",800);
+  } catch(err) {
+    console.error(err);
+    status.textContent="Signup failed"; status.style.color="red";
+  }
+});
 
-        document.getElementById('statusMessage').textContent = `Welcome ${user.displayName || user.email}!`;
-        // redirect to your homepage (zoomshopy.html)
-        setTimeout(() => window.location.href = "zoomshopy.html", 600);
-      } catch (err) {
-        console.error("Google Sign-Up Error:", err);
+// Google Sign-Up
+document.getElementById("google-signup-btn").addEventListener("click", async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+    localStorage.setItem("zoomshopy_current_user", JSON.stringify({ uid:user.uid,email:user.email,name:user.displayName||'' }));
+    status.textContent=`Welcome ${user.displayName||user.email}! Redirecting...`; status.style.color="green";
+    setTimeout(()=>window.location.href="zoomshopy.html",800);
+  } catch(err) {
+    console.error(err);
+    status.textContent="Google Sign Up failed"; status.style.color="red";
+  }
+});
+</script>
 
-        // Friendly error messages for common problems
-        const code = err?.code || '';
-        if (code === 'auth/popup-blocked') {
-          document.getElementById('statusMessage').textContent = 'Popup blocked — allow popups for this site and try again.';
-        } else if (code === 'auth/cancelled-popup-request') {
-          document.getElementById('statusMessage').textContent = 'Sign-in was cancelled. Try again.';
-        } else if (code === 'auth/configuration-not-found' || code === 'auth/invalid-api-key') {
-          document.getElementById('statusMessage').textContent = 'Firebase OAuth configuration missing — check Firebase console (Authorized domains & Google provider).';
-        } else {
-          document.getElementById('statusMessage').textContent = 'Google Sign-Up failed. Please try again.';
-        }
-      } finally {
-        googleAuthInProgress = false;
-        googleBtn.disabled = false;
-      }
-    });
-  </script>
+<!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>
+  emailjs.init("kYmWGGTZcdWGSv-Uq");
+</script>
 </body>
 </html>

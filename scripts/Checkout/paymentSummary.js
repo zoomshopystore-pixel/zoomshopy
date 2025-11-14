@@ -20,7 +20,7 @@ const firebaseConfig = {
   apiKey: "AIzaSyDiidI7VfMw5fN0SfKDeQwrLK4HAFfhg78",
   authDomain: "zoom-shopy.firebaseapp.com",
   projectId: "zoom-shopy",
-  storageBucket: "zoom-shopy.firebasestorage.app",
+  storageBucket: "zoom-shopy.appspot.com",
   messagingSenderId: "521524635595",
   appId: "1:521524635595:web:c93b6caf4d77ec8525b84e",
   measurementId: "G-86JY1J7HSV"
@@ -91,54 +91,49 @@ export async function renderPaymentSummary() {
 
   document.querySelector('.js-payment-summary').innerHTML = paymentSummaryHTML;
 
-  // ✅ Place Order Handler
-  document.querySelector('.js-place-order').addEventListener('click', async () => {
-    if (!cart || cart.length === 0) {
-      alert("⚠️ Your cart is empty. Please add items before placing an order.");
-      return;
-    }
+ document.querySelector('.js-place-order').addEventListener('click', async () => {
+  if (!cart || cart.length === 0) {
+    alert("⚠️ Your cart is empty.");
+    return;
+  }
 
-    const totalAmount = orderTotal.toFixed(2);
-    const user = JSON.parse(localStorage.getItem('zoomshopy_current_user')) || {};
+  const totalAmount = orderTotal.toFixed(2);
+  const user = JSON.parse(localStorage.getItem('zoomshopy_current_user')) || {};
 
-    const pendingOrder = {
-      cartItems: cart.map(item => {
-        const product = getProduct(item.productId);
-        const deliveryOption = getDeliveryOption(item.deliveryOptionId);
-        const deliveryDate = dayjs()
-          .add(deliveryOption?.deliveryDays || 0, 'days')
-          .toDate()
-          .toDateString();
+  const pendingOrder = {
+    cartItems: cart.map(item => {
+      const product = getProduct(item.productId);
+      const deliveryOption = getDeliveryOption(item.deliveryOptionId);
+      const deliveryDate = dayjs()
+        .add(deliveryOption?.deliveryDays || 0, 'days')
+        .toDate()
+        .toDateString();
 
-        return {
-          productId: item.productId,
-          name: product?.name || "Unknown Product",
-          image: product?.image || "",
-          price: convert(product?.priceCents || 0),
-          quantity: item.quantity,
-          deliveryOption: {
-            id: item.deliveryOptionId,
-            name: deliveryOption?.name || "Standard Shipping",
-            price: convert(deliveryOption?.priceCents || 0),
-            deliveryDate
-          }
-        };
-      }),
-      totalAmount,
-      currency: localCurrency, // ✅ user’s currency
-      user,
-      timestamp: serverTimestamp()
-    };
+      return {
+        productId: item.productId,
+        name: product?.name || "Unknown Product",
+        image: product?.image || "",
+        price: convert(product?.priceCents || 0),
+        quantity: item.quantity,
+        deliveryOption: {
+          id: item.deliveryOptionId,
+          name: deliveryOption?.name || "Standard Shipping",
+          price: convert(deliveryOption?.priceCents || 0),
+          deliveryDate
+        }
+      };
+    }),
+    totalAmount,
+    currency: localCurrency, // user's currency
+    user,
+    timestamp: serverTimestamp()
+  };
 
-    try {
-    
-      // Save locally (optional)
-      localStorage.setItem('pendingOrder', JSON.stringify(pendingOrder));
+  // ✅ Save only locally, not Firestore
+  localStorage.setItem('pendingOrder', JSON.stringify(pendingOrder));
 
-      // Redirect
-      window.location.href = 'checkout-info.html';
-    } catch (error) {
-      alert("Something went wrong while saving your order. Please try again.");
-    }
-  });
-}
+  // ✅ Redirect to checkout-info page
+  window.location.href = 'checkout-info.html';
+});
+
+  };
