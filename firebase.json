@@ -1,0 +1,11 @@
+{
+  "hosting": {
+    "site": "zoom-shopy",
+    "public": "public",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
