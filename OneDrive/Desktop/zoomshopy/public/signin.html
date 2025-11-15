@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ZoomShopy — Sign In</title>
+<style>
+body{font-family:Inter,Roboto,sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;margin:0;background:#f3f7fb;}
+.card{background:white;padding:30px;border-radius:12px;width:350px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+input,button{width:100%;padding:10px;margin:10px 0;border-radius:6px;border:1px solid #ccc;font-size:14px;}
+button{background:#00b4ff;color:white;border:none;cursor:pointer;}
+.google-btn{display:flex;align-items:center;justify-content:center;gap:10px;background:white;border:1px solid #ccc;color:#444;}
+.status{margin-top:10px;font-weight:600;color:#444;}
+a{color:#00b4ff;text-decoration:none;}
+a:hover{text-decoration:underline;}
+</style>
+</head>
+<body>
+<div class="card">
+  <h2>Sign In</h2>
+  <input id="email" type="email" placeholder="Email" />
+  <input id="password" type="password" placeholder="Password" />
+  <button id="signin-btn">Sign In</button>
+  <div class="divider">or</div>
+  <button id="google-signin-btn" class="google-btn">
+    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google" width="20" /> Sign In with Google
+  </button>
+  <p>Don't have an account? <a href="signup.html">Sign Up</a></p>
+  <p><a href="#" id="forgot-password-link">Forgot Password?</a></p>
+  <div id="status" class="status"></div>
+</div>
+
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-app.js";
+import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, sendPasswordResetEmail } from "https://www.gstatic.com/firebasejs/10.14.0/firebase-auth.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDiidI7VfMw5fN0SfKDeQwrLK4HAFfhg78",
+  authDomain: "zoom-shopy.firebaseapp.com",
+  projectId: "zoom-shopy",
+  storageBucket: "zoom-shopy.appspot.com",
+  messagingSenderId: "521524635595",
+  appId: "1:521524635595:web:c93b6caf4d77ec8525b84e"
+};
+
+const app = initializeApp(firebaseConfig);
+const auth = getAuth(app);
+const provider = new GoogleAuthProvider();
+const status = document.getElementById("status");
+
+// Email/Password Sign In
+document.getElementById("signin-btn").addEventListener("click", async () => {
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value.trim();
+  if(!email || !password) { status.textContent="Enter email & password"; status.style.color="red"; return; }
+
+  try {
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+    localStorage.setItem("zoomshopy_current_user", JSON.stringify({ uid:user.uid, email:user.email, name:user.displayName||'' }));
+    status.style.color="green"; status.textContent=`Welcome back ${user.email}!`;
+    setTimeout(()=>window.location.href="zoomshopy.html",800);
+  } catch(err){
+    status.style.color="red";
+    if(err.code==="auth/user-not-found") status.textContent="No account found. Sign up first.";
+    else if(err.code==="auth/wrong-password") status.textContent="Incorrect password.";
+    else status.textContent="Sign in failed.";
+    console.error(err);
+  }
+});
+
+// Google Sign In
+document.getElementById("google-signin-btn").addEventListener("click", async () => {
+  try {
+    const result = await signInWithPopup(auth, provider);
+    const user = result.user;
+    localStorage.setItem("zoomshopy_current_user", JSON.stringify({ uid:user.uid,email:user.email,name:user.displayName||'' }));
+    status.style.color="green"; status.textContent=`Welcome ${user.displayName||user.email}! Redirecting...`;
+    setTimeout(()=>window.location.href="zoomshopy.html",800);
+  } catch(err){ 
+    status.style.color="red"; 
+    status.textContent="Google Sign In failed."; 
+    console.error(err);
+  }
+});
+
+// Forgot Password
+document.getElementById("forgot-password-link").addEventListener("click", async () => {
+  const email = document.getElementById("email").value.trim();
+  if(!email) { status.textContent="Enter your email to reset password"; status.style.color="red"; return; }
+
+  try {
+    await sendPasswordResetEmail(auth, email);
+    status.style.color="green";
+    status.textContent="Password reset email sent! Check your inbox.";
+  } catch(err){
+    status.style.color="red";
+    if(err.code==="auth/user-not-found") status.textContent="No account found with this email.";
+    else status.textContent="Failed to send password reset email.";
+    console.error(err);
+  }
+});
+</script>
+</body>
+</html>

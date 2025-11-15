@@ -1,0 +1,518 @@
+/* ---------- MAIN LAYOUT ---------- */
+.main {
+  margin-top: 5px;
+}
+
+/* ---------- PRODUCTS GRID ---------- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+@media (max-width: 2000px) {
+  .products-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
+}
+
+@media (max-width: 1600px) {
+  .products-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .products-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1000px) {
+  .products-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 450px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------- PRODUCT CARD ---------- */
+.product-container {
+  padding: 40px 25px 25px 25px;
+  border-right: 1px solid rgb(231, 231, 231);
+  border-bottom: 1px solid rgb(231, 231, 231);
+  display: flex;
+  flex-direction: column;
+}
+
+.product-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product-name {
+  height: 40px;
+  margin-bottom: 5px;
+}
+
+.product-rating-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.product-rating-stars {
+  width: 100px;
+  margin-right: 6px;
+}
+
+.product-rating-count {
+  color: rgb(1, 124, 182);
+  cursor: pointer;
+  margin-top: 3px;
+}
+
+.product-price {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.product-quantity-container {
+  margin-bottom: 17px;
+}
+
+.product-spacer {
+  flex: 1;
+}
+
+.added-to-cart {
+  color: rgb(53, 130, 160); /* or use rgb(6, 125, 98) if you want greenish tone */
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out; /* 👈 smooth fade animation */
+}
+
+
+.added-to-cart img {
+  height: 20px;
+  margin-right: 5px;
+}
+
+.add-to-cart-button {
+  width: 100%;
+  padding: 8px;
+  border-radius: 50px;
+  border: none;
+  background-color: rgb(13, 151, 206); /* 💙 Sky blue background */
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.add-to-cart-button:hover {
+  background-color: deepskyblue; /* slightly darker blue when hovered */
+  transform: scale(1.03); /* subtle zoom effect */
+}
+
+
+/* ---------- HEADER ENHANCEMENTS ---------- */
+
+
+/* ---------- HEADER BACKGROUND ---------- */
+.amazon-header {
+  background-color: #00b4ff; /* 🌈 Sky blue header */
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+/* Optional: dark text for contrast */
+.amazon-header a,
+.amazon-header span {
+  color: white;
+}
+
+
+/* Logo Section */
+.amazon-header-left-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 15px;
+}
+
+/* 🛍️ ZoomShopy Logo Styling */
+.amazon-logo {
+  height: 40px;               /* slightly taller */
+  width: auto;
+  object-fit: contain;
+  background: linear-gradient(135deg, #00b4ff); /* modern sky-blue gradient */
+  border-radius: 20px;
+  padding: 6px 14px;
+  box-shadow: 0 0 12px rgba(0, 180, 255, 0.4); /* glowing soft light */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.amazon-logo:hover {
+  transform: scale(1.08); /* smooth zoom on hover */
+  box-shadow: 0 0 16px rgba(0, 200, 255, 0.6);
+}
+
+
+/* 📍 Location section */
+.nav-location {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+  margin-right: 15px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-location:hover {
+  color: #ffa600;
+  transform: scale(1.05);
+}
+
+.nav-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 4px;
+  vertical-align: middle;
+  transition: filter 0.3s ease;
+}
+
+.nav-location:hover .nav-icon {
+  filter: brightness(1.4);
+}
+
+/* 👤 Sign In section */
+.nav-signin {
+  display: flex;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-signin:hover {
+  color: orange;
+  transform: scale(1.05);
+}
+
+.signin-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 1px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+
+.nav-signin:hover .signin-icon {
+  filter: brightness(1.4);
+}
+
+.signin-texts {
+  line-height: 1.1;
+  font-size: 13px;
+}
+
+.hello-text {
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.account-text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+/* 🔍 Search bar adjustments */
+.amazon-header-middle-section {
+  flex: 1;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 200px;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 520px;
+  height: 36px;
+  font-size: 15px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  outline: none;
+   margin-left: 10px; /* 👈 Add this line to move it slightly to the right */
+}
+
+.search-button {
+  height: 36px;
+  width: 45px;
+  background-color: skyblue;
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px; /* 👈 Add this line to move it slightly to the right */
+  position: relative; /* ✅ Add this line */
+  left: -10px; /* ✅ Add this line to pull the button over the bar slightly */
+}
+
+.search-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* 🛒 Make the cart quantity number white */
+.cart-quantity {
+  color: white !important;
+}
+
+/* ---------- PROMO BANNER ---------- */
+.promo-banner {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  border-radius: none;
+  margin-bottom: 40px;
+  margin: 59px auto 40px; /* ⬅ added top margin to push it below header */
+}
+
+.promo-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+  
+}
+.promo-banner::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100px; /* amount of bottom area hidden */
+  background: linear-gradient(to top, #fff, transparent); /* fade effect */
+}
+
+
+.promo-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translateY(-50%);
+  color: white;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.promo-text h1 {
+  font-size: 42px;
+  font-weight: 700;
+}
+
+.promo-text h1 span {
+  color: #ffd814; /* bright yellow for 50% OFF */
+}
+
+.promo-text p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.promo-button {
+  margin-top: 20px;
+  background-color: #ffd814;
+  color: #111;
+  border: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.promo-button:hover {
+  background-color: #f3a847;
+  transform: scale(1.05);
+}
+
+/* Responsive Banner */
+@media (max-width: 768px) {
+  .promo-banner {
+    height: 250px;
+  }
+
+  .promo-text h1 {
+    font-size: 28px;
+  }
+
+  .promo-text p {
+    font-size: 14px;
+  }
+
+  .promo-button {
+    padding: 8px 16px;
+  }
+}
+
+
+/* 📱 Responsive fixes */
+@media (max-width: 1000px) {
+  .amazon-header-middle-section {
+    max-width: 400px;
+    margin-left: 25px;
+  }
+
+  .search-bar {
+    max-width: 360px;
+  }
+}
+
+@media (max-width: 800px) {
+  .amazon-header-middle-section {
+    max-width: 300px;
+    margin-left: 15px;
+  }
+
+  .search-bar {
+    max-width: 260px;
+  }
+}
+
+@media (max-width: 600px) {
+  .amazon-logo {
+    height: 35px;
+    padding: 2px 5px;
+  }
+}
+
+/* ✅ FINAL — Mobile fix for promo banner and text/button */
+@media (max-width: 768px) {
+  .promo-banner {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .promo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .promo-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 90%;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  }
+
+  .promo-text h1 {
+    font-size: 22px;
+    margin-bottom: 6px;
+  }
+
+  .promo-text p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .promo-button {
+    background-color: #ffd814;
+    color: #111;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    border: none;
+    margin-top: 10px;
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .promo-button:hover {
+    background-color: #f3a847;
+  }
+}
+
+/* PRODUCT POPUP */
+.product-modal {
+  display: none;
+  position: fixed;
+  z-index: 3000;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  justify-content: center;
+  align-items: center;
+}
+
+.product-modal-content {
+  background: white;
+  width: 90%;
+  max-width: 380px;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.product-modal-content img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.close-modal {
+  position: absolute;
+  right: 14px;
+  top: 8px;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+
