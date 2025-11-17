@@ -1359,7 +1359,7 @@ export const products = [
   id: "apple-iphone-se",
   name: "Apple iPhone SE",
   priceCents: 2099,
-  image: "images/products/316.JPG",
+  image: "images/products/316.jpg",
   rating: {
     stars: 4.0,
     count: 1452
@@ -1378,7 +1378,7 @@ export const products = [
   id: "apple-iphone-5c",
   name: "Apple iPhone 5c",
   priceCents: 2599,
-  image: "images/products/315.JPG",
+  image: "images/products/315.jpg",
   rating: {
     stars: 4.0,
     count: 1345
