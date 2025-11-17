@@ -62,36 +62,2466 @@ class Clothing extends Product {
 
 export const products = [
   {
-    id: "e6f4d3c2-5a6b-4d7f-9b3c-1e7f2d4a5c3e",
-    image: "images/products/266.webp",
-    name: "Apple MacBook Air M1 13.3\" 8GB RAM 128GB SSD – Space Gray (Renewed)",
-    rating: {
-      stars: 4.5,
-      count: 1678
-    },
-    priceCents: 31099,
-    keywords: [
-      "apple-macbook-air",
-      "late-2020",
-      "m1-chip",
-      "13-3-inch",
-      "8gb-ram",
-      "128gb-ssd",
-      "space-gray",
-      "renewed"
-    ]
+  id: "apple-iphone-15-pro-max-256gb-unlocked-black-titanium",
+  name: "iPhone 15 Pro Max 256GB Black",
+  priceCents: 49234,
+  image: "images/products/376.webp",
+  rating: {
+    stars: 5.0,
+    count: 1320
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "15 pro max",
+    "256gb",
+    "black",
+    "titanium",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-15-pro-1tb-unlocked-blue-titanium",
+  name: "iPhone 15 Pro 1TB Blue",
+  priceCents: 49107,
+  image: "images/products/375.webp",
+  rating: {
+    stars: 5.0,
+    count: 1456
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "15 pro",
+    "1tb",
+    "blue",
+    "titanium",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-15-128gb-unlocked-black",
+  name: "iPhone 15 128GB Black",
+  priceCents: 30898,
+  image: "images/products/374.webp",
+  rating: {
+    stars: 4.5,
+    count: 1324
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "15",
+    "128gb",
+    "black",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-15-pro-max-256gb-unlocked-blue-titanium",
+  name: "iPhone 15 Pro Max 256GB Blue Titanium",
+  priceCents: 50989,
+  image: "images/products/373.webp",
+  rating: {
+    stars: 5.0,
+    count: 2145
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "15 pro max",
+    "256gb",
+    "blue titanium",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-15-128gb-unlocked-blue",
+  name: "iPhone 15 128GB Blue",
+  priceCents: 28990,
+  image: "images/products/372.webp",
+  rating: {
+    stars: 4.5,
+    count: 1578
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "15",
+    "128gb",
+    "blue",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
 },
 
   {
-    id: "f5d3c2b1-6a5e-4d7f-9b3c-1e7f2d4a5c2d",
-    image: "images/products/265.webp",
-    name: "2025 15.6\" Laptop – Celeron N150, 16GB RAM, 512GB SSD",
-    rating: {
-      stars: 4.5,
-      count: 1786
-    },
-    priceCents: 20934,
-    keywords: [
+  id: "apple-iphone-6s-plus-16-32-64-128gb-unlocked",
+  name: "iPhone 6s Plus 16-128GB",
+  priceCents: 7298,
+  image: "images/products/371.webp",
+  rating: {
+    stars: 4.5,
+    count: 1423
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "6s plus",
+    "16gb",
+    "32gb",
+    "64gb",
+    "128gb",
+    "unlocked",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-5s-16-32-64gb-unlocked",
+  name: "iPhone 5s 16/32/64GB",
+  priceCents: 1982,
+  image: "images/products/370.webp",
+  rating: {
+    stars: 4.0,
+    count: 1387
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "5s",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-x-256gb-space-gray-unlocked",
+  name: "iPhone X 256GB",
+  priceCents: 9990,
+  image: "images/products/369.webp",
+  rating: {
+    stars: 4.5,
+    count: 1250
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "x",
+    "256gb",
+    "space gray",
+    "unlocked",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-12-pro-max-128gb-256gb-512gb-unlocked",
+  name: "iPhone 12 Pro Max 128/256/512GB",
+  priceCents: 21089,
+  image: "images/products/368.webp",
+  rating: {
+    stars: 4.5,
+    count: 1450
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "12 pro max",
+    "128gb",
+    "256gb",
+    "512gb",
+    "unlocked",
+    "smartphone",
+    "very good condition"
+  ]
+},
+  {
+  id: "apple-iphone-11-pro-64gb-256gb-unlocked",
+  name: "iPhone 11 Pro 64/256GB",
+  priceCents: 9899,
+  image: "images/products/367.webp",
+  rating: {
+    stars: 4.5,
+    count: 1320
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "11 pro",
+    "64gb",
+    "256gb",
+    "unlocked",
+    "smartphone",
+    "good condition"
+  ]
+},
+  {
+  id: "apple-iphone-5s-16gb-tested-unlocked",
+  name: "iPhone 5s 16GB",
+  priceCents: 3099,
+  image: "images/products/366.webp",
+  rating: {
+    stars: 4.5,
+    count: 1450
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "5s",
+    "16gb",
+    "unlocked",
+    "tested",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-5s-16gb-no-fingerprint",
+  name: "iPhone 5s 16GB",
+  priceCents: 2088,
+  image: "images/products/365.webp",
+  rating: {
+    stars: 4.0,
+    count: 1120
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "5s",
+    "16gb",
+    "unlocked",
+    "4g",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-11-pro-max-64-256gb-unlocked",
+  name: "iPhone 11 Pro Max 64/256GB",
+  priceCents: 11089,
+  image: "images/products/364.webp",
+  rating: {
+    stars: 4.5,
+    count: 1324
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "11 pro max",
+    "64gb",
+    "256gb",
+    "unlocked",
+    "great",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-11-pro-64-256gb-unlocked",
+  name: "iPhone 11 Pro 64/256GB",
+  priceCents: 12099,
+  image: "images/products/363.webp",
+  rating: {
+    stars: 4.5,
+    count: 1456
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "11 pro",
+    "64gb",
+    "256gb",
+    "unlocked",
+    "good",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-xs-max-64-256gb-unlocked",
+  name: "iPhone XS Max 64/256GB",
+  priceCents: 11088,
+  image: "images/products/362.webp",
+  rating: {
+    stars: 4.5,
+    count: 2145
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "xs max",
+    "64gb",
+    "256gb",
+    "unlocked",
+    "very good condition",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5s-16-32-64gb-unlocked",
+  name: "Apple iPhone 5s 16/32/64GB",
+  priceCents: 3099,
+  image: "images/products/361.webp",
+  rating: {
+    stars: 4.0,
+    count: 1789
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5s",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "4g",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-12-64-128-256gb-multi",
+  name: "Apple iPhone 12 64/128/256GB - Multi",
+  priceCents: 14500,
+  image: "images/products/360.webp",
+  rating: {
+    stars: 4.5,
+    count: 1523
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 12",
+    "64gb",
+    "128gb",
+    "256gb",
+    "multi",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-16e-128gb-white",
+  name: "Apple iPhone 16e 128GB - White",
+  priceCents: 32088,
+  image: "images/products/359.webp",
+  rating: {
+    stars: 4.5,
+    count: 2145
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 16e",
+    "128gb",
+    "white",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-12-pro-128-256gb-face-id",
+  name: "Apple iPhone 12 Pro 128/256GB - Face ID",
+  priceCents: 19999,
+  image: "images/products/358.webp",
+  rating: {
+    stars: 4.5,
+    count: 1578
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 12 pro",
+    "128gb",
+    "256gb",
+    "face id",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-6-dysfunctional",
+  name: "Apple iPhone 6 16/64GB - Dysfunctional",
+  priceCents: 1499,
+  image: "images/products/357.webp",
+  rating: {
+    stars: 4.0,
+    count: 1045
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 6",
+    "16gb",
+    "64gb",
+    "dysfunctional",
+    "smartphone",
+    "unlocked"
+  ]
+},
+  {
+  id: "apple-iphone-4s-16gb",
+  name: "Apple iPhone 4s 16GB",
+  priceCents: 2900,
+  image: "images/products/356.webp",
+  rating: {
+    stars: 4.0,
+    count: 1124
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 4s",
+    "16gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-7-plus-32gb",
+  name: "Apple iPhone 7 Plus 32GB",
+  priceCents: 9089,
+  image: "images/products/355.webp",
+  rating: {
+    stars: 4.5,
+    count: 1523
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 7 plus",
+    "32gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-xs-max-64gb",
+  name: "Apple iPhone XS Max 64GB",
+  priceCents: 11099,
+  image: "images/products/354.webp",
+  rating: {
+    stars: 4.5,
+    count: 2345
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone xs max",
+    "64gb",
+    "unlocked",
+    "face id",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5s-16gb",
+  name: "Apple iPhone 5s 16GB",
+  priceCents: 2099,
+  image: "images/products/353.webp",
+  rating: {
+    stars: 4.0,
+    count: 1589
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5s",
+    "16gb",
+    "unlocked",
+    "factory unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-xr-64gb",
+  name: "Apple iPhone XR 64GB",
+  priceCents: 10089,
+  image: "images/products/352.webp",
+  rating: {
+    stars: 4.5,
+    count: 1432
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone xr",
+    "64gb",
+    "unlocked",
+    "excellent condition",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-13-128gb",
+  name: "Apple iPhone 13 128GB",
+  priceCents: 22099,
+  image: "images/products/351.webp",
+  rating: {
+    stars: 4.5,
+    count: 1789
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 13",
+    "128gb",
+    "unlocked",
+    "excellent condition",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-16-128gb-tmobile",
+  name: "Apple iPhone 16 128GB",
+  priceCents: 32099,
+  image: "images/products/350.webp",
+  rating: {
+    stars: 4.5,
+    count: 1543
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 16",
+    "128gb",
+    "tmobile",
+    "black",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-x-64gb-256gb",
+  name: "Apple iPhone X 64/256GB",
+  priceCents: 13099,
+  image: "images/products/349.webp",
+  rating: {
+    stars: 4.5,
+    count: 1423
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone x",
+    "64gb",
+    "256gb",
+    "black",
+    "white",
+    "face id",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "samsung-galaxy-a54-128gb",
+  name: "Samsung Galaxy A54 128GB",
+  priceCents: 12099,
+  image: "images/products/348.webp",
+  rating: {
+    stars: 4.5,
+    count: 1567
+  },
+  keywords: [
+    "samsung",
+    "galaxy",
+    "a54",
+    "128gb",
+    "black",
+    "unlocked",
+    "carrier unlocked",
+    "smartphone",
+    "mobile"
+  ]
+},
+  {
+  id: "samsung-galaxy-j7-crown-16gb",
+  name: "Samsung Galaxy J7 Crown 16GB",
+  priceCents: 4995,
+  image: "images/products/347.webp",
+  rating: {
+    stars: 4.5,
+    count: 1420
+  },
+  keywords: [
+    "samsung",
+    "galaxy",
+    "j7",
+    "crown",
+    "16gb",
+    "gsm",
+    "unlocked",
+    "international",
+    "smartphone",
+    "mobile"
+  ]
+},
+  {
+  id: "motorola-startac-338c",
+  name: "Motorola Startac 338c",
+  priceCents: 10099,
+  image: "images/products/346.webp",
+  rating: {
+    stars: 4.5,
+    count: 1345
+  },
+  keywords: [
+    "motorola",
+    "startac",
+    "338c",
+    "mobile",
+    "phone",
+    "flip phone",
+    "classic",
+    "unlocked",
+    "cellphone",
+    "original"
+  ]
+},
+  {
+  id: "google-pixel-7-pro-128gb",
+  name: "Pixel 7 Pro 128GB",
+  priceCents: 15099,
+  image: "images/products/345.webp",
+  rating: {
+    stars: 4.5,
+    count: 1720
+  },
+  keywords: [
+    "google",
+    "pixel",
+    "pixel 7",
+    "pixel 7 pro",
+    "7 pro",
+    "128gb",
+    "unlocked",
+    "smartphone",
+    "android",
+    "refurbished"
+  ]
+},
+  {
+  id: "google-pixel-7a-128gb",
+  name: "Pixel 7a 128GB",
+  priceCents: 19999,
+  image: "images/products/344.webp",
+  rating: {
+    stars: 4.5,
+    count: 1520
+  },
+  keywords: [
+    "google",
+    "pixel",
+    "pixel 7a",
+    "7a",
+    "128gb",
+    "256gb",
+    "512gb",
+    "unlocked",
+    "smartphone",
+    "android"
+  ]
+},
+  {
+  id: "apple-iphone-12-64gb-blue",
+  name: "iPhone 12 64GB Blue",
+  priceCents: 4290,
+  image: "images/products/343.webp",
+  rating: {
+    stars: 4.5,
+    count: 1320
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 12",
+    "12",
+    "64gb",
+    "blue",
+    "very good",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5-unlocked",
+  name: "iPhone 5 Unlocked",
+  priceCents: 3099,
+  image: "images/products/342.webp",
+  rating: {
+    stars: 4.5,
+    count: 1760
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5",
+    "5",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "black",
+    "white",
+    "grade a",
+    "ios10",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-4s-unlocked",
+  name: "iPhone 4S Unlocked",
+  priceCents: 2600,
+  image: "images/products/341.webp",
+  rating: {
+    stars: 4.0,
+    count: 1450
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 4s",
+    "4s",
+    "8gb",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "classic",
+    "3.5inch",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5-5c-5s-unlocked",
+  name: "iPhone 5/5C/5S Unlocked",
+  priceCents: 2599,
+  image: "images/products/340.webp",
+  rating: {
+    stars: 4.0,
+    count: 1387
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5",
+    "iphone 5c",
+    "iphone 5s",
+    "8gb",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-15-128gb-fully-unlocked",
+  name: "iPhone 15 128GB Unlocked",
+  priceCents: 31799,
+  image: "images/products/339.webp",
+  rating: {
+    stars: 4.5,
+    count: 1523
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 15",
+    "15",
+    "128gb",
+    "fully unlocked",
+    "very good condition",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-16-128gb-factory-unlocked",
+  name: "iPhone 16 128GB Unlocked",
+  priceCents: 39099,
+  image: "images/products/338.webp",
+  rating: {
+    stars: 5.0,
+    count: 1784
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 16",
+    "16",
+    "128gb",
+    "factory unlocked",
+    "att",
+    "tmobile",
+    "verizon",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-14-a2649-tmobile-128gb-midnight",
+  name: "iPhone 14 128GB Midnight",
+  priceCents: 17099,
+  image: "images/products/337.webp",
+  rating: {
+    stars: 4.5,
+    count: 1542
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 14",
+    "14",
+    "128gb",
+    "tmobile",
+    "midnight",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5s-gray-silver-gold-16-32-64gb",
+  name: "iPhone 5s 16/32/64GB",
+  priceCents: 3099,
+  image: "images/products/336.webp",
+  rating: {
+    stars: 4.5,
+    count: 1423
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5s",
+    "5s",
+    "16gb",
+    "32gb",
+    "64gb",
+    "gray",
+    "silver",
+    "gold",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5s-gray-silver-gold",
+  name: "iPhone 5s Gray/Silver/Gold",
+  priceCents: 2000,
+  image: "images/products/335.webp",
+  rating: {
+    stars: 4.0,
+    count: 1375
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5s",
+    "5s",
+    "16gb",
+    "32gb",
+    "gray",
+    "silver",
+    "gold",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5s-silver",
+  name: "iPhone 5s Silver",
+  priceCents: 2000,
+  image: "images/products/334.webp",
+  rating: {
+    stars: 4.0,
+    count: 1420
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5s",
+    "5s",
+    "16gb",
+    "32gb",
+    "64gb",
+    "silver",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-4s",
+  name: "iPhone 4s",
+  priceCents: 2199,
+  image: "images/products/333.webp",
+  rating: {
+    stars: 4.0,
+    count: 1345
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 4s",
+    "4s",
+    "8gb",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "black",
+    "white",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-x",
+  name: "iPhone X",
+  priceCents: 12099,
+  image: "images/products/332.webp",
+  rating: {
+    stars: 4.5,
+    count: 1523
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone x",
+    "64gb",
+    "256gb",
+    "unlocked",
+    "face id",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-6s-plus",
+  name: "iPhone 6S Plus",
+  priceCents: 5099,
+  image: "images/products/331.webp",
+  rating: {
+    stars: 4.5,
+    count: 1845
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 6s",
+    "iphone 6s plus",
+    "32gb",
+    "64gb",
+    "128gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5-5c-5s",
+  name: "iPhone 5/5C/5S",
+  priceCents: 2000,
+  image: "images/products/330.webp",
+  rating: {
+    stars: 4.0,
+    count: 1520
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5",
+    "iphone 5c",
+    "iphone 5s",
+    "8gb",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5s-16gb",
+  name: "iPhone 5s 16GB",
+  priceCents: 2199,
+  image: "images/products/329.webp",
+  rating: {
+    stars: 4.0,
+    count: 1405
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5s",
+    "5s",
+    "16gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-6-16gb",
+  name: "iPhone 6 16GB",
+  priceCents: 2399,
+  image: "images/products/328.webp",
+  rating: {
+    stars: 4.0,
+    count: 1520
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 6",
+    "6",
+    "16gb",
+    "32gb",
+    "64gb",
+    "128gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-11-pro-max-64gb",
+  name: "iPhone 11 Pro Max 64GB",
+  priceCents: 12088,
+  image: "images/products/327.webp",
+  rating: {
+    stars: 4.5,
+    count: 1345
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 11 pro max",
+    "11 pro max",
+    "64gb",
+    "256gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-13-128gb",
+  name: "iPhone 13 128GB",
+  priceCents: 21099,
+  image: "images/products/326.webp",
+  rating: {
+    stars: 4.5,
+    count: 1520
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 13",
+    "13",
+    "128gb",
+    "fully unlocked",
+    "good",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-12-mini-64gb",
+  name: "iPhone 12 Mini 64GB",
+  priceCents: 11099,
+  image: "images/products/325.webp",
+  rating: {
+    stars: 4.5,
+    count: 1450
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 12 mini",
+    "12 mini",
+    "64gb",
+    "fully unlocked",
+    "very good condition",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-16-128gb-pink",
+  name: "iPhone 16 128GB Pink",
+  priceCents: 31288,
+  image: "images/products/324.webp",
+  rating: {
+    stars: 4.5,
+    count: 1320
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 16",
+    "16",
+    "128gb",
+    "pink",
+    "tmobile",
+    "smartphone",
+    "ios",
+    "unlocked"
+  ]
+},
+  {
+  id: "apple-iphone-11-64gb-black",
+  name: "iPhone 11 64GB Black",
+  priceCents: 3089,
+  image: "images/products/323.webp",
+  rating: {
+    stars: 4.5,
+    count: 1450
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 11",
+    "11",
+    "64gb",
+    "black",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-4-4s-unlocked",
+  name: "Apple iPhone 4/4s",
+  priceCents: 2099,
+  image: "images/products/322.webp",
+  rating: {
+    stars: 4.0,
+    count: 1250
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 4",
+    "iphone 4s",
+    "4",
+    "4s",
+    "8gb",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-xs-max",
+  name: "Apple iPhone XS Max",
+  priceCents: 9390,
+  image: "images/products/321.webp",
+  rating: {
+    stars: 4.5,
+    count: 1870
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone xs max",
+    "xs max",
+    "64gb",
+    "256gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+
+  {
+  id: "apple-iphone-5s",
+  name: "Apple iPhone 5s",
+  priceCents: 2000,
+  image: "images/products/320.webp",
+  rating: {
+    stars: 4.0,
+    count: 1450
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5s",
+    "5s",
+    "16gb",
+    "32gb",
+    "64gb",
+    "fully unlocked",
+    "good condition",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-13-mini",
+  name: "Apple iPhone 13 Mini",
+  priceCents: 13619,
+  image: "images/products/319.webp",
+  rating: {
+    stars: 4.5,
+    count: 1789
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 13 mini",
+    "13 mini",
+    "128gb",
+    "256gb",
+    "unlocked",
+    "tested",
+    "excellent condition",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-5s",
+  name: "Apple iPhone 5s",
+  priceCents: 2088,
+  image: "images/products/318.webp",
+  rating: {
+    stars: 4.0,
+    count: 1456
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5s",
+    "5s",
+    "16gb",
+    "32gb",
+    "64gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-8",
+  name: "Apple iPhone 8",
+  priceCents: 6399,
+  image: "images/products/317.webp",
+  rating: {
+    stars: 4.5,
+    count: 2176
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 8",
+    "8",
+    "64gb",
+    "128gb",
+    "256gb",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+
+  {
+  id: "apple-iphone-se",
+  name: "Apple iPhone SE",
+  priceCents: 2099,
+  image: "images/products/316.JPG",
+  rating: {
+    stars: 4.0,
+    count: 1452
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone se",
+    "se",
+    "unlocked",
+    "ios",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-5c",
+  name: "Apple iPhone 5c",
+  priceCents: 2599,
+  image: "images/products/315.JPG",
+  rating: {
+    stars: 4.0,
+    count: 1345
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 5c",
+    "5c",
+    "unlocked",
+    "ios",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-se-1st-gen",
+  name: "Apple iPhone SE 1st Gen",
+  priceCents: 4599,
+  image: "images/products/314.webp",
+  rating: {
+    stars: 4.0,
+    count: 1420
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone se",
+    "se",
+    "1st gen",
+    "16gb",
+    "32gb",
+    "64gb",
+    "128gb",
+    "unlocked",
+    "ios",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-se-1st-gen",
+  name: "Apple iPhone SE 1st Gen",
+  priceCents: 4599,
+  image: "images/products/313.webp",
+  rating: {
+    stars: 4.0,
+    count: 1420
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone se",
+    "se",
+    "1st gen",
+    "16gb",
+    "32gb",
+    "64gb",
+    "128gb",
+    "unlocked",
+    "ios",
+    "smartphone"
+  ]
+},
+  {
+  id: "apple-iphone-12-64gb-purple",
+  name: "Apple iPhone 12 64GB - Purple",
+  priceCents: 10099,
+  image: "images/products/312.webp",
+  rating: {
+    stars: 4.5,
+    count: 1324
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 12",
+    "12",
+    "64gb",
+    "purple",
+    "spectrum",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-16-128gb",
+  name: "Apple iPhone 16 128GB - T-Mobile",
+  priceCents: 32099,
+  image: "images/products/311.webp",
+  rating: {
+    stars: 4.5,
+    count: 1542
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 16",
+    "16",
+    "128gb",
+    "t-mobile",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "apple-iphone-12-64gb-fully-unlocked-very-good-condition",
+  name: "Apple iPhone 12 64GB – Fully Unlocked - VERY GOOD CONDITION - Unlocked",
+  priceCents: 13099,
+  image: "images/products/310.webp",
+  rating: {
+    stars: 4.5,
+    count: 1287
+  },
+  keywords: [
+    "apple",
+    "iphone",
+    "iphone 12",
+    "12",
+    "64gb",
+    "fully unlocked",
+    "very good condition",
+    "unlocked",
+    "smartphone",
+    "ios"
+  ]
+},
+  {
+  id: "f3b4c1de-82a2-4a9c-9f71-1c72d4b842aa",
+  name: "iPhone 15 Plus 128GB Pink",
+  priceCents: 35099,
+  image: "images/products/309.jpg",
+  keywords: [
+    "iphone",
+    "apple",
+    "smartphone",
+    "ios",
+    "iphone 15 plus",
+    "128gb",
+    "pink"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 6890
+  }
+},
+  {
+  id: "c7f325fa-4a8e-4a63-ae3b-7d9f23b0c812",
+  name: "iPhone 12 64GB Blue",
+  priceCents: 11099,
+  image: "images/products/308.jpg",
+  keywords: [
+    "iphone",
+    "apple",
+    "smartphone",
+    "ios",
+    "iphone 12",
+    "64gb",
+    "blue"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 4310
+  }
+},
+  {
+  id: "8fa1c7de-52bd-44d8-9d87-6a1b8c3a91f2",
+  name: "iPhone 12 64GB",
+  priceCents: 12088,
+  image: "images/products/307.jpg",
+  keywords: [
+    "iphone",
+    "apple",
+    "smartphone",
+    "ios",
+    "iphone 12",
+    "64gb"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 4821
+  }
+},
+  {
+  id: "b2c9d8e4-1f7a-4a6b-9c3d-2e5f7a1b6c4d",
+  name: "NUU A25 Phone",
+  priceCents: 11588,
+  image: "images/products/306.webp",
+  keywords: [
+    "smartphone",
+    "android",
+    "NUU A25",
+    "AMOLED",
+    "120Hz",
+    "6.7 inch",
+    "gaming",
+    "dual SIM",
+    "6GB RAM",
+    "LTE",
+    "Helio G99"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "f1a9d4b2-7c3e-4d5a-8b1f-3e7c6a9d2b5f",
+  name: "I25 Ultra Smartphone",
+  priceCents: 13088,
+  image: "images/products/305.webp",
+  keywords: [
+    "smartphone",
+    "android",
+    "i25 ultra",
+    "16GB RAM",
+    "512GB storage",
+    "6.99 inch",
+    "FHD+ display",
+    "7000mAh battery",
+    "dual camera",
+    "108MP",
+    "68MP"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "d2e7b5f1-6c3a-4a9b-8d1e-2f6c7a9b4e5f",
+  name: "10-Inch Tablet",
+  priceCents: 7099,
+  image: "images/products/304.webp",
+  keywords: [
+    "tablet",
+    "android",
+    "10 inch",
+    "24GB RAM",
+    "128GB storage",
+    "1TB expandable",
+    "octa-core",
+    "HD touchscreen",
+    "dual camera",
+    "5MP",
+    "8MP"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1200
+  }
+},
+  {
+  id: "c1f7a4d2-9b3e-4f6a-8d2c-7e1a5b9f0c4d",
+  name: "16PROMA X 5G",
+  priceCents: 14400,
+  image: "images/products/303.webp",
+  keywords: [
+    "16PROMA X",
+    "android",
+    "smartphone",
+    "5G",
+    "16GB RAM",
+    "512GB storage",
+    "dual SIM",
+    "68MP camera",
+    "108MP camera",
+    "6.99 inch display",
+    "unlocked"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1800
+  }
+},
+
+  {
+  id: "b9d3f6a1-7e4c-4d2a-8f1b-3c5e7a9d2f8b",
+  name: "K70 5G",
+  priceCents: 9899,
+  image: "images/products/302.webp",
+  keywords: [
+    "k70",
+    "android",
+    "smartphone",
+    "5G",
+    "8GB RAM",
+    "256GB storage",
+    "dual SIM",
+    "24MP camera",
+    "50MP camera",
+    "purple",
+    "unlocked"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "f7b2d8a4-6c3f-4e1a-9d2b-8f5a7c1b9e2d",
+  name: "Moto G 5G",
+  priceCents: 10200,
+  image: "images/products/301.webp",
+  keywords: [
+    "motorola",
+    "android",
+    "smartphone",
+    "5G",
+    "4GB RAM",
+    "128GB storage",
+    "dual SIM",
+    "50MP camera",
+    "sage green",
+    "unlocked",
+    "US model"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1200
+  }
+},
+  {
+  id: "d5a1c3e7-4f6b-4c8e-9a2d-7f5b1c9e2a3f",
+  name: "Galaxy A16 4G",
+  priceCents: 9863,
+  image: "images/products/300.webp",
+  keywords: [
+    "samsung",
+    "android",
+    "smartphone",
+    "4G LTE",
+    "128GB storage",
+    "4GB RAM",
+    "dual SIM",
+    "50MP camera",
+    "black",
+    "SM-A165F",
+    "international",
+    "case bundle"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "c3e9b5f2-7d4a-4a9c-8f1e-7b6c2d4e5f6a",
+  name: "Spark10Pro Phone",
+  priceCents: 3000,
+  image: "images/products/299.webp",
+  keywords: [
+    "android",
+    "smartphone",
+    "5 inch screen",
+    "HD display",
+    "3000mAh battery",
+    "16GB storage",
+    "expandable storage",
+    "dual SIM",
+    "WiFi",
+    "Bluetooth",
+    "face ID",
+    "3G",
+    "black"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1200
+  }
+},
+  {
+  id: "b2d7f3a1-4c6e-4f8b-9a3d-6e7f1b2c4d5e",
+  name: "Android 14 Phone",
+  priceCents: 11099,
+  image: "images/products/298.webp",
+  keywords: [
+    "android",
+    "smartphone",
+    "16GB RAM",
+    "512GB storage",
+    "48MP camera",
+    "108MP camera",
+    "zoom camera",
+    "6800mAh battery",
+    "6.8 inch screen",
+    "HD display",
+    "face ID",
+    "fingerprint",
+    "GPS",
+    "unlocked",
+    "gray"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1400
+  }
+},
+  {
+  id: "a1c9f2d4-7b3e-4f8a-9c2b-5d6f7e1a8b2c",
+  name: "Moto G Stylus 5G",
+  priceCents: 12099,
+  image: "images/products/297.webp",
+  keywords: [
+    "Motorola",
+    "Moto G Stylus",
+    "5G",
+    "android",
+    "smartphone",
+    "8GB RAM",
+    "256GB storage",
+    "50MP camera",
+    "unlocked",
+    "US version",
+    "Caramel Latte"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1800
+  }
+},
+  {
+  id: "f2b8d7e1-6a4c-4f9d-8c3b-2e7f1a5b6c9d",
+  name: "BLU G35",
+  priceCents: 3099,
+  image: "images/products/296.webp",
+  keywords: [
+    "BLU G35",
+    "android",
+    "smartphone",
+    "6.5-inch",
+    "HD+ display",
+    "dual camera",
+    "8MP",
+    "selfie",
+    "32GB",
+    "3GB RAM",
+    "unlocked",
+    "US version",
+    "grey"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1500
+  }
+},
+  {
+  id: "d1a7c5b2-3f8e-4b9c-9d2e-1f6a4b7c8e5f",
+  name: "A3 4G",
+  priceCents: 4299,
+  image: "images/products/295.webp",
+  keywords: [
+    "android",
+    "A3 4G",
+    "smartphone",
+    "4G",
+    "unlocked",
+    "dual SIM",
+    "face ID",
+    "octa-core",
+    "HD+ display",
+    "gold",
+    "cheap",
+    "13MP",
+    "Android 12"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1500
+  }
+},
+  {
+  id: "c9d7f2a1-4b6e-4f8c-9a3d-1e7b2f5c8d9a",
+  name: "Google Pixel 9a",
+  priceCents: 35099,
+  image: "images/products/294.webp",
+  keywords: [
+    "google",
+    "pixel 9a",
+    "android",
+    "smartphone",
+    "gemini",
+    "unlocked",
+    "camera",
+    "AI",
+    "photo editing",
+    "battery",
+    "security",
+    "obsidian",
+    "128GB"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "f3b2d8e7-9c1a-4f6b-8d5a-2e7c1f4b6a9d",
+  name: "Crisolitic X24 Ultra",
+  priceCents: 12098,
+  image: "images/products/293.webp",
+  keywords: [
+    "crisolitic",
+    "x24 ultra",
+    "android",
+    "5G",
+    "smartphone",
+    "8GB",
+    "256GB",
+    "128GB",
+    "dual sim",
+    "camera",
+    "48MP",
+    "108MP",
+    "fast processor",
+    "battery",
+    "dark green"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "d2a9f7c1-5b3e-4f8d-9a2c-7e1b3f6d4a5e",
+  name: "Galaxy Z Fold7",
+  priceCents: 80099,
+  image: "images/products/292.webp",
+  keywords: [
+    "samsung",
+    "galaxy",
+    "z fold7",
+    "android",
+    "512GB",
+    "ai smartphone",
+    "unlocked",
+    "large screen",
+    "long battery",
+    "jetblack",
+    "2025"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "c1f8d2e3-6a7b-4f2c-9d8e-3b4a7f1e2c5d",
+  name: "Foxion Phone",
+  priceCents: 6999,
+  image: "images/products/291.webp",
+  keywords: [
+    "foxion",
+    "android",
+    "smartphone",
+    "6.56 inch",
+    "90Hz",
+    "8GB RAM",
+    "64GB storage",
+    "4000mAh",
+    "octa-core",
+    "face ID",
+    "4G",
+    "dual sim",
+    "unlocked",
+    "green"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1250
+  }
+},
+  {
+  id: "b9e2c4d1-5f7a-4c3d-9b8f-2a1d7e5c9b3f",
+  name: "DOOGEE Note 59 Pro",
+  priceCents: 14099,
+  image: "images/products/290.webp",
+  keywords: [
+    "doogee",
+    "note 59 pro",
+    "smartphone",
+    "android 15",
+    "5G",
+    "cell phone",
+    "6.75 inch",
+    "hd+",
+    "120hz",
+    "32GB",
+    "256GB",
+    "expandable",
+    "2TB",
+    "6250mAh",
+    "dual sim",
+    "16MP",
+    "8MP"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1450
+  }
+},
+  {
+  id: "f7c9d3b1-4e6a-4b9f-8a2e-1d3f6b7c9a2e",
+  name: "NUU A25",
+  priceCents: 11099,
+  image: "images/products/289.webp",
+  keywords: [
+    "nuu",
+    "a25",
+    "smartphone",
+    "android",
+    "amoled",
+    "120hz",
+    "6.7 inch",
+    "t-mobile",
+    "att",
+    "cricket",
+    "mint",
+    "ultra",
+    "metro",
+    "gaming",
+    "octa-core",
+    "helio g99",
+    "4G",
+    "LTE",
+    "dual sim",
+    "6GB RAM"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1320
+  }
+},
+
+
+  {
+  id: "d4b7e6f1-9c3a-4f5d-b8e2-1a7c9d2e6f34",
+  name: "TCL 60 XE NXTPAPER",
+  priceCents: 12719,
+  image: "images/products/288.webp",
+  keywords: [
+    "tcl",
+    "60 xe",
+    "nxtpaper",
+    "smartphone",
+    "android",
+    "5g",
+    "unlocked",
+    "8GB RAM",
+    "256GB storage",
+    "6.8 inch",
+    "120Hz display",
+    "AI"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1350
+  }
+},
+  {
+  id: "f1a9c3b2-7d5e-4f8a-9b1c-2d6f8a4e7c91",
+  name: "UMIDIGI G9T",
+  priceCents: 8890,
+  image: "images/products/287.webp",
+  keywords: [
+    "umidigi",
+    "g9t",
+    "smartphone",
+    "android 14",
+    "6.75 inch",
+    "90Hz display",
+    "5000mAh battery",
+    "18W fast charge",
+    "8GB RAM",
+    "128GB storage",
+    "1TB expandable",
+    "unlocked"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1700
+  }
+},
+  {
+  id: "d7b3f2e9-1c5a-4b8d-9e2f-6a4c7f3b9d12",
+  name: "UMIDIGI G9A",
+  priceCents: 5099,
+  image: "images/products/286.webp",
+  keywords: [
+    "umidigi",
+    "g9a",
+    "smartphone",
+    "android 14",
+    "6.75 inch",
+    "90Hz display",
+    "8GB RAM",
+    "64GB storage",
+    "2TB expandable",
+    "octa-core",
+    "unlocked"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1500
+  }
+},
+  {
+  id: "8f6a2c4d-5b7e-4a1d-9f3b-6c8d2e7f0145",
+  name: "Moto G Play 2024",
+  priceCents: 8099,
+  image: "images/products/285.webp",
+  keywords: [
+    "motorola",
+    "moto g play",
+    "smartphone",
+    "android",
+    "5G",
+    "4GB RAM",
+    "64GB storage",
+    "50MP camera",
+    "unlocked",
+    "sapphire blue"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1200
+  }
+},
+  {
+  id: "7d5e9b3f-4a6c-4f8b-9a2d-5e7f8a9c0123",
+  name: "Android A15 ProMax",
+  priceCents: 12099,
+  image: "images/products/284.webp",
+  keywords: [
+    "android",
+    "a15 promax",
+    "smartphone",
+    "5G",
+    "dual SIM",
+    "HD display",
+    "16GB RAM",
+    "512GB storage",
+    "48MP camera",
+    "108MP camera",
+    "large battery"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1600
+  }
+},
+  {
+  id: "6c4f8a2d-3b5e-4f7c-9a1b-3d5e6f7a8912",
+  name: "Samsung Galaxy A16",
+  priceCents: 11088,
+  image: "images/products/283.webp",
+  keywords: [
+    "samsung",
+    "galaxy a16",
+    "android",
+    "smartphone",
+    "5G",
+    "unlocked",
+    "AMOLED display",
+    "fast charging",
+    "durable",
+    "mobile phone"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "5b3c7d9e-1f2a-4e6b-8c9d-2f4a56781234",
+  name: "X25 Ultra Phone",
+  priceCents: 12099,
+  image: "images/products/282.webp",
+  keywords: [
+    "x25 ultra",
+    "android",
+    "smartphone",
+    "5G",
+    "unlocked",
+    "8GB RAM",
+    "256GB storage",
+    "128GB TF",
+    "108MP camera",
+    "6.9 inch display"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  {
+  id: "4a2f9b1c-8d5e-4c3f-b9a7-1f2e34567890",
+  name: "Motorola Moto G Power 5G",
+  priceCents: 11099,
+  image: "images/products/281.webp",
+  keywords: [
+    "motorola",
+    "moto g power",
+    "5G",
+    "android",
+    "smartphone",
+    "unlocked",
+    "50MP camera",
+    "midnight blue",
+    "US version",
+    "128GB storage"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1500
+  }
+},
+  
+  {
+  id: "380b7c9d-2f3e-4a5b-8d6c-7e9f01234567",
+  name: "Samsung Galaxy A16 5G",
+  priceCents: 10099,
+  image: "images/products/280.webp",
+  keywords: [
+    "samsung",
+    "galaxy a16",
+    "5G",
+    "android",
+    "smartphone",
+    "unlocked",
+    "AMOLED display",
+    "large screen",
+    "durable",
+    "fast charging"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1300
+  }
+},
+  {
+  id: "279a6b8c-1d2e-3f4a-5b6c-7d8e9f012345",
+  name: "UMIDIGI Note 100",
+  priceCents: 9599,
+  image: "images/products/279.webp",
+  keywords: [
+    "umidigi",
+    "note 100",
+    "android",
+    "phone",
+    "unlocked",
+    "8-core",
+    "12GB RAM",
+    "128GB storage",
+    "1TB expandable",
+    "6.8-inch display",
+    "50MP camera",
+    "5000mAh",
+    "fast charge",
+    "dual SIM",
+    "NFC",
+    "face ID",
+    "fingerprint",
+    "GPS"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1250
+  }
+},
+  {
+  id: "278d6a7b-9c1e-0f2a-3b4c-5d6e7f8a9012",
+  name: "Samsung Galaxy S25 Edge",
+  priceCents: 52999,
+  image: "images/products/278.webp",
+  keywords: [
+    "samsung",
+    "galaxy",
+    "s25",
+    "edge",
+    "android",
+    "phone",
+    "512GB",
+    "smartphone",
+    "unlocked",
+    "proscaler display",
+    "fast processor"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1345
+  }
+},
+  {
+  id: "277c5f6a-8b9c-0d1e-2f3a-4b5c6d7e8f90",
+  name: "MacBook Pro 14-inch",
+  priceCents: 30000,
+  image: "images/products/277.webp",
+  keywords: [
+    "macbook",
+    "pro",
+    "apple",
+    "laptop",
+    "14-inch",
+    "m1 pro",
+    "32GB",
+    "512GB",
+    "space gray"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1452
+  }
+},
+  {
+  id: "276c4e5f-7a8b-9c0d-1e2f-3a4b5c6d7e8f",
+  name: "MacBook Pro 13-inch",
+  priceCents: 29099,
+  image: "images/products/276.webp",
+  keywords: [
+    "macbook",
+    "pro",
+    "apple",
+    "laptop",
+    "13-inch",
+    "m2",
+    "8GB",
+    "256GB",
+    "space gray"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1387
+  }
+},
+  {
+  id: "275b3d4e-6f7a-8b9c-0d1e-2f3a4b5c6d7e",
+  name: "MacBook Air 13-inch",
+  priceCents: 30000,
+  image: "images/products/275.webp",
+  keywords: [
+    "macbook",
+    "air",
+    "apple",
+    "laptop",
+    "13-inch",
+    "intel",
+    "i5",
+    "512GB",
+    "space gray"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1425
+  }
+},
+  {
+  id: "274b2c3d-5e6f-7a8b-9c0d-1e2f3a4b5c6d",
+  name: "MacBook Air 11-inch",
+  priceCents: 20937,
+  image: "images/products/274.webp",
+  keywords: [
+    "macbook",
+    "air",
+    "apple",
+    "laptop",
+    "11-inch",
+    "intel",
+    "i5",
+    "128GB"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1324
+  }
+},
+
+  {
+  id: "273a1b2c-4d5e-6f7a-8b9c-0d1e2f3a4b5c",
+  name: "MacBook Air M4 13-inch",
+  priceCents: 50943,
+  image: "images/products/273.jpg",
+  keywords: [
+    "macbook",
+    "air",
+    "apple",
+    "laptop",
+    "m4",
+    "13-inch",
+    "starlight"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1452
+  }
+},
+
+  {
+  id: "272b4e5f-8c9d-1a2b-3f4e-5d6c7b8a9f0e",
+  name: "MacBook Air i7 13-inch",
+  priceCents: 29935,
+  image: "images/products/272.webp",
+  keywords: [
+    "macbook",
+    "air",
+    "apple",
+    "laptop",
+    "i7",
+    "13-inch",
+    "gold",
+    "renewed"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1324
+  }
+},
+
+  {
+  id: "271c5d6f-7a8b-9d0e-1f2a-3b4c5d6e7f8a",
+  name: "MacBook Pro i7 16-inch",
+  priceCents: 30971,
+  image: "images/products/271.webp",
+  keywords: [
+    "macbook",
+    "pro",
+    "apple",
+    "laptop",
+    "i7",
+    "16-inch",
+    "space gray",
+    "renewed"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1587
+  }
+},
+  {
+  id: "270b4d5e-6f7a-8c9d-0e1f-2a3b4c5d6e7f",
+  name: "MacBook Pro i5 13-inch",
+  priceCents: 20597,
+  image: "images/products/270.webp",
+  keywords: [
+    "macbook",
+    "pro",
+    "apple",
+    "laptop",
+    "i5",
+    "13-inch",
+    "space gray",
+    "renewed"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1324
+  }
+},
+  {
+  id: "269c3d4e-5f6a-7b8c-9d0e-1f2a3b4c5d6e",
+  name: "MacBook Pro M1 13-inch",
+  priceCents: 38092,
+  image: "images/products/269.webp",
+  keywords: [
+    "macbook",
+    "pro",
+    "apple",
+    "laptop",
+    "m1",
+    "13-inch",
+    "space gray",
+    "renewed"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1587
+  }
+},
+  {
+  id: "268b2c3d-4e5f-6a7b-8c9d-0e1f2a3b4c5d",
+  name: "MacBook Pro i5 13-inch",
+  priceCents: 32939,
+  image: "images/products/268.webp",
+  keywords: [
+    "macbook",
+    "pro",
+    "apple",
+    "laptop",
+    "intel i5",
+    "13-inch",
+    "space gray",
+    "renewed"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1432
+  }
+},
+  {
+  id: "267a1b2c-3d4e-5f6a-7b8c-9d0e1f2a3b4c",
+  name: "MacBook Pro M5 14-inch",
+  priceCents: 50099,
+  image: "images/products/267.webp",
+  keywords: [
+    "macbook",
+    "pro",
+    "apple",
+    "laptop",
+    "m5",
+    "14-inch",
+    "silver"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1524
+  }
+},
+
+  {
+  id: "apple-macbook-air-m1-13-3-8gb-128gb-space-gray-renewed",
+  name: "Apple MacBook Air M1 13.3\" 8GB RAM 128GB SSD – Space Gray (Renewed)",
+  priceCents: 31099,
+  image: "images/products/266.webp",
+  keywords: [
+    "apple-macbook-air",
+    "late-2020",
+    "m1-chip",
+    "13-3-inch",
+    "8gb-ram",
+    "128gb-ssd",
+    "space-gray",
+    "renewed"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1678
+  }
+},
+
+{
+  id: "2025-laptop-celeron-n150-16gb-512gb",
+  name: "2025 15.6\" Laptop – Celeron N150, 16GB RAM, 512GB SSD",
+  priceCents: 20934,
+  image: "images/products/265.webp",
+  keywords: [
       "2025-laptop",
       "laptop-computer",
       "celeron-n150",
@@ -106,19 +2536,19 @@ export const products = [
       "work",
       "office",
       "student"
-    ]
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1786
+  }
 },
 
-  {
-    id: "e3f2d1b4-6a5e-4d7f-9b3c-1e7f2d4a5c1b",
-    image: "images/products/264.webp",
-    name: "15.6\" Laptop – Gold 6500Y, 32GB RAM, 512GB SSD",
-    rating: {
-      stars: 4.5,
-      count: 1924
-    },
-    priceCents: 24999,
-    keywords: [
+{
+  id: "15-6-laptop-gold-6500y-32gb-512gb",
+  name: "15.6\" Laptop – Gold 6500Y, 32GB RAM, 512GB SSD",
+  priceCents: 24999,
+  image: "images/products/264.webp",
+  keywords: [
       "15-6-inch",
       "laptop-computer",
       "gold-6500y",
@@ -132,19 +2562,19 @@ export const products = [
       "usb3-2",
       "bt5-2",
       "wifi-5"
-    ]
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1924
+  }
 },
 
-  {
-    id: "f1d2c3b4-6a5e-4d7f-9b3c-1e7f2d4a5c0d",
-    image: "images/products/263.webp",
-    name: "15.6\" Laptop – N5095, 16GB RAM, 512GB SSD",
-    rating: {
-      stars: 4.5,
-      count: 1795
-    },
-    priceCents: 13990,
-    keywords: [
+{
+  id: "15-6-laptop-n5095-16gb-512gb",
+  name: "15.6\" Laptop – N5095, 16GB RAM, 512GB SSD",
+  priceCents: 13990,
+  image: "images/products/263.webp",
+  keywords: [
       "laptop-computers",
       "15-6-inch",
       "ips-1080p-screen",
@@ -158,19 +2588,19 @@ export const products = [
       "usb-3-0",
       "webcam",
       "hdmi"
-    ]
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1795
+  }
 },
 
-  {
-    id: "d2f1c3b4-6a5e-4d7f-9b3c-1e7f2d4a5b9c",
-    image: "images/products/262.webp",
-    name: "UGREEN Vertical Laptop Stand – Aluminum, Gray",
-    rating: {
-      stars: 4.0,
-      count: 1412
-    },
-    priceCents: 1599,
-    keywords: [
+{
+  id: "ugreen-vertical-laptop-stand-gray",
+  name: "UGREEN Vertical Laptop Stand – Aluminum, Gray",
+  priceCents: 1599,
+  image: "images/products/262.webp",
+  keywords: [
       "ugreen-vertical-laptop-stand",
       "desk",
       "macbook-pro",
@@ -181,19 +2611,19 @@ export const products = [
       "up-to-17-3-inch",
       "gaming-laptop",
       "gray"
-    ]
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1412
+  }
 },
 
-  {
-    id: "f4d3c2b1-6a5e-4d7f-9b3c-1e7f2d4a5b7c",
-    image: "images/products/261.webp",
-    name: "MOSISO 13.3-inch Laptop Sleeve Bag – Neoprene, Black",
-    rating: {
-      stars: 4.0,
-      count: 1365
-    },
-    priceCents: 866,
-    keywords: [
+{
+  id: "mosiso-13-3-laptop-sleeve-black",
+  name: "MOSISO 13.3-inch Laptop Sleeve Bag – Neoprene, Black",
+  priceCents: 866,
+  image: "images/products/261.webp",
+  keywords: [
       "mosiso-laptop-case",
       "13-13.3-inch",
       "laptop-sleeve-bag",
@@ -208,3434 +2638,3360 @@ export const products = [
       "computer-sleeve",
       "small-case",
       "black"
-    ]
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1365
+  }
+},
+{
+  id: "70w-usb-c-charger-macbook-ipad-6-6ft-cable",
+  name: "70W USB-C Charger for MacBook & iPad – 6.6ft Cable",
+  priceCents: 1799,
+  image: "images/products/260.webp",
+  keywords: [
+    "macbook-air-charger",
+    "macbook-pro-charger",
+    "13-14-15-16-inch",
+    "2025-2020",
+    "m1-m4",
+    "70w-usb-c",
+    "laptop-power-adapter",
+    "ipad",
+    "led",
+    "6-6ft-usb-c-cable",
+    "original-quality"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1589
+  }
+},
+
+{
+  id: "100w-usb-c-charger-macbook-laptop-braided-6-6ft",
+  name: "100W USB-C Charger for MacBook & Laptop – 6.6ft Braided Cable",
+  priceCents: 1723,
+  image: "images/products/259.webp",
+  keywords: [
+    "macbook-pro-charger",
+    "macbook-air",
+    "16-inch",
+    "14-inch",
+    "15-inch",
+    "13-inch",
+    "100w-usb-c",
+    "laptop-power-adapter",
+    "6-6ft-usb-c-braided-cable",
+    "m1-m4",
+    "2025-2019",
+    "original-quality"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1627
+  }
+},
+
+{
+  id: "96w-usb-c-fast-charger-macbook-ipad-samsung-6-6ft",
+  name: "96W USB-C Fast Charger for MacBook, iPad, Samsung – with 6.6ft Cable",
+  priceCents: 1499,
+  image: "images/products/258.webp",
+  keywords: [
+    "macbook-pro-charger",
+    "96w",
+    "usb-c",
+    "fast-charger",
+    "macbook-pro",
+    "macbook-air",
+    "ipad-pro",
+    "samsung-galaxy",
+    "type-c-device",
+    "6-6ft-usbc-cable"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1548
+  }
+},
+
+{
+  id: "ergonomic-adjustable-laptop-stand-foldable-aluminum-black",
+  name: "Ergonomic Adjustable Laptop Stand, Foldable Aluminum, 10-15.6” – Black",
+  priceCents: 590,
+  image: "images/products/257.webp",
+  keywords: [
+    "laptop-stand",
+    "desk",
+    "ergonomic",
+    "adjustable",
+    "aluminum",
+    "foldable",
+    "portable",
+    "computer-stand",
+    "macbook-air",
+    "macbook-pro",
+    "hp",
+    "lenovo",
+    "dell",
+    "10-15-6-inch",
+    "tablets",
+    "black"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1298
+  }
+},
+
+{
+  id: "astaron-17-in-1-screwdriver-set-macbook-electronics",
+  name: "ASTARON 17-in-1 Screwdriver Set for MacBook & Electronics",
+  priceCents: 499,
+  image: "images/products/256.webp",
+  keywords: [
+    "astaron-screwdriver-set",
+    "17-in-1",
+    "macbook",
+    "repair-tool-kit",
+    "t3-t8",
+    "p2-p5",
+    "ph000-ph00",
+    "y00",
+    "magnetic-torx-bit",
+    "opening-tool",
+    "laptop",
+    "macbook-air",
+    "macbook-pro",
+    "xbox",
+    "ps4"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1387
+  }
+},
+
+{
+  id: "15-6-amd-3020e-laptop-8gb-512gb-fhd-gray",
+  name: "15.6\" AMD 3020e Laptop, 8GB RAM, 512GB SSD, FHD IPS, Gray",
+  priceCents: 24199,
+  image: "images/products/255.webp",
+  keywords: [
+    "15.6-inch",
+    "laptop-computer",
+    "amd-3020e",
+    "8gb-ddr4",
+    "512gb-ssd",
+    "up-to-32gb",
+    "up-to-4tb",
+    "1080p-fhd",
+    "ips-display",
+    "type-c",
+    "hdmi",
+    "usb3-2",
+    "bt5-2",
+    "wifi-5",
+    "gray"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1821
+  }
+},{
+  id: "118w-usb-c-fast-charger-macbook-devices",
+  name: "118W USB-C Fast Charger for MacBook & Devices",
+  priceCents: 1542,
+  image: "images/products/254.webp",
+  keywords: [
+    "macbook-pro-charger",
+    "118w",
+    "usb-c",
+    "fast-charger",
+    "macbook-pro",
+    "macbook-air",
+    "m1-m5",
+    "ipad-pro",
+    "samsung-galaxy",
+    "charge-cable"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1532
+  }
+},
+
+{
+  id: "rechargeable-bluetooth-mouse-macbook-pc-black",
+  name: "Rechargeable Bluetooth Mouse for MacBook & PC, Black",
+  priceCents: 861,
+  image: "images/products/253.webp",
+  keywords: [
+    "rechargeable-mouse",
+    "bluetooth-5-2",
+    "bt3-0",
+    "type-c",
+    "usb-2-4g",
+    "macbook",
+    "macbook-air",
+    "macbook-pro",
+    "ipad",
+    "wireless-mouse",
+    "laptop",
+    "notebook",
+    "pc",
+    "chromebook",
+    "black"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1421
+  }
+},
+
+{
+  id: "laptop-sleeve-case-13-3-shockproof-black",
+  name: "Laptop Sleeve Case 13.3\", Shockproof Protective Bag, Black",
+  priceCents: 599,
+  image: "images/products/252.webp",
+  keywords: [
+    "laptop-sleeve-case",
+    "13-3-inch",
+    "shockproof",
+    "protective-cover",
+    "accessories-pocket",
+    "portable-laptop-bag",
+    "macbook-air",
+    "macbook-pro-13-3",
+    "macbook-pro-14",
+    "black"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1378
+  }
+},
+
+{
+  id: "wireless-bluetooth-mouse-macbook-laptop-ipad-black",
+  name: "Wireless Bluetooth Mouse for MacBook, Laptop & iPad, Dual Mode, Black",
+  priceCents: 1423,
+  image: "images/products/251.webp",
+  keywords: [
+    "mouse-macbook",
+    "wireless-mouse",
+    "bluetooth-mouse",
+    "macbook-air",
+    "macbook-pro",
+    "rechargeable",
+    "silent-mouse",
+    "pc",
+    "ipad",
+    "optical-mouse",
+    "dual-mode-switch",
+    "bluetooth-5-2",
+    "bt3-0",
+    "2-4ghz-usb-type-c",
+    "black"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1452
+  }
+},
+
+{
+  id: "mosiso-13-3-laptop-sleeve-polyester-black",
+  name: "MOSISO 13.3'' Laptop Sleeve for MacBook & Laptops, Polyester, Black",
+  priceCents: 861,
+  image: "images/products/250.webp",
+  keywords: [
+    "mosiso-laptop-case",
+    "13-13.3-inch",
+    "laptop-sleeve",
+    "macbook-air",
+    "macbook-pro",
+    "hp",
+    "dell",
+    "asus",
+    "lenovo",
+    "polyester",
+    "vertical-sleeve",
+    "pocket",
+    "black"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1322
+  }
+},
+
+{
+  id: "ugreen-usb-c-hub-5-in-1-4k-hdmi-100w-pd",
+  name: "UGREEN USB-C Hub 5-in-1, 4K HDMI, 100W PD, 3 USB-A, MacBook/iPad/iMac/Thinkpad",
+  priceCents: 584,
+  image: "images/products/249.webp",
+  keywords: [
+    "ugreen-usb-c-hub",
+    "5-in-1",
+    "multiport-adapter",
+    "revodok-105",
+    "4k-hdmi",
+    "100w-power-delivery",
+    "3-usb-a",
+    "usb-c-dongle",
+    "macbook-pro",
+    "macbook-air",
+    "ipad-pro",
+    "imac",
+    "iphone-16-pro",
+    "xps",
+    "thinkpad"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1427
+  }
+},
+
+{
+  id: "15-6-laptop-gold-6500y-32gb-1tb-fhd-ips",
+  name: "Laptop 15.6\" Gold 6500Y, 32GB RAM, 1TB SSD, FHD IPS, Bluetooth, WiFi, HDMI, Type-C",
+  priceCents: 32099,
+  image: "images/products/248.webp",
+  keywords: [
+    "15.6-inch",
+    "laptop-computer",
+    "gold-6500y",
+    "beat-n5095",
+    "32gb-ram",
+    "1tb-ssd",
+    "1080p-fhd",
+    "ips-display",
+    "bluetooth",
+    "wifi",
+    "hdmi",
+    "type-c",
+    "38wh-battery"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1923
+  }
+},
+
+{
+  id: "15-6-laptop-gold-6500y-32gb-512gb-fhd-ips",
+  name: "Laptop 15.6\" Gold 6500Y, 32GB RAM, 512GB SSD, FHD IPS, Win11, Type-C, HDMI, USB3.2, BT5.2",
+  priceCents: 25962,
+  image: "images/products/247.webp",
+  keywords: [
+    "15.6-inch",
+    "laptop-computer",
+    "gold-6500y",
+    "32gb-ram",
+    "512gb-ssd",
+    "1080p-fhd",
+    "ips-display",
+    "win11",
+    "type-c",
+    "hdmi",
+    "usb3-2",
+    "bt5-2",
+    "wifi-5"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1894
+  }
+},
+
+{
+  id: "14-inch-laptop-gold-6500y-16gb-256gb-fhd-ips",
+  name: "Laptop 14\" Gold 6500Y, 16GB RAM, 256GB SSD, FHD IPS, Bluetooth, WiFi, HDMI, Type-C",
+  priceCents: 19999,
+  image: "images/products/246.webp",
+  keywords: [
+    "laptop-computer",
+    "gold-6500y",
+    "beat-n5095",
+    "16gb-ram",
+    "256gb-ssd",
+    "14-inch-fhd",
+    "ips-display",
+    "bluetooth",
+    "wifi",
+    "hdmi",
+    "type-c",
+    "38wh-battery",
+    "thin-portable"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1789
+  }
+},
+
+{
+  id: "e8d2c1b4-5f7a-4e6b-9c2d-1f3a7b8c9d2e",
+  name: "2025 Gaming Laptop 15.6\" Ryzen 7 5700U, 16GB RAM, 512GB SSD, Radeon RX Vega 8, WiFi 6",
+  priceCents: 36499,
+  image: "images/products/245.webp",
+  keywords: [
+    "2025-gaming-laptop",
+    "15.6-inch",
+    "amd-ryzen-7-5700u",
+    "8c-16t",
+    "16gb-ram",
+    "512gb-nvme-ssd",
+    "windows-11",
+    "radeon-rx-vega-8",
+    "wifi-6"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1983
+  }
+},
+
+{
+  id: "f7c3d2b1-6a4e-4f7b-9c2a-5d1e8f3b7c9a",
+  name: "USB-C 7-in-1 Multiport Hub, 4K HDMI, 100W PD, SD/TF, 3 USB-A",
+  priceCents: 593,
+  image: "images/products/244.webp",
+  keywords: [
+    "usb-c-hub",
+    "7-in-1",
+    "multiport-adapter",
+    "4k-hdmi",
+    "100w-pd",
+    "sd-tf-card-reader",
+    "3-usb-a",
+    "usbc-docking-station",
+    "macbook",
+    "mac-pro",
+    "mac-air",
+    "dell",
+    "hp",
+    "asus",
+    "acer",
+    "type-c-laptops"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1521
+  }
+},
+
+{
+  id: "d4f1b8c2-7e3a-4d6b-9f2c-1a9e5d7b8f3c",
+  name: "USB-C Hub Docking Station, Dual HDMI, 100W PD, Multiport Adapter",
+  priceCents: 1599,
+  image: "images/products/243.webp",
+  keywords: [
+    "usb-c-hub",
+    "docking-station",
+    "dual-monitor",
+    "laptop",
+    "macbook-air-pro",
+    "dock-adapter",
+    "multiport-dongle",
+    "2-hdmi",
+    "4k-60hz",
+    "100w-pd",
+    "usba-3-0",
+    "usbc"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1622
+  }
+},
+
+{
+  id: "b8f3d1c2-5e7a-4f6b-9c8d-3a7e1d9b4f2a",
+  name: "15.6\" Student Laptop, 16GB RAM, 512GB SSD, N5095, Silver",
+  priceCents: 19972,
+  image: "images/products/242.webp",
+  keywords: [
+    "15.6-inch",
+    "fhd-ips",
+    "student-laptop",
+    "16gb-ram",
+    "512gb-ssd",
+    "intel-celeron-n5095",
+    "backlit-keyboard",
+    "fingerprint-reader",
+    "win-11",
+    "numpad",
+    "silver"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1743
+  }
+},
+
+{
+  id: "a1c7d9e3-4b2f-4f6a-9b1c-6d8f3e7b5a1d",
+  name: "Wireless Bluetooth Mouse, Dual Mode, Silver",
+  priceCents: 394,
+  image: "images/products/241.webp",
+  keywords: [
+    "wireless-mouse",
+    "bluetooth-mouse",
+    "macbook",
+    "laptop",
+    "computer",
+    "pc",
+    "rechargeable",
+    "dual-mode",
+    "bluetooth-5-2",
+    "bt3-0",
+    "2-4ghz-usb-a",
+    "2-4ghz-usb-type-c",
+    "silver"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1321
+  }
+},
+
+{
+  id: "d2f5b7a4-6e1c-4b3e-9f8a-3c7e9d1b5f2a",
+  name: "15.6'' Laptop, 8GB RAM, 256GB SSD, Gold 6500Y, FHD",
+  priceCents: 19992,
+  image: "images/products/240.webp",
+  keywords: [
+    "laptop-computer",
+    "8gb-ram",
+    "256gb-ssd",
+    "gold-6500y",
+    "beat-n5095",
+    "15.6-inch",
+    "fhd-ips",
+    "type-c",
+    "hdmi",
+    "usb3-2",
+    "bt5-2",
+    "wifi-5"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1715
+  }
+},
+
+{
+  id: "9c3f4b11-5ad2-4f0a-9c6a-2f7bd8ea9127",
+  name: "OTVOC 15.6'' Laptop, 4GB RAM, 128GB SSD, Core CPU, FHD",
+  priceCents: 9974,
+  image: "images/products/239.webp",
+  keywords: [
+    "otvoc-laptop",
+    "15-6-inch",
+    "windows-11",
+    "core-cpu",
+    "4gb-ram",
+    "128gb-ssd",
+    "fhd-ips",
+    "students",
+    "business"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1822
+  }
+},
+
+{
+  id: "1f6b7c3d-9ab4-4e2b-8f32-7c1d2c448c91",
+  name: "SGIN 15.6'' Laptop, 16GB RAM, 1TB SSD, Core i3, Portable",
+  priceCents: 19999,
+  image: "images/products/238.webp",
+  keywords: [
+    "sgin-laptop",
+    "15-6-inch",
+    "16gb-ram",
+    "1024gb-ssd",
+    "core-i3",
+    "portable-notebook",
+    "wifi-6",
+    "7000mah"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1432
+  }
+},
+
+{
+  id: "c7e2f19b-1c42-4d72-92ab-9d73f3bb7f3a",
+  name: "14'' Laptop, Gold 6500Y, 16GB RAM, 256GB SSD, FHD IPS, Portable",
+  priceCents: 19999,
+  image: "images/products/237.webp",
+  keywords: [
+    "laptop-computer",
+    "gold-6500y",
+    "16gb-ram",
+    "256gb-ssd",
+    "14-inch-fhd",
+    "ips-display",
+    "type-c-pd",
+    "thin-portable",
+    "beat-n5095"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1677
+  }
+},
+
+{
+  id: "f3c81e7a-91b4-4ce0-b1b7-6c2e709ac4df",
+  name: "2025 15.6'' Win11 Laptop, 16GB RAM, 1TB SSD, Intel Quad-Core, FHD IPS",
+  priceCents: 18983,
+  image: "images/products/236.webp",
+  keywords: [
+    "2025-laptop",
+    "15.6-windows-11",
+    "16gb-ram",
+    "1tb-ssd",
+    "intel-quad-core",
+    "1080p-ips",
+    "backlit-keyboard",
+    "fingerprint",
+    "webcam",
+    "wifi-6",
+    "bt5.2"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1588
+  }
+},
+
+{
+  id: "b7f0e1ac-2c54-4b7e-8f1c-9d73c0fe9812",
+  name: "15.6'' Laptop, AMD 3020e, 8GB RAM, 256GB SSD, FHD, Win11 Pro",
+  priceCents: 19998,
+  image: "images/products/235.webp",
+  keywords: [
+    "15.6-laptop",
+    "amd-3020e",
+    "8gb-ram",
+    "256gb-ssd",
+    "fhd-ips",
+    "windows-11-pro",
+    "office-2024",
+    "type-c",
+    "wifi-5",
+    "lightweight",
+    "student-laptop",
+    "business-laptop"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1433
+  }
+},
+
+{
+  id: "f8c2d0e4-9b21-4f0b-9c53-0e7adf0cc8b1",
+  name: "2025 15.6'' Laptop, 32GB RAM, 1TB SSD, Quad-Core, FHD, Win11",
+  priceCents: 19982,
+  image: "images/products/234.webp",
+  keywords: [
+    "2025-laptop",
+    "15.6-inch",
+    "windows-11",
+    "1tb-ssd",
+    "32gb-ram",
+    "quad-core",
+    "1080p-fhd",
+    "backlit-keyboard",
+    "fingerprint",
+    "mini-hdmi",
+    "laptop",
+    "tf-card"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1822
+  }
+},
+
+{
+  id: "b4e1b9ac-3c0f-4f67-8d6c-9a7dbd7e51c2",
+  name: "15.6\" Laptop Pentium 6500Y, 32GB RAM, 512GB SSD, Win11 Pro",
+  priceCents: 17900,
+  image: "images/products/233.webp",
+  keywords: [
+    "15.6-laptop",
+    "32gb-ram",
+    "512gb-ssd",
+    "pentium-gold-6500y",
+    "win11-pro",
+    "fhd-ips",
+    "type-c",
+    "pd-charging",
+    "space-gray"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1433
+  }
+},
+
+{
+  id: "c7f92be1-4df8-4c3e-9b1e-2fa4c76e9d31",
+  name: "SGIN 15.6\" Windows 11 Laptop i3, 16GB RAM, 1TB SSD",
+  priceCents: 19982,
+  image: "images/products/232.webp",
+  keywords: [
+    "sgin-laptop",
+    "15.6-inch",
+    "win-11",
+    "16gb-ram",
+    "1024gb-ssd",
+    "core-i3-10100y",
+    "3.9ghz",
+    "backlit-keyboard",
+    "wifi-6",
+    "ips-fhd",
+    "hdmi",
+    "type-c"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1877
+  }
+},
+{
+  id: "a3e6d9f2-7bf3-4bd2-9fd8-51c828f7c5b1",
+  name: "OTVOC 15.6\" Windows 11 Laptop",
+  priceCents: 9999,
+  image: "images/products/231.webp",
+  keywords: [
+    "otvoc-laptop",
+    "15.6-inch",
+    "windows-11",
+    "core-cpu",
+    "3.4ghz",
+    "4gb-ram",
+    "128gb-ssd",
+    "2tb",
+    "fhd-ips",
+    "1920x1080",
+    "students",
+    "business"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1422
+  }
+},
+
+{
+  id: "f9b27c44-1d8a-4c92-b7ef-647aaf31c92e",
+  name: "2025 Ryzen7 15.6\" Laptop",
+  priceCents: 39984,
+  image: "images/products/230.webp",
+  keywords: [
+    "2025-laptop",
+    "amd-ryzen7",
+    "8-core",
+    "4.3ghz",
+    "amd-radeon",
+    "16gb-ddr4",
+    "512gb-ssd",
+    "wifi6",
+    "15.6-inch",
+    "ips-display",
+    "type-c",
+    "micro-sd",
+    "webcam",
+    "windows-11",
+    "slim-laptop"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1874
+  }
+},
+
+{
+  id: "e7d3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "14.1\" Quad Core Laptop Notebook",
+  priceCents: 7999,
+  image: "images/products/229.webp",
+  keywords: [
+    "14.1-inch",
+    "laptop-computer",
+    "quad-core",
+    "notebook",
+    "windows-11",
+    "6GB-DDR4",
+    "256GB-SSD",
+    "2.4-5G-WiFi",
+    "BT4.0",
+    "HDMI",
+    "USB-3.0",
+    "large-capacity-battery"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1642
+  }
+},
+
+{
+  id: "d9f3c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "14\" Triple Laptop Screen Extender",
+  priceCents: 21299,
+  image: "images/products/228.webp",
+  keywords: [
+    "14-inch",
+    "triple-laptop-screen-extender",
+    "1080P",
+    "FHD",
+    "IPS",
+    "ultra-slim",
+    "portable",
+    "dual-monitor",
+    "USB-C",
+    "HDMI",
+    "plug-play",
+    "triple-display",
+    "MacOS",
+    "Windows",
+    "13-17.3-inch-laptops"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1723
+  }
+},
+
+{
+  id: "c7f3d1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "HP 14\" Laptop i3-8GB 256GB SSD",
+  priceCents: 19449,
+  image: "images/products/227.webp",
+  keywords: [
+    "hp",
+    "14-inch",
+    "laptop",
+    "HD-display",
+    "intel-core-i3-N305",
+    "8GB-RAM",
+    "256GB-SSD",
+    "intel-UHD-graphics",
+    "windows-11-home",
+    "S-mode",
+    "natural-silver",
+    "14-ep0299nr"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1786
+  }
+},
+
+{
+  id: "f8d3c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "2025 15.6\" Laptop 32GB RAM 1TB SSD Win11",
+  priceCents: 19999,
+  image: "images/products/226.webp",
+  keywords: [
+    "2025",
+    "15.6-inch",
+    "laptop",
+    "windows-11",
+    "1TB-SSD",
+    "32GB-Dual-Channel-RAM",
+    "quad-core-processor",
+    "1080p-FHD-display",
+    "backlit-keyboard",
+    "fingerprint",
+    "webcam",
+    "mini-HDMI",
+    "WiFi5",
+    "BT5"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1875
+  }
+},
+
+{
+  id: "d7f3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "HP Stream 14\" Laptop 16GB RAM 416GB Storage N150",
+  priceCents: 19900,
+  image: "images/products/225.webp",
+  keywords: [
+    "hp-stream",
+    "14-inch",
+    "HD-BrightView",
+    "laptop",
+    "intel-processor-N150",
+    "16GB-RAM",
+    "416GB-storage",
+    "128GB-eMMC",
+    "288GB-docking-station",
+    "intel-UHD-graphics",
+    "720p-camera",
+    "Wi-Fi",
+    "office-365",
+    "win-11-s",
+    "gold"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1804
+  }
+},
+
+{
+  id: "c9f3d1a5-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "AOC 15.6'' Laptop 16GB RAM 512GB SSD N95",
+  priceCents: 24199,
+  image: "images/products/224.webp",
+  keywords: [
+    "aoc",
+    "2025-laptop",
+    "15.6-inch",
+    "FHD-screen",
+    "laptop-computer",
+    "work-laptops",
+    "intel-N95",
+    "16GB-RAM",
+    "512GB-SSD",
+    "windows-11",
+    "light",
+    "thin",
+    "metal-shell",
+    "webcam",
+    "Type-C",
+    "USB-3.2"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1901
+  }
+},
+
+{
+  id: "e6f3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "SGIN 15.6'' Laptop 16GB RAM 1TB SSD N5100",
+  priceCents: 23498,
+  image: "images/products/223.webp",
+  keywords: [
+    "sgin",
+    "15.6-inch",
+    "laptop",
+    "computer",
+    "windows-11",
+    "16GB-RAM",
+    "1024GB-SSD",
+    "celeron-N5100",
+    "WiFi-6",
+    "IPS",
+    "FHD",
+    "180-degree-viewing",
+    "53.2WH-battery",
+    "HDMI",
+    "cooling-fan",
+    "business",
+    "students"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1884
+  }
+},
+
+{
+  id: "f9d3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "2025 15.6'' Laptop 16GB RAM 512GB SSD N95 Pro",
+  priceCents: 21072,
+  image: "images/products/222.webp",
+  keywords: [
+    "2025",
+    "laptop",
+    "15.6-inch",
+    "IPS",
+    "windows-11-pro",
+    "quad-core-N95",
+    "16GB-DDR4",
+    "512GB-SSD",
+    "metal-shell",
+    "BT5.0",
+    "5G-WiFi",
+    "USB3.2",
+    "Type-C",
+    "webcam",
+    "38Wh-battery"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1872
+  }
+},
+
+{
+  id: "d8f3c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "2025 17.3'' Laptop 16GB RAM 512GB SSD N95",
+  priceCents: 20099,
+  image: "images/products/221.webp",
+  keywords: [
+    "2025",
+    "new-laptop",
+    "17.3-inch",
+    "FHD-display",
+    "quad-core",
+    "12th-alder-lake-N95",
+    "16GB-RAM",
+    "512GB-ROM",
+    "traditional-laptop",
+    "computer",
+    "6000Mah-battery",
+    "silver"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1854
+  }
+},
+{
+  id: "e9f3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "Naclud 15.6'' Laptop 16GB RAM 1TB SSD i3",
+  priceCents: 50099,
+  image: "images/products/220.webp",
+  keywords: [
+    "naclud",
+    "15.6-inch",
+    "laptop",
+    "computer",
+    "windows-11",
+    "16GB-RAM",
+    "1024GB-SSD",
+    "core-i3",
+    "CPU",
+    "backlit-keyboard",
+    "53.2WH-battery",
+    "WiFi-6",
+    "IPS",
+    "FHD-display",
+    "180-degree-viewing",
+    "HDMI",
+    "Type-C"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1893
+  }
+},
+{
+  id: "c8d2f1a7-6b4e-4f8c-9d3b-1e7f5a3b8d4c",
+  name: "HP 14'' Laptop 4GB RAM 64GB SSD",
+  priceCents: 9845,
+  image: "images/products/219.webp",
+  keywords: [
+    "hp",
+    "14-laptop",
+    "intel-celeron-N4020",
+    "4GB-RAM",
+    "64GB-storage",
+    "14-inch",
+    "micro-edge",
+    "HD-display",
+    "windows-11",
+    "thin",
+    "portable",
+    "4K-graphics",
+    "microsoft-365",
+    "snowflake-white"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1752
+  }
+},
+{
+  id: "d9f3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d6c",
+  name: "2025 17.3'' Laptop 16GB RAM 512GB SSD",
+  priceCents: 23499,
+  image: "images/products/218.webp",
+  keywords: [
+    "2025",
+    "new-laptop",
+    "17.3-inch",
+    "FHD-display",
+    "quad-core",
+    "12th-alder-lake-N95",
+    "16GB-RAM",
+    "512GB-ROM",
+    "traditional-laptop",
+    "computer",
+    "6000Mah-battery",
+    "silver"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1847
+  }
+},
+{
+  id: "f8d3c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d4c",
+  name: "SGIN 15.6'' Laptop 16GB RAM 1TB SSD Win11",
+  priceCents: 20056,
+  image: "images/products/217.webp",
+  keywords: [
+    "sgin",
+    "15.6-inch",
+    "laptop",
+    "computer",
+    "windows-11",
+    "16GB-RAM",
+    "1024GB-SSD",
+    "celeron-N5100",
+    "WiFi-6",
+    "IPS",
+    "FHD",
+    "180-degree-viewing",
+    "53.2WH-battery",
+    "HDMI",
+    "cooling-fan",
+    "business",
+    "students"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1823
+  }
+},
+{
+  id: "c7d3f1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "10'' 6GB RAM Tablet with Stylus",
+  priceCents: 5099,
+  image: "images/products/216.avif",
+  keywords: [
+    "tablet",
+    "10-inch",
+    "6GB-RAM",
+    "128GB-ROM",
+    "1TB-expansion",
+    "quad-core",
+    "2.4G/5G",
+    "WiFi",
+    "IPS",
+    "touch-screen",
+    "stylus",
+    "study",
+    "chase-drama",
+    "game",
+    "christmas-gift",
+    "pad"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1623
+  }
+},
+{
+  id: "e8f3c1a7-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "Fangzheng 15.6'' Ultra-thin Laptop",
+  priceCents: 10010,
+  image: "images/products/215.avif",
+  keywords: [
+    "fangzheng",
+    "15.6-inch",
+    "ultra-thin",
+    "lightweight",
+    "office",
+    "study",
+    "laptop",
+    "pentium-6500Y",
+    "32GB-RAM",
+    "SO-DIMM-2",
+    "512GB-SSD",
+    "dual-screen",
+    "4K",
+    "high-definition",
+    "stereo",
+    "four-speakers",
+    "TYPE-C",
+    "PD",
+    "fast-charging"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1784
+  }
+},
+{
+  id: "f6c3d1a7-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "Zaples Baby Non-Slip Ankle Socks for Toddlers Boys & Girls",
+  priceCents: 1067,
+  image: "images/products/214.webp",
+  keywords: [
+    "zaples",
+    "baby",
+    "non-slip",
+    "grip",
+    "ankle",
+    "socks",
+    "non-skid",
+    "soles",
+    "infants",
+    "toddlers",
+    "kids",
+    "boys",
+    "girls"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1502
+  }
+},
+{
+  id: "d3f2c1a5-5b4e-4f8c-9d3b-1e7f5a3b8d4c",
+  name: "UTTPLL Toddler Magic Stretch Mittens",
+  priceCents: 299,
+  image: "images/products/213.webp",
+  keywords: [
+    "uttpll",
+    "toddler",
+    "magic",
+    "stretch",
+    "gloves",
+    "mittens",
+    "multicolor",
+    "soft",
+    "knit",
+    "warm",
+    "kids",
+    "thick",
+    "cold",
+    "boys",
+    "girls",
+    "supplies"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1275
+  }
+},
+{
+  id: "c8f2d1a7-6b4e-4f9a-8c2d-1e7f5a3b8d6c",
+  name: "Fleece Lined Baby Mittens for Boys & Girls",
+  priceCents: 1162,
+  image: "images/products/212.webp",
+  keywords: [
+    "fleece",
+    "lined",
+    "mittens",
+    "baby",
+    "boys",
+    "girls",
+    "toddler",
+    "little",
+    "kids",
+    "winter",
+    "gloves",
+    "children"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1419
+  }
+},
+{
+  id: "f5d3c1a7-5b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "Waterproof Toddler Winter Mittens",
+  priceCents: 599,
+  image: "images/products/211.webp",
+  keywords: [
+    "toddler",
+    "gloves",
+    "waterproof",
+    "winter",
+    "mittens",
+    "kids",
+    "snow",
+    "warm",
+    "baby",
+    "boys",
+    "girls"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1387
+  }
+},
+{
+  id: "d4f2c1a7-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "Kids Winter Beanie & Mittens Set",
+  priceCents: 990,
+  image: "images/products/210.webp",
+  keywords: [
+    "kids",
+    "winter",
+    "beanie",
+    "hat",
+    "mittens",
+    "set",
+    "warm",
+    "fleece",
+    "baby",
+    "toddler",
+    "knitted",
+    "gloves",
+    "boys",
+    "girls"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1462
+  }
+},
+{
+  id: "e7c3d1a5-5b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "Toddlers 9-Pair Grip Socks",
+  priceCents: 1234,
+  image: "images/products/209.webp",
+  keywords: [
+    "toddlers",
+    "kids",
+    "grips",
+    "socks",
+    "warm",
+    "thermal",
+    "winter",
+    "thick",
+    "anti-slip",
+    "non-skid",
+    "ankle",
+    "crew",
+    "9-pairs",
+    "baby",
+    "boys",
+    "girls",
+    "infants"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1521
+  }
+},
+{
+  id: "c5f2d1a7-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "HonestBaby 10-Pack Wash Cloths",
+  priceCents: 1499,
+  image: "images/products/208.webp",
+  keywords: [
+    "honestbaby",
+    "10-pack",
+    "terry",
+    "wash",
+    "cloths",
+    "gift-box",
+    "100%-organic",
+    "cotton",
+    "infant",
+    "baby",
+    "boys",
+    "girls",
+    "rainbow-blues",
+    "one-size"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1634
+  }
+},
+{
+  id: "f3d1c2a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "Dinosaur Ear Beanie Hat",
+  priceCents: 999,
+  image: "images/products/207.webp",
+  keywords: [
+    "children",
+    "dinosaur",
+    "ear",
+    "protection",
+    "hat",
+    "beanie",
+    "boys",
+    "girls",
+    "unisex",
+    "winter"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1417
+  }
+},
+{
+  id: "d7f2c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d4c",
+  name: "UTTPLL Kids Glove Clips",
+  priceCents: 399,
+  image: "images/products/206.webp",
+  keywords: [
+    "uttpll",
+    "glove",
+    "clips",
+    "stainless-steel",
+    "gloves",
+    "kids",
+    "babys",
+    "toddlers",
+    "winter",
+    "boys",
+    "girls",
+    "elastic",
+    "mitten"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1284
+  }
+},
+{
+  id: "e4c3d1a7-5b4e-4f8c-9d2b-1e7f5a3b8d6c",
+  name: "Toddler Non-Slip Grip Socks",
+  priceCents: 999,
+  image: "images/products/205.webp",
+  keywords: [
+    "toddler",
+    "grip",
+    "socks",
+    "non-slip",
+    "crew",
+    "cute",
+    "seamless",
+    "cotton",
+    "baby",
+    "boys",
+    "girls",
+    "infants",
+    "kids",
+    "9-pairs"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1452
+  }
+},
+{
+  id: "c9d2f1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "Toddler Magic Stretch Mittens",
+  priceCents: 599,
+  image: "images/products/204.webp",
+  keywords: [
+    "satinior",
+    "3-pairs",
+    "toddler",
+    "magic",
+    "stretch",
+    "mittens",
+    "little-girls",
+    "soft",
+    "knit",
+    "baby",
+    "boys",
+    "winter",
+    "knitted",
+    "gloves"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1369
+  }
+},
+{
+  id: "f2d3c1a5-7b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "Resinta Toddler Shirt & Legging Set",
+  priceCents: 964,
+  image: "images/products/203.webp",
+  keywords: [
+    "resinta",
+    "baby",
+    "toddler",
+    "boys",
+    "girls",
+    "cotton",
+    "long-sleeve",
+    "shirt",
+    "legging",
+    "set",
+    "kids",
+    "ribbed",
+    "basic",
+    "pant",
+    "2-piece",
+    "daily-life"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1487
+  }
+},
+{
+  id: "d5c3f1a7-6b4e-4f9a-8c2d-1e7f5b3a9d4c",
+  name: "Baby Non-Slip Ankle Socks",
+  priceCents: 499,
+  image: "images/products/202.webp",
+  keywords: [
+    "5-pairs",
+    "baby",
+    "boys",
+    "girls",
+    "non-slip",
+    "grip",
+    "ankle",
+    "socks",
+    "infant",
+    "anti-skid",
+    "sticky"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1345
+  }
+},
+{
+  id: "c7f2d1a5-5b4e-4f8c-9d3b-1e7f5a3b8d6c",
+  name: "Baby Beanie Knit Ski Hat with Cute Face for Girls Boys 0-7 Years",
+  priceCents: 499,
+  image: "images/products/201.webp",
+  keywords: [
+    "baby",
+    "beanie",
+    "knit",
+    "ski",
+    "hat",
+    "cute",
+    "face",
+    "girls",
+    "boys",
+    "0-7-years"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1298
+  }
+},
+{
+  id: "f3d2c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "Baby Fleece Mittens",
+  priceCents: 399,
+  image: "images/products/200.webp",
+  keywords: [
+    "fleece",
+    "lined",
+    "mittens",
+    "baby",
+    "boys",
+    "girls",
+    "toddler",
+    "little",
+    "kids",
+    "winter",
+    "warm",
+    "gloves"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1327
+  }
+},
+{
+  id: "d4f1c3a7-5b6e-4f8c-9d2b-1e7f5a3b8d6c",
+  name: "American Trends Toddler Mittens",
+  priceCents: 399,
+  image: "images/products/199.webp",
+  keywords: [
+    "american",
+    "trends",
+    "lined",
+    "fleece",
+    "toddler",
+    "mittens",
+    "winter",
+    "warm",
+    "gloves",
+    "child",
+    "ski",
+    "waterproof",
+    "snow",
+    "baby",
+    "boys",
+    "girls"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1268
+  }
+},
+{
+  id: "b7d3f1c5-6a4e-4f9a-8c2d-1e5f7b3a9d4c",
+  name: "FURTALK Satin Beanie",
+  priceCents: 988,
+  image: "images/products/198.webp",
+  keywords: [
+    "furtalk",
+    "toddler",
+    "beanie",
+    "satin",
+    "lined",
+    "baby",
+    "boys",
+    "girls",
+    "winter",
+    "hats",
+    "pom-pom",
+    "beanies",
+    "kids"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1492
+  }
+},
+{
+  id: "e5c2d1a7-6b4e-4f8c-9d3b-1e7f5a3b8d4c",
+  name: "Toddler Knit Sweater",
+  priceCents: 299,
+  image: "images/products/197.webp",
+  keywords: [
+    "baby",
+    "girl",
+    "boy",
+    "toddler",
+    "knit",
+    "sweater",
+    "cute",
+    "round-neck",
+    "long-sleeve",
+    "blouse",
+    "pullover",
+    "oversized",
+    "sweatshirt",
+    "warm",
+    "kids",
+    "tops"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1289
+  }
+},
+{
+  id: "c8f3d1a7-5b4e-4f9a-8c2d-1e5f7b3a9d6c",
+  name: "Toddler Swimsuit Set",
+  priceCents: 1362,
+  image: "images/products/196.webp",
+  keywords: [
+    "toddler",
+    "infant",
+    "baby",
+    "boys",
+    "swimsuit",
+    "kids",
+    "rash-guard",
+    "one-piece",
+    "newborn",
+    "zipper",
+    "bathing-suit",
+    "swimwear",
+    "hat"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1537
+  }
+},
+{
+  id: "f2d3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d6c",
+  name: "Tame Baby Hair Gel",
+  priceCents: 892,
+  image: "images/products/195.webp",
+  keywords: [
+    "t-is-for-tame",
+    "taming",
+    "gel",
+    "boys",
+    "girls",
+    "baby",
+    "hair",
+    "styling",
+    "frizz",
+    "control",
+    "flyaways",
+    "natural",
+    "toddler",
+    "kids",
+    "hair-tamer",
+    "flexible",
+    "hold",
+    "3.38fl-oz",
+    "1-pack"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1478
+  }
+},
+{
+  id: "d3f8c1a5-5b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "12-Pack Toddler Grip Socks",
+  priceCents: 799,
+  image: "images/products/194.webp",
+  keywords: [
+    "jakidar",
+    "12-pack",
+    "baby",
+    "toddler",
+    "socks",
+    "non-slip",
+    "grip",
+    "cotton",
+    "crew",
+    "boys",
+    "girls",
+    "infants",
+    "kids"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1395
+  }
+},
+{
+  id: "e7c1d3f5-6b4e-4f9a-8c2d-1e5f7b3a9d6c",
+  name: "Toddler Sock Shoes Non-Slip",
+  priceCents: 1083,
+  image: "images/products/193.webp",
+  keywords: [
+    "morendl",
+    "toddler",
+    "sock",
+    "shoes",
+    "baby",
+    "walking",
+    "infant",
+    "slippers",
+    "boys",
+    "girls",
+    "non-slip",
+    "sneakers"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1541
+  }
+},
+{
+  id: "c5d3f1a7-7b4e-4f8c-9d2b-1e7f5a3b8d6c",
+  name: "Baby Grip Socks 12-Pack",
+  priceCents: 600,
+  image: "images/products/192.webp",
+  keywords: [
+    "baby",
+    "girls",
+    "boys",
+    "toddlers",
+    "kids",
+    "grips",
+    "socks",
+    "12-pairs",
+    "non-slip",
+    "anti-skid",
+    "ankle",
+    "no-show",
+    "funny",
+    "cotton",
+    "grippers"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1427
+  }
+},
+{
+  id: "d8f2c1a5-6b4e-4f9a-8c3d-1e5b7a2f9d6c",
+  name: "Toddler Fleece Joggers",
+  priceCents: 853,
+  image: "images/products/191.webp",
+  keywords: [
+    "toddler",
+    "fleece",
+    "lined",
+    "warm",
+    "joggers",
+    "baby",
+    "boys",
+    "girls",
+    "thermal",
+    "winter",
+    "sweatpants",
+    "kids",
+    "hiking",
+    "pants"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1362
+  }
+},
+{
+  id: "f6c3d1a7-5b4e-4f8c-9d2b-1e7f5a3b8d4c",
+  name: "Baby Beanie 3-Pack",
+  priceCents: 1342,
+  image: "images/products/190.webp",
+  keywords: [
+    "baby",
+    "beanie",
+    "hat",
+    "3-packs",
+    "cute",
+    "smiley",
+    "face",
+    "toddler",
+    "girls",
+    "boys",
+    "winter",
+    "kids",
+    "cold-weather"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1475
+  }
+},
+{
+  id: "d2f7c1a5-6b4e-4f9a-8c3d-1e5b7a2f9d4c",
+  name: "Sharpty Kids Hangers",
+  priceCents: 752,
+  image: "images/products/189.webp",
+  keywords: [
+    "sharpty",
+    "kids",
+    "plastic",
+    "hangers",
+    "children",
+    "baby",
+    "toddler",
+    "child",
+    "clothes",
+    "everyday",
+    "standard",
+    "use",
+    "boys",
+    "girls",
+    "closet",
+    "clothing",
+    "pants",
+    "coats",
+    "white",
+    "20-pack"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1389
+  }
+},
+{
+  id: "b9d3f1c5-6a4e-4f8b-9d2c-1e7f5a3b8d4c",
+  name: "Personalized Baby Blanket",
+  priceCents: 2190,
+  image: "images/products/188.webp",
+  keywords: [
+    "personalized",
+    "baby",
+    "blanket",
+    "name",
+    "handmade",
+    "100%-organic",
+    "cotton",
+    "newborn",
+    "gift",
+    "custom",
+    "knit",
+    "boys",
+    "girls",
+    "kids",
+    "baby-shower",
+    "petal-pink",
+    "petal-whispers"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1748
+  }
+},
+{
+  id: "e4b7c2d1-5f3a-4f8c-9d6b-1a3f7e5b8c2d",
+  name: "ZOORON Toddler Beanie",
+  priceCents: 342,
+  image: "images/products/187.webp",
+  keywords: [
+    "zooron",
+    "toddler",
+    "beanie",
+    "baby",
+    "boys",
+    "girls",
+    "beanies",
+    "kids",
+    "winter",
+    "hats",
+    "children",
+    "knit",
+    "warm",
+    "caps",
+    "soft",
+    "ski"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1245
+  }
+},
+{
+  id: "c8d3f1a5-7b4e-4f9a-8c2d-1e5f7b3a9d6c",
+  name: "Hat Warm Fleece Lined Knit Beanies Kids Hats for 3-36 Months",
+  priceCents: 499,
+  image: "images/products/186.webp",
+  keywords: [
+    "baby",
+    "winter",
+    "beanie",
+    "hat",
+    "boys",
+    "girls",
+    "2-pack",
+    "toddler",
+    "warm",
+    "fleece",
+    "lined",
+    "knit",
+    "beanies",
+    "kids",
+    "3-36-months"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1312
+  }
+},
+{
+  id: "b5f2c7d1-4a6e-4f8b-9d3c-2e7a5f1b8d4c",
+  name: "Hahaland 5-Language Learning Tablet for Toddlers",
+  priceCents: 1214,
+  image: "images/products/185.webp",
+  keywords: [
+    "hahaland",
+    "5-language",
+    "learning",
+    "tablet",
+    "toddlers",
+    "1-3",
+    "new-version",
+    "educational",
+    "toy",
+    "sounds",
+    "speech",
+    "therapy",
+    "early",
+    "development",
+    "boys",
+    "girls",
+    "baby",
+    "toddler",
+    "ages-1-2-3"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1623
+  }
+},
+{
+  id: "d8f1c3a7-6b4e-4f9a-8c2d-1e5b7a3f9d6c",
+  name: "Jimonda Baby Pajamas",
+  priceCents: 1842,
+  image: "images/products/184.webp",
+  keywords: [
+    "jimonda",
+    "baby",
+    "boys",
+    "girls",
+    "pajama",
+    "sets",
+    "kid",
+    "soft",
+    "sleepwear",
+    "rayon",
+    "bamboo",
+    "short-sleeve",
+    "4-piece",
+    "cool",
+    "jammies",
+    "18M-12Y"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1567
+  }
+},
+{
+  id: "a1d4f7c2-5b3e-4f8a-9d6c-2e1f7b5a8d3c",
+  name: "Bamboo Toddler Pajamas",
+  priceCents: 1599,
+  image: "images/products/183.webp",
+  keywords: [
+    "bamboo",
+    "viscose",
+    "toddler",
+    "pajamas",
+    "boys",
+    "girls",
+    "baby",
+    "12M-8Y",
+    "pjs",
+    "sets",
+    "kids",
+    "2pcs",
+    "snug",
+    "fit",
+    "long-sleeve",
+    "sleepwear"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1512
+  }
+},
+{
+  id: "f6c2d1a8-7b4e-4f9a-8c3d-2e5f7b1a9d4c",
+  name: "Vidsel Toddler Beanie Hat",
+  priceCents: 842,
+  image: "images/products/182.webp",
+  keywords: [
+    "vidsel",
+    "100%-cotton",
+    "toddler",
+    "beanie",
+    "hats",
+    "baby",
+    "boys",
+    "girls",
+    "kids",
+    "infant",
+    "winter",
+    "soft",
+    "warm",
+    "knit",
+    "cuffed",
+    "caps"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1398
+  }
+},
+{
+  id: "d3f7c1a5-5b4e-4f8a-9d2c-1e7b5f3a8d6c",
+  name: "ANTSANG 12 Pairs Grip Socks",
+  priceCents: 1354,
+  image: "images/products/181.webp",
+  keywords: [
+    "antsang",
+    "12-pairs",
+    "baby",
+    "girls",
+    "boys",
+    "toddlers",
+    "kids",
+    "grips",
+    "socks",
+    "crew",
+    "cotton",
+    "non-slip",
+    "anti-skid"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1432
+  }
+},
+{
+  id: "c7d2f5a9-6b4e-4f8c-9d3b-1e5f7a2c8d4b",
+  name: "ONESING 5 Pairs Mittens",
+  priceCents: 432,
+  image: "images/products/180.webp",
+  keywords: [
+    "onesing",
+    "5-pair",
+    "toddler",
+    "mittens",
+    "black",
+    "baby",
+    "winter",
+    "gloves",
+    "girls",
+    "boys",
+    "warm",
+    "newborn"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1278
+  }
+},
+{
+  id: "b2e9d3f5-4c6a-4f8b-9d1c-2e7f5a3b8d4c",
+  name: "Zando Baby Beanie Hat",
+  priceCents: 449,
+  image: "images/products/179.webp",
+  keywords: [
+    "zando",
+    "satin",
+    "lined",
+    "baby",
+    "girls",
+    "boys",
+    "toddler",
+    "winter",
+    "hat",
+    "earflap",
+    "infant",
+    "newborn",
+    "beanie",
+    "warm",
+    "knit",
+    "pompom",
+    "silk",
+    "skull",
+    "cap"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1347
+  }
+},
+{
+  id: "d5f8c2a7-6b4e-4f9a-8c3d-1e7b5a2f9c4d",
+  name: "Mesh Baby Sneakers",
+  priceCents: 1956,
+  image: "images/products/178.webp",
+  keywords: [
+    "mesh",
+    "toddler",
+    "shoes",
+    "baby",
+    "sneakers",
+    "girls",
+    "boys",
+    "sock",
+    "slip-on",
+    "walking",
+    "breathable",
+    "tennis",
+    "non-slip",
+    "slippers",
+    "soft",
+    "rubber",
+    "soles",
+    "6-24-months"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1619
+  }
+},
+{
+  id: "a9d3f5b1-7c2e-4f8a-9d6b-1e3f7c5a8d2e",
+  name: "Bamboo Toddler Pajamas 2pcs",
+  priceCents: 1752,
+  image: "images/products/177.webp",
+  keywords: [
+    "bamboo",
+    "viscose",
+    "toddler",
+    "pajamas",
+    "boys",
+    "girls",
+    "baby",
+    "12M-8Y",
+    "pjs",
+    "sets",
+    "kids",
+    "snug",
+    "fit",
+    "2pcs",
+    "long-sleeve",
+    "sleepwear"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1537
+  }
+},
+{
+  id: "f3c9b2d1-6a4e-4f8c-9d3b-2e7a5f1c8d4b",
+  name: "Learning Tablet for Toddlers",
+  priceCents: 1097,
+  image: "images/products/176.webp",
+  keywords: [
+    "learning",
+    "tablet",
+    "toddlers",
+    "1-3",
+    "trilingual",
+    "toys",
+    "sounds",
+    "speech",
+    "therapy",
+    "montessori",
+    "educational",
+    "1-year-old",
+    "boy",
+    "girl",
+    "baby",
+    "musical",
+    "12-18-months",
+    "age-1-2-3",
+    "gifts"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1642
+  }
+},{
+  id: "e1b4c7d3-5f2a-4f8b-9c6e-2a3f7d5b8c1e",
+  name: "4-Pack Toddler Long Sleeve Tees",
+  priceCents: 2085,
+  image: "images/products/175.webp",
+  keywords: [
+    "4-pack",
+    "boys",
+    "long-sleeve",
+    "shirts",
+    "girls",
+    "henley",
+    "tees",
+    "toddler",
+    "baby",
+    "knit",
+    "casual",
+    "tops",
+    "kids",
+    "fall",
+    "clothes",
+    "unisex"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1529
+  }
+},
+{
+  id: "d7f1c3a5-6b4e-4f9a-8c2d-1e5b7a3f9d6c",
+  name: "3 Pack Baby Beanies",
+  priceCents: 743,
+  image: "images/products/174.webp",
+  keywords: [
+    "3-packs",
+    "baby",
+    "beanie",
+    "cute",
+    "toddler",
+    "beanies",
+    "kids",
+    "winter",
+    "hat",
+    "boys",
+    "girls",
+    "warm",
+    "knit",
+    "infant",
+    "0-8",
+    "years"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1387
+  }
+},
+{
+  id: "c4e7b2f1-5d3a-4f8c-9b6e-2a1f7d5c8e3b",
+  name: "12 Pairs Baby Socks",
+  priceCents: 842,
+  image: "images/products/173.webp",
+  keywords: [
+    "12-pairs",
+    "baby",
+    "girls",
+    "boys",
+    "toddlers",
+    "kids",
+    "grips",
+    "socks",
+    "non-slip",
+    "anti-skid",
+    "funny",
+    "cartoon",
+    "breathable",
+    "cotton",
+    "crew"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1456
+  }
+},
+{
+  id: "a8d3f1c5-7b2e-4f9a-8c6d-1e3f5b7a9d4c",
+  name: "Baby Sock Sneakers",
+  priceCents: 599,
+  image: "images/products/172.webp",
+  keywords: [
+    "baby",
+    "sock",
+    "shoes",
+    "walking",
+    "infant",
+    "non-slip",
+    "breathable",
+    "slippers",
+    "soft",
+    "rubber",
+    "sole",
+    "boys",
+    "girls",
+    "sneakers"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1321
+  }
+},
+{
+  id: "f2c9a7d3-4b6e-4f8a-9d1c-3e5b7a2f6d8c",
+  name: "Interactive Baby Ball",
+  priceCents: 1566,
+  image: "images/products/171.webp",
+  keywords: [
+    "move2play",
+    "hilariously",
+    "interactive",
+    "baby",
+    "ball",
+    "music",
+    "sound",
+    "effects",
+    "first",
+    "birthday",
+    "gift",
+    "toddler",
+    "boys",
+    "girls",
+    "age",
+    "6",
+    "9",
+    "12",
+    "18+",
+    "1",
+    "2+",
+    "year",
+    "old"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1683
+  }
+},
+{
+  id: "b3e7d1f4-5c2a-4f9b-8d6e-1a3f7c5b9d2e",
+  name: "Toddler Fleece Winter Joggers",
+  priceCents: 1499,
+  image: "images/products/170.webp",
+  keywords: [
+    "toddler",
+    "fleece",
+    "lined",
+    "warm",
+    "snow",
+    "hiking",
+    "pants",
+    "baby",
+    "boys",
+    "girls",
+    "winter",
+    "ski",
+    "sweatpants",
+    "kids",
+    "running",
+    "joggers"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1574
+  }
+},
+{
+  id: "d9f1c3b7-6e4a-4f8b-9d2c-1a7e5f3b8c6d",
+  name: "Baby Toddler Christmas Jumpsuits",
+  priceCents: 2544,
+  image: "images/products/169.webp",
+  keywords: [
+    "tipsy",
+    "elves",
+    "christmas",
+    "outfits",
+    "babies",
+    "toddlers",
+    "fun",
+    "holiday",
+    "themed",
+    "jumpsuits"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1893
+  }
+},
+{
+  id: "c7d4e2f8-5a1b-4f6c-9d3e-2b7f1a4c8d5e",
+  name: "Toddler Hiking Joggers",
+  priceCents: 655,
+  image: "images/products/168.webp",
+  keywords: [
+    "toddler",
+    "hiking",
+    "cargo",
+    "pants",
+    "baby",
+    "boys",
+    "girls",
+    "quick",
+    "dry",
+    "joggers",
+    "kids",
+    "pull-on"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1289
+  }
+},
+{
+  id: "a5c3d8f1-7b2e-4f9a-9d6c-2e1f7b4a8c5d",
+  name: "Baby First Walking Shoes",
+  priceCents: 834,
+  image: "images/products/167.webp",
+  keywords: [
+    "centipede",
+    "demon",
+    "baby",
+    "shoes",
+    "boy",
+    "girl",
+    "first",
+    "walking",
+    "breathable",
+    "barefoot",
+    "infant",
+    "lightweight",
+    "slip-on",
+    "sneakers",
+    "soft",
+    "sock"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1462
+  }
+},
+{
+  id: "f8a2d5b3-6c4e-4f9a-8d2b-1e7c3f5a9b6d",
+  name: "Magnetic Doodle Board",
+  priceCents: 599,
+  image: "images/products/166.webp",
+  keywords: [
+    "magnetic",
+    "drawing",
+    "doodle",
+    "board",
+    "toddler",
+    "toys",
+    "3",
+    "4",
+    "5",
+    "year",
+    "old",
+    "boys",
+    "girls",
+    "learning",
+    "educational",
+    "baby",
+    "kids",
+    "christmas",
+    "birthday",
+    "gifts"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1376
+  }
+},
+{
+  id: "e6b1c3d4-7f2a-4a9b-8c5d-1e3f6b7a9d2c",
+  name: "Baby Knit Sweater Pullover",
+  priceCents: 187,
+  image: "images/products/165.webp",
+  keywords: [
+    "baby",
+    "girl",
+    "boy",
+    "knit",
+    "sweater",
+    "blouse",
+    "pullover",
+    "sweatshirt",
+    "warm",
+    "crewneck",
+    "long",
+    "sleeve",
+    "tops",
+    "infant",
+    "toddler"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1197
+  }
+},
+{
+  id: "c9d2f7a5-4b6e-4c8a-9f1d-3e7b2a5c8d4f",
+  name: "Carter's 6-Piece Baby Bodysuit Set",
+  priceCents: 1550,
+  image: "images/products/164.webp",
+  keywords: [
+    "simple",
+    "joys",
+    "carters",
+    "unisex",
+    "baby",
+    "6-piece",
+    "bodysuits",
+    "short",
+    "long",
+    "sleeve",
+    "pants",
+    "set"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1628
+  }
+},
+{
+  id: "b7e9c4d2-5f1a-4a8b-9c3d-2f6e7a1b8c4d",
+  name: "Baby Boy 3PCS Outfit",
+  priceCents: 863,
+  image: "images/products/163.webp",
+  keywords: [
+    "agapeng",
+    "baby",
+    "boy",
+    "clothes",
+    "newborn",
+    "outfits",
+    "infant",
+    "letter",
+    "print",
+    "romper",
+    "long",
+    "pants",
+    "hat",
+    "3pcs",
+    "clothing"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1415
+  }
+},
+{
+  id: "d5f3a1b8-6c4e-4f7a-9b2d-1e8c3f5a7d9b",
+  name: "Toddler Beanie Hat",
+  priceCents: 790,
+  image: "images/products/162.webp",
+  keywords: [
+    "furtalk",
+    "toddler",
+    "beanie",
+    "baby",
+    "boys",
+    "girls",
+    "beanies",
+    "kids",
+    "winter",
+    "hats",
+    "children",
+    "knit",
+    "warm",
+    "caps"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1327
+  }
+},
+{
+  id: "f1c8b2d7-3e4a-4f9d-8b6c-2a7d5e1f9b3c",
+  name: "Checkered Baby Blanket",
+  priceCents: 599,
+  image: "images/products/161.webp",
+  keywords: [
+    "yurhap",
+    "checkered",
+    "baby",
+    "blanket",
+    "girls",
+    "pink",
+    "fleece",
+    "boys",
+    "warmer",
+    "comfort",
+    "lightweight",
+    "bed",
+    "toddlers",
+    "infants",
+    "newborn",
+    "30x40"
+  ],
+  rating: {
+    stars: 5.0,
+    count: 1784
+  }
+},
+{
+  id: "a2b9d4e7-8f1c-4c5a-9d3b-6e7f1a2c4b5d",
+  name: "Baby Winter Beanie Hats",
+  priceCents: 599,
+  image: "images/products/160.webp",
+  keywords: [
+    "baby",
+    "beanie",
+    "hats",
+    "2-pack",
+    "warm",
+    "winter",
+    "boys",
+    "girls",
+    "infant",
+    "fleece",
+    "lined",
+    "toddler",
+    "0-36",
+    "month"
+  ],
+  rating: {
+    stars: 4.0,
+    count: 1532
+  }
+},
+{
+  id: "e3f7c9a1-2d4b-4f8e-9a12-7b5c3e9f1d2a",
+  name: "Baby Hiking Jogger Pants",
+  priceCents: 499,
+  image: "images/products/159.webp",
+  keywords: [
+    "baby",
+    "boys",
+    "girls",
+    "hiking",
+    "pants",
+    "lightweight",
+    "athletic",
+    "jogger",
+    "toddler",
+    "quick",
+    "dry",
+    "track",
+    "sweatpants"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1243
+  }
+},
+{
+  id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
+  name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
+  priceCents: 1500,
+  image: "images/products/athletic-cotton-socks-6-pairs.jpg",
+  keywords: [
+    "socks",
+    "sports",
+    "apparel"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 87
+  }
+},
+{
+  id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
+  name: "Intermediate Size Basketball",
+  priceCents: 2000,
+  image: "images/products/intermediate-composite-basketball.jpg",
+  keywords: [
+    "sports",
+    "basketballs"
+  ],
+  rating: {
+    stars: 4,
+    count: 127
+  }
+},
+{
+  id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
+  name: "Adults Plain Cotton T-Shirt - 2 Pack",
+  priceCents: 2000,
+  image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
+  keywords: [
+    "tshirts",
+    "apparel",
+    "mens"
+  ],
+  type: "clothing",
+  sizeChartLink: "images/clothing-size-chart.png",
+  rating: {
+    stars: 4.5,
+    count: 56
+  }
+},
+{
+  id: "54e0eccd-8f36-462b-b68a-8182611d9add",
+  name: "2 Slot Toaster - Black",
+  priceCents: 1899,
+  image: "images/products/black-2-slot-toaster.jpg",
+  keywords: [
+    "toaster",
+    "kitchen",
+    "appliances"
+  ],
+  rating: {
+    stars: 5,
+    count: 2197
+  }
+},
+{
+  id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
+  name: "6 Piece White Dinner Plate Set",
+  priceCents: 1300,
+  image: "images/products/6-piece-white-dinner-plate-set.jpg",
+  keywords: [
+    "plates",
+    "kitchen",
+    "dining"
+  ],
+  rating: {
+    stars: 4,
+    count: 37
+  }
+},
+{
+  id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
+  name: "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
+  priceCents: 1800,
+  image: "images/products/6-piece-non-stick-baking-set.webp",
+  keywords: [
+    "kitchen",
+    "cookware"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 175
+  }
+},
+{
+  id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
+  name: "Plain Hooded Fleece Sweatshirt",
+  priceCents: 2000,
+  image: "images/products/plain-hooded-fleece-sweatshirt-yellow.jpg",
+  keywords: [
+    "hoodies",
+    "sweaters",
+    "apparel"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 317
+  }
+},
+{
+  id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
+  name: "Luxury Towel Set - Graphite Gray",
+  priceCents: 2599,
+  image: "images/products/luxury-tower-set-6-piece.jpg",
+  keywords: [
+    "bathroom",
+    "washroom",
+    "restroom",
+    "towels",
+    "bath towels"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 144
+  }
+},
+{
+  id: "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
+  name: "Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz",
+  priceCents: 1000,
+  image: "images/products/liquid-laundry-detergent-plain.jpg",
+  keywords: [
+    "bathroom",
+    "cleaning"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 305
+  }
+},
+{
+  id: "58b4fc92-e98c-42aa-8c55-b6b79996769a",
+  name: "Waterproof Knit Athletic Sneakers - Gray",
+  priceCents: 1800,
+  image: "images/products/knit-athletic-sneakers-gray.jpg",
+  keywords: [
+    "shoes",
+    "running shoes",
+    "footwear"
+  ],
+  rating: {
+    stars: 4,
+    count: 89
+  }
+},
+{
+  id: "5968897c-4d27-4872-89f6-5bcb052746d7",
+  name: "Women's Chiffon Beachwear Cover Up - Black",
+  priceCents: 2000,
+  image: "images/products/women-chiffon-beachwear-coverup-black.jpg",
+  keywords: [
+    "robe",
+    "swimsuit",
+    "swimming",
+    "bathing",
+    "apparel"
+  ],
+  type: "clothing",
+  sizeChartLink: "images/clothing-size-chart.png",
+  rating: {
+    stars: 4.5,
+    count: 235
+  }
+},
+{
+  id: "aad29d11-ea98-41ee-9285-b916638cac4a",
+  name: "Round Sunglasses",
+  priceCents: 1000,
+  image: "images/products/round-sunglasses-black.jpg",
+  keywords: [
+    "accessories",
+    "shades"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 30
+  }
+},
+  {
+  id: "04701903-bc79-49c6-bc11-1af7e3651358",
+  name: "Women's Two Strap Buckle Sandals - Tan",
+  priceCents: 1300,
+  image: "images/products/women-beach-sandals.jpg",
+  keywords: [
+    "footwear",
+    "sandals",
+    "womens",
+    "beach",
+    "summer"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 562
+  }
+},
+{
+  id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
+  name: "Blackout Curtains Set 4-Pack - Beige",
+  priceCents: 2000,
+  image: "images/products/blackout-curtain-set-beige.webp",
+  keywords: [
+    "bedroom",
+    "curtains",
+    "home"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 232
+  }
+},
+{
+  id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9",
+  name: "Men's Slim-Fit Summer Shorts",
+  priceCents: 1399,
+  image: "images/products/men-slim-fit-summer-shorts-gray.jpg",
+  keywords: [
+    "shorts",
+    "apparel",
+    "mens"
+  ],
+  rating: {
+    stars: 4,
+    count: 160
+  }
+},
+{
+  id: "c2a82c5e-aff4-435f-9975-517cfaba2ece",
+  name: "Electric Glass and Steel Hot Tea Water Kettle - 1.7-Liter",
+  priceCents: 2000,
+  image: "images/products/electric-glass-and-steel-hot-water-kettle.webp",
+  keywords: [
+    "water boiler",
+    "appliances",
+    "kitchen"
+  ],
+  rating: {
+    stars: 5,
+    count: 846
+  }
+},
+{
+  id: "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
+  name: "Ultra Soft Tissue 2-Ply - 18 Box",
+  priceCents: 800,
+  image: "images/products/facial-tissue-2-ply-18-boxes.jpg",
+  keywords: [
+    "kleenex",
+    "tissues",
+    "kitchen",
+    "tissues box",
+    "napkins"
+  ],
+  rating: {
+    stars: 4,
+    count: 99
+  }
+},
+{
+  id: "a82c6bac-3067-4e68-a5ba-d827ac0be010",
+  name: "Straw Lifeguard Sun Hat",
+  priceCents: 1199,
+  image: "images/products/straw-sunhat.webp",
+  keywords: [
+    "hats",
+    "straw hats",
+    "summer",
+    "apparel"
+  ],
+  rating: {
+    stars: 4,
+    count: 215
+  }
+},
+{
+  id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
+  name: "Sterling Silver Sky Flower Stud Earrings",
+  priceCents: 1799,
+  image: "images/products/sky-flower-stud-earrings.webp",
+  keywords: [
+    "jewelry",
+    "accessories",
+    "womens"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 52
+  }
+},
+{
+  id: "b0f17cc5-8b40-4ca5-9142-b61fe3d98c85",
+  name: "Women's Stretch Popover Hoodie",
+  priceCents: 1374,
+  image: "images/products/women-stretch-popover-hoodie-black.jpg",
+  keywords: [
+    "hooded",
+    "hoodies",
+    "sweaters",
+    "womens",
+    "apparel"
+  ],
+  type: "clothing",
+  sizeChartLink: "images/clothing-size-chart.png",
+  rating: {
+    stars: 4.5,
+    count: 2465
+  }
+},
+{
+  id: "a93a101d-79ef-4cf3-a6cf-6dbe532a1b4a",
+  name: "Bathroom Bath Rug Mat 20 x 31 Inch - Grey",
+  priceCents: 1250,
+  image: "images/products/bathroom-rug.jpg",
+  keywords: [
+    "bathmat",
+    "bathroom",
+    "home"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 119
+  }
+},
+{
+  id: "4f4fbcc2-4e72-45cc-935c-9e13d79cc57f",
+  name: "Women's Knit Ballet Flat",
+  priceCents: 2000,
+  image: "images/products/women-knit-ballet-flat-black.jpg",
+  keywords: [
+    "shoes",
+    "flats",
+    "womens",
+    "footwear"
+  ],
+  rating: {
+    stars: 4,
+    count: 326
+  }
+},
+{
+  id: "8b5a2ee1-6055-422a-a666-b34ba28b76d4",
+  name: "Men's Regular-Fit Quick-Dry Golf Polo Shirt",
+  priceCents: 1399,
+  image: "images/products/men-golf-polo-t-shirt-blue.jpg",
+  keywords: [
+    "tshirts",
+    "shirts",
+    "apparel",
+    "mens"
+  ],
+  type: "clothing",
+  sizeChartLink: "images/clothing-size-chart.png",
+  rating: {
+    stars: 4.5,
+    count: 2556
+  }
+},
+{
+  id: "b86ddc8b-3501-4b17-9889-a3bad6fb585f",
+  name: "Trash Can with Foot Pedal - Brushed Stainless Steel",
+  priceCents: 1700,
+  image: "images/products/trash-can-with-foot-pedal-50-liter.jpg",
+  keywords: [
+    "garbage",
+    "bins",
+    "cans",
+    "kitchen"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 2286
+  }
+},
+{
+  id: "19c6a64a-5463-4d45-9af8-e41140a4100c",
+  name: "Duvet Cover Set with Zipper Closure",
+  priceCents: 2399,
+  image: "images/products/duvet-cover-set-blue-twin.jpg",
+  keywords: [
+    "bedroom",
+    "bed sheets",
+    "sheets",
+    "covers",
+    "home"
+  ],
+  rating: {
+    stars: 4,
+    count: 456
+  }
+},
+{
+  id: "d2785924-743d-49b3-8f03-ec258e640503",
+  name: "Women's Chunky Cable Beanie - Gray",
+  priceCents: 850,
+  image: "images/products/women-chunky-beanie-gray.webp",
+  keywords: [
+    "hats",
+    "winter hats",
+    "beanies",
+    "tuques",
+    "apparel",
+    "womens"
+  ],
+  rating: {
+    stars: 5,
+    count: 83
+  }
+},{
+  id: "ee1f7c56-f977-40a4-9642-12ba5072e2b0",
+  name: "Men's Classic-fit Pleated Chino Pants",
+  priceCents: 1490,
+  image: "images/products/men-chino-pants-beige.jpg",
+  keywords: [
+    "pants",
+    "apparel",
+    "mens"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 9017
+  }
+},
+{
+  id: "1c079479-8586-494f-ab53-219325432536",
+  name: "Men's Athletic Sneaker",
+  priceCents: 2099,
+  image: "images/products/men-athletic-shoes-green.jpg",
+  keywords: [
+    "shoes",
+    "running shoes",
+    "footwear",
+    "mens"
+  ],
+  rating: {
+    stars: 4,
+    count: 229
+  }
+},
+{
+  id: "4df68c27-fd59-4a6a-bbd1-e754ddb6d53c",
+  name: "Men's Navigator Sunglasses Pilot",
+  priceCents: 1000,
+  image: "images/products/men-navigator-sunglasses-brown.jpg",
+  keywords: [
+    "sunglasses",
+    "glasses",
+    "accessories",
+    "shades"
+  ],
+  rating: {
+    stars: 3.5,
+    count: 42
+  }
+},
+{
+  id: "4e37dd03-3b23-4bc6-9ff8-44e112a92c64",
+  name: "Non-Stick Cookware Set, Pots, Pans and Utensils - 15 Pieces",
+  priceCents: 3099,
+  image: "images/products/non-stick-cooking-set-15-pieces.webp",
+  keywords: [
+    "cooking set",
+    "kitchen"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 511
+  }
+},
+{
+  id: "a434b69f-1bc1-482d-9ce7-cd7f4a66ce8d",
+  name: "Vanity Mirror with Heavy Base - Chrome",
+  priceCents: 1649,
+  image: "images/products/vanity-mirror-silver.jpg",
+  keywords: [
+    "bathroom",
+    "washroom",
+    "mirrors",
+    "home"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 130
+  }
+},
+{
+  id: "a45cfa0a-66d6-4dc7-9475-e2b01595f7d7",
+  name: "Women's Fleece Jogger Sweatpant",
+  priceCents: 2400,
+  image: "images/products/women-french-terry-fleece-jogger-camo.jpg",
+  keywords: [
+    "pants",
+    "sweatpants",
+    "jogging",
+    "apparel",
+    "womens"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 248
+  }
+},
+{
+  id: "d339adf3-e004-4c20-a120-40e8874c66cb",
+  name: "Double Oval Twist French Wire Earrings - Gold",
+  priceCents: 2400,
+  image: "images/products/double-elongated-twist-french-wire-earrings.webp",
+  keywords: [
+    "accessories",
+    "womens"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 117
+  }
+},
+{
+  id: "d37a651a-d501-483b-aae6-a9659b0757a0",
+  name: "Round Airtight Food Storage Containers - 5 Piece",
+  priceCents: 1599,
+  image: "images/products/round-airtight-food-storage-containers.jpg",
+  keywords: [
+    "boxes",
+    "food containers",
+    "kitchen"
+  ],
+  rating: {
+    stars: 4,
+    count: 126
+  }
+},
+{
+  id: "0d7f9afa-2efe-4fd9-b0fd-ba5663e0a524",
+  name: "Coffeemaker with Glass Carafe and Reusable Filter - 25 Oz, Black",
+  priceCents: 2250,
+  image: "images/products/coffeemaker-with-glass-carafe-black.jpg",
+  keywords: [
+    "coffeemakers",
+    "kitchen",
+    "appliances"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1211
+  }
+},
+{
+  id: "02e3a47e-dd68-467e-9f71-8bf6f723fdae",
+  name: "Blackout Curtains Set 42 x 84-Inch - Black, 2 Panels",
+  priceCents: 2599,
+  image: "images/products/blackout-curtains-black.jpg",
+  keywords: [
+    "bedroom",
+    "home"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 363
+  }
+},
+{
+  id: "8a53b080-6d40-4a65-ab26-b24ecf700bce",
+  name: "100% Cotton Bath Towels - 2 Pack, Light Teal",
+  priceCents: 2010,
+  image: "images/products/cotton-bath-towels-teal.webp",
+  keywords: [
+    "bathroom",
+    "home",
+    "towels"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 93
+  }
+},
+{
+  id: "10ed8504-57db-433c-b0a3-fc71a35c88a1",
+  name: "Waterproof Knit Athletic Sneakers - Pink",
+  priceCents: 2090,
+  image: "images/products/knit-athletic-sneakers-pink.webp",
+  keywords: [
+    "shoes",
+    "running shoes",
+    "footwear",
+    "womens"
+  ],
+  rating: {
+    stars: 4,
+    count: 89
+  }
+},
+{
+  id: "77a845b1-16ed-4eac-bdf9-5b591882113d",
+  name: "Countertop Blender - 64oz, 1400 Watts",
+  priceCents: 5047,
+  image: "images/products/countertop-blender-64-oz.jpg",
+  keywords: [
+    "food blenders",
+    "kitchen",
+    "appliances"
+  ],
+  rating: {
+    stars: 4,
+    count: 3
+  }
+},
+{
+  id: "36c64692-677f-4f58-b5ec-0dc2cf109e27",
+  name: "10-Piece Mixing Bowl Set with Lids - Floral",
+  priceCents: 2099,
+  image: "images/products/floral-mixing-bowl-set.jpg",
+  keywords: [
+    "mixing bowls",
+    "baking",
+    "cookware",
+    "kitchen"
+  ],
+  rating: {
+    stars: 5,
+    count: 679
+  }
+},
+{
+  id: "aaa65ef3-8d6f-4eb3-bc9b-a6ea49047d8f",
+  name: "2-Ply Kitchen Paper Towels - 30 Pack",
+  priceCents: 890,
+  image: "images/products/kitchen-paper-towels-30-pack.jpg",
+  keywords: [
+    "kitchen",
+    "kitchen towels",
+    "tissues"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 1045
+  }
+},
+{
+  id: "bc2847e9-5323-403f-b7cf-57fde044a955",
+  name: "Men's Full-Zip Hooded Fleece Sweatshirt",
+  priceCents: 2400,
+  image: "images/products/men-cozy-fleece-zip-up-hoodie-red.jpg",
+  keywords: [
+    "sweaters",
+    "hoodies",
+    "apparel",
+    "mens"
+  ],
+  rating: {
+    stars: 4.5,
+    count: 3157
+  }
 },
 
-
-  {
-    id: "e1f2d3c4-5a6b-4d7f-9c2e-1b3d5f7a4c6e",
-    image: "images/products/260.webp",
-    name: "70W USB-C Charger for MacBook & iPad – 6.6ft Cable",
-    rating: {
-      stars: 4.5,
-      count: 1589
-    },
-    priceCents: 1799,
-    keywords: [
-      "macbook-air-charger",
-      "macbook-pro-charger",
-      "13-14-15-16-inch",
-      "2025-2020",
-      "m1-m4",
-      "70w-usb-c",
-      "laptop-power-adapter",
-      "ipad",
-      "led",
-      "6-6ft-usb-c-cable",
-      "original-quality"
-    ]
-},
-
-  {
-    id: "f3d1c2b4-6a5e-4d7f-9b3c-1e7f2d4a5c9d",
-    image: "images/products/259.webp",
-    name: "100W USB-C Charger for MacBook & Laptop – 6.6ft Braided Cable",
-    rating: {
-      stars: 4.5,
-      count: 1627
-    },
-    priceCents: 1723,
-    keywords: [
-      "macbook-pro-charger",
-      "macbook-air",
-      "16-inch",
-      "14-inch",
-      "15-inch",
-      "13-inch",
-      "100w-usb-c",
-      "laptop-power-adapter",
-      "6-6ft-usb-c-braided-cable",
-      "m1-m4",
-      "2025-2019",
-      "original-quality"
-    ]
-},
-
-  {
-    id: "d5f3c2b1-7a4e-4d9f-9c2a-5e1b7f3d8a5c",
-    image: "images/products/258.webp",
-    name: "96W USB-C Fast Charger for MacBook, iPad, Samsung – with 6.6ft Cable",
-    rating: {
-      stars: 4.5,
-      count: 1548
-    },
-    priceCents: 1499,
-    keywords: [
-      "macbook-pro-charger",
-      "96w",
-      "usb-c",
-      "fast-charger",
-      "macbook-pro",
-      "macbook-air",
-      "ipad-pro",
-      "samsung-galaxy",
-      "type-c-device",
-      "6-6ft-usbc-cable"
-    ]
-},
-
-  {
-    id: "f2d3c1b4-6a5e-4d7f-9b3c-1e7f2d4a5c8b",
-    image: "images/products/257.webp",
-    name: "Ergonomic Adjustable Laptop Stand, Foldable Aluminum, 10-15.6” – Black",
-    rating: {
-      stars: 4.0,
-      count: 1298
-    },
-    priceCents: 590,
-    keywords: [
-      "laptop-stand",
-      "desk",
-      "ergonomic",
-      "adjustable",
-      "aluminum",
-      "foldable",
-      "portable",
-      "computer-stand",
-      "macbook-air",
-      "macbook-pro",
-      "hp",
-      "lenovo",
-      "dell",
-      "10-15-6-inch",
-      "tablets",
-      "black"
-    ]
-},
-
-  {
-    id: "e7f1d3c2-5a6b-4d8e-9c2f-1b3d5e7a4f6c",
-    image: "images/products/256.webp",
-    name: "ASTARON 17-in-1 Screwdriver Set for MacBook & Electronics",
-    rating: {
-      stars: 4.5,
-      count: 1387
-    },
-    priceCents: 499,
-    keywords: [
-      "astaron-screwdriver-set",
-      "17-in-1",
-      "macbook",
-      "repair-tool-kit",
-      "t3-t8",
-      "p2-p5",
-      "ph000-ph00",
-      "y00",
-      "magnetic-torx-bit",
-      "opening-tool",
-      "laptop",
-      "macbook-air",
-      "macbook-pro",
-      "xbox",
-      "ps4"
-    ]
-},
-
-  {
-    id: "f4c2d1b3-6a5e-4d7f-9b3c-1e7f2d4a5b8c",
-    image: "images/products/255.webp",
-    name: "15.6\" AMD 3020e Laptop, 8GB RAM, 512GB SSD, FHD IPS, Gray",
-    rating: {
-      stars: 4.5,
-      count: 1821
-    },
-    priceCents: 24199,
-    keywords: [
-      "15.6-inch",
-      "laptop-computer",
-      "amd-3020e",
-      "8gb-ddr4",
-      "512gb-ssd",
-      "up-to-32gb",
-      "up-to-4tb",
-      "1080p-fhd",
-      "ips-display",
-      "type-c",
-      "hdmi",
-      "usb3-2",
-      "bt5-2",
-      "wifi-5",
-      "gray"
-    ]
-},
-
-  {
-    id: "d3e1f2b4-7c5a-4d8e-9b2f-6a1c3d5e7f8b",
-    image: "images/products/254.webp",
-    name: "118W USB-C Fast Charger for MacBook & Devices",
-    rating: {
-      stars: 4.5,
-      count: 1532
-    },
-    priceCents: 1542,
-    keywords: [
-      "macbook-pro-charger",
-      "118w",
-      "usb-c",
-      "fast-charger",
-      "macbook-pro",
-      "macbook-air",
-      "m1-m5",
-      "ipad-pro",
-      "samsung-galaxy",
-      "charge-cable"
-    ]
-},
-
-  {
-    id: "f7d2c3b4-6a5e-4d7f-9b3c-1e7f2d4a5b6c",
-    image: "images/products/253.webp",
-    name: "Rechargeable Bluetooth Mouse for MacBook & PC, Black",
-    rating: {
-      stars: 4.5,
-      count: 1421
-    },
-    priceCents: 861,
-    keywords: [
-      "rechargeable-mouse",
-      "bluetooth-5-2",
-      "bt3-0",
-      "type-c",
-      "usb-2-4g",
-      "macbook",
-      "macbook-air",
-      "macbook-pro",
-      "ipad",
-      "wireless-mouse",
-      "laptop",
-      "notebook",
-      "pc",
-      "chromebook",
-      "black"
-    ]
-},
-
-  {
-    id: "e4c1d2b7-5f6a-4d8c-9b3e-2f7a1c3d4b5f",
-    image: "images/products/252.webp",
-    name: "Laptop Sleeve Case 13.3\", Shockproof Protective Bag, Black",
-    rating: {
-      stars: 4.0,
-      count: 1378
-    },
-    priceCents: 599,
-    keywords: [
-      "laptop-sleeve-case",
-      "13-3-inch",
-      "shockproof",
-      "protective-cover",
-      "accessories-pocket",
-      "portable-laptop-bag",
-      "macbook-air",
-      "macbook-pro-13-3",
-      "macbook-pro-14",
-      "black"
-    ]
-},
-
-  {
-    id: "d1f3e2b7-6c4a-4f8d-9b2f-5a7c3d1e8b4f",
-    image: "images/products/251.webp",
-    name: "Wireless Bluetooth Mouse for MacBook, Laptop & iPad, Dual Mode, Black",
-    rating: {
-      stars: 4.5,
-      count: 1452
-    },
-    priceCents: 1423,
-    keywords: [
-      "mouse-macbook",
-      "wireless-mouse",
-      "bluetooth-mouse",
-      "macbook-air",
-      "macbook-pro",
-      "rechargeable",
-      "silent-mouse",
-      "pc",
-      "ipad",
-      "optical-mouse",
-      "dual-mode-switch",
-      "bluetooth-5-2",
-      "bt3-0",
-      "2-4ghz-usb-type-c",
-      "black"
-    ]
-},
-
-  {
-    id: "c6d3e2b1-5f7a-4c9d-9b2e-1f3a7d8c4b5f",
-    image: "images/products/250.webp",
-    name: "MOSISO 13.3'' Laptop Sleeve for MacBook & Laptops, Polyester, Black",
-    rating: {
-      stars: 4.0,
-      count: 1322
-    },
-    priceCents: 861,
-    keywords: [
-      "mosiso-laptop-case",
-      "13-13.3-inch",
-      "laptop-sleeve",
-      "macbook-air",
-      "macbook-pro",
-      "hp",
-      "dell",
-      "asus",
-      "lenovo",
-      "polyester",
-      "vertical-sleeve",
-      "pocket",
-      "black"
-    ]
-},
-
-  {
-    id: "f2b1d8c3-7a4e-4d9f-9c2a-5e1b7f3d8a4c",
-    image: "images/products/249.webp",
-    name: "UGREEN USB-C Hub 5-in-1, 4K HDMI, 100W PD, 3 USB-A, MacBook/iPad/iMac/Thinkpad",
-    rating: {
-      stars: 4.5,
-      count: 1427
-    },
-    priceCents: 584,
-    keywords: [
-      "ugreen-usb-c-hub",
-      "5-in-1",
-      "multiport-adapter",
-      "revodok-105",
-      "4k-hdmi",
-      "100w-power-delivery",
-      "3-usb-a",
-      "usb-c-dongle",
-      "macbook-pro",
-      "macbook-air",
-      "ipad-pro",
-      "imac",
-      "iphone-16-pro",
-      "xps",
-      "thinkpad"
-    ]
-},
-
-  {
-    id: "e5d3f1b7-6c4a-4f8d-9b2e-1f7c3d5a8b4f",
-    image: "images/products/248.webp",
-    name: "Laptop 15.6\" Gold 6500Y, 32GB RAM, 1TB SSD, FHD IPS, Bluetooth, WiFi, HDMI, Type-C",
-    rating: {
-      stars: 4.5,
-      count: 1923
-    },
-    priceCents: 32099,
-    keywords: [
-      "15.6-inch",
-      "laptop-computer",
-      "gold-6500y",
-      "beat-n5095",
-      "32gb-ram",
-      "1tb-ssd",
-      "1080p-fhd",
-      "ips-display",
-      "bluetooth",
-      "wifi",
-      "hdmi",
-      "type-c",
-      "38wh-battery"
-    ]
-},
-
-  {
-    id: "d3f7c1e4-8b5a-4c9d-9f2b-6e1a7c3d5f2b",
-    image: "images/products/247.webp",
-    name: "Laptop 15.6\" Gold 6500Y, 32GB RAM, 512GB SSD, FHD IPS, Win11, Type-C, HDMI, USB3.2, BT5.2",
-    rating: {
-      stars: 4.5,
-      count: 1894
-    },
-    priceCents: 25962,
-    keywords: [
-      "15.6-inch",
-      "laptop-computer",
-      "gold-6500y",
-      "32gb-ram",
-      "512gb-ssd",
-      "1080p-fhd",
-      "ips-display",
-      "win11",
-      "type-c",
-      "hdmi",
-      "usb3-2",
-      "bt5-2",
-      "wifi-5"
-    ]
-},
-
-  {
-    id: "c9f3e2a1-7b4d-4f6c-9d2e-5a7f1b8c3d4f",
-    image: "images/products/246.webp",
-    name: "Laptop 14\" Gold 6500Y, 16GB RAM, 256GB SSD, FHD IPS, Bluetooth, WiFi, HDMI, Type-C",
-    rating: {
-      stars: 4.5,
-      count: 1789
-    },
-    priceCents: 19999,
-    keywords: [
-      "laptop-computer",
-      "gold-6500y",
-      "beat-n5095",
-      "16gb-ram",
-      "256gb-ssd",
-      "14-inch-fhd",
-      "ips-display",
-      "bluetooth",
-      "wifi",
-      "hdmi",
-      "type-c",
-      "38wh-battery",
-      "thin-portable"
-    ]
-},
-
-  {
-    id: "e8d2c1b4-5f7a-4e6b-9c2d-1f3a7b8c9d2e",
-    image: "images/products/245.webp",
-    name: "2025 Gaming Laptop 15.6\" Ryzen 7 5700U, 16GB RAM, 512GB SSD, Radeon RX Vega 8, WiFi 6",
-    rating: {
-      stars: 4.5,
-      count: 1983
-    },
-    priceCents: 36499,
-    keywords: [
-      "2025-gaming-laptop",
-      "15.6-inch",
-      "amd-ryzen-7-5700u",
-      "8c-16t",
-      "16gb-ram",
-      "512gb-nvme-ssd",
-      "windows-11",
-      "radeon-rx-vega-8",
-      "wifi-6"
-    ]
-},
-
-  {
-    id: "f7c3d2b1-6a4e-4f7b-9c2a-5d1e8f3b7c9a",
-    image: "images/products/244.webp",
-    name: "USB-C 7-in-1 Multiport Hub, 4K HDMI, 100W PD, SD/TF, 3 USB-A",
-    rating: {
-      stars: 4.0,
-      count: 1521
-    },
-    priceCents: 593,
-    keywords: [
-      "usb-c-hub",
-      "7-in-1",
-      "multiport-adapter",
-      "4k-hdmi",
-      "100w-pd",
-      "sd-tf-card-reader",
-      "3-usb-a",
-      "usbc-docking-station",
-      "macbook",
-      "mac-pro",
-      "mac-air",
-      "dell",
-      "hp",
-      "asus",
-      "acer",
-      "type-c-laptops"
-    ]
-},
-
-  {
-    id: "d4f1b8c2-7e3a-4d6b-9f2c-1a9e5d7b8f3c",
-    image: "images/products/243.webp",
-    name: "USB-C Hub Docking Station, Dual HDMI, 100W PD, Multiport Adapter",
-    rating: {
-      stars: 4.5,
-      count: 1622
-    },
-    priceCents: 1599,
-    keywords: [
-      "usb-c-hub",
-      "docking-station",
-      "dual-monitor",
-      "laptop",
-      "macbook-air-pro",
-      "dock-adapter",
-      "multiport-dongle",
-      "2-hdmi",
-      "4k-60hz",
-      "100w-pd",
-      "usba-3-0",
-      "usbc"
-    ]
-},
-
-  {
-    id: "b8f3d1c2-5e7a-4f6b-9c8d-3a7e1d9b4f2a",
-    image: "images/products/242.webp",
-    name: "15.6\" Student Laptop, 16GB RAM, 512GB SSD, N5095, Silver",
-    rating: {
-      stars: 4.5,
-      count: 1743
-    },
-    priceCents: 19972,
-    keywords: [
-      "15.6-inch",
-      "fhd-ips",
-      "student-laptop",
-      "16gb-ram",
-      "512gb-ssd",
-      "intel-celeron-n5095",
-      "backlit-keyboard",
-      "fingerprint-reader",
-      "win-11",
-      "numpad",
-      "silver"
-    ]
-},
-
-  {
-    id: "a1c7d9e3-4b2f-4f6a-9b1c-6d8f3e7b5a1d",
-    image: "images/products/241.webp",
-    name: "Wireless Bluetooth Mouse, Dual Mode, Silver",
-    rating: {
-      stars: 4.5,
-      count: 1321
-    },
-    priceCents: 394,
-    keywords: [
-      "wireless-mouse",
-      "bluetooth-mouse",
-      "macbook",
-      "laptop",
-      "computer",
-      "pc",
-      "rechargeable",
-      "dual-mode",
-      "bluetooth-5-2",
-      "bt3-0",
-      "2-4ghz-usb-a",
-      "2-4ghz-usb-type-c",
-      "silver"
-    ]
-},
-
-  {
-    id: "d2f5b7a4-6e1c-4b3e-9f8a-3c7e9d1b5f2a",
-    image: "images/products/240.webp",
-    name: "15.6'' Laptop, 8GB RAM, 256GB SSD, Gold 6500Y, FHD",
-    rating: {
-      stars: 4.5,
-      count: 1715
-    },
-    priceCents: 19992,
-    keywords: [
-      "laptop-computer",
-      "8gb-ram",
-      "256gb-ssd",
-      "gold-6500y",
-      "beat-n5095",
-      "15.6-inch",
-      "fhd-ips",
-      "type-c",
-      "hdmi",
-      "usb3-2",
-      "bt5-2",
-      "wifi-5"
-    ]
-},
-
-
-  
-  {
-    id: "9c3f4b11-5ad2-4f0a-9c6a-2f7bd8ea9127",
-    image: "images/products/239.webp",
-    name: "OTVOC 15.6'' Laptop, 4GB RAM, 128GB SSD, Core CPU, FHD",
-    rating: {
-      stars: 4.5,
-      count: 1822
-    },
-    priceCents: 9974,
-    keywords: [
-      "otvoc-laptop",
-      "15-6-inch",
-      "windows-11",
-      "core-cpu",
-      "4gb-ram",
-      "128gb-ssd",
-      "fhd-ips",
-      "students",
-      "business"
-    ]
-},
-
-  {
-    id: "1f6b7c3d-9ab4-4e2b-8f32-7c1d2c448c91",
-    image: "images/products/238.webp",
-    name: "SGIN 15.6'' Laptop, 16GB RAM, 1TB SSD, Core i3, Portable",
-    rating: {
-      stars: 4.0,
-      count: 1432
-    },
-    priceCents: 19999,
-    keywords: [
-      "sgin-laptop",
-      "15-6-inch",
-      "16gb-ram",
-      "1024gb-ssd",
-      "core-i3",
-      "portable-notebook",
-      "wifi-6",
-      "7000mah"
-    ]
-},
-
-  {
-    id: "c7e2f19b-1c42-4d72-92ab-9d73f3bb7f3a",
-    image: "images/products/237.webp",
-    name:"14'' Laptop, Gold 6500Y, 16GB RAM, 256GB SSD, FHD IPS, Portable",
-    rating: {
-      stars: 4.5,
-      count: 1677
-    },
-    priceCents: 19999,
-    keywords: [
-      "laptop-computer",
-      "gold-6500y",
-      "16gb-ram",
-      "256gb-ssd",
-      "14-inch-fhd",
-      "ips-display",
-      "type-c-pd",
-      "thin-portable",
-      "beat-n5095"
-    ]
-},
-
-  {
-    id: "f3c81e7a-91b4-4ce0-b1b7-6c2e709ac4df",
-    image: "images/products/236.webp",
-    name: "2025 15.6'' Win11 Laptop, 16GB RAM, 1TB SSD, Intel Quad-Core, FHD IPS",
-    rating: {
-      stars: 4.0,
-      count: 1588
-    },
-    priceCents: 18983,
-    keywords: [
-      "2025-laptop",
-      "15.6-windows-11",
-      "16gb-ram",
-      "1tb-ssd",
-      "intel-quad-core",
-      "1080p-ips",
-      "backlit-keyboard",
-      "fingerprint",
-      "webcam",
-      "wifi-6",
-      "bt5.2"
-    ]
-},
-
-  {
-    id: "b7f0e1ac-2c54-4b7e-8f1c-9d73c0fe9812",
-    image: "images/products/235.webp",
-    name: "15.6'' Laptop, AMD 3020e, 8GB RAM, 256GB SSD, FHD, Win11 Pro",
-    rating: {
-      stars: 4.5,
-      count: 1433
-    },
-    priceCents: 19998,
-    keywords: [
-      "15.6-laptop",
-      "amd-3020e",
-      "8gb-ram",
-      "256gb-ssd",
-      "fhd-ips",
-      "windows-11-pro",
-      "office-2024",
-      "type-c",
-      "wifi-5",
-      "lightweight",
-      "student-laptop",
-      "business-laptop"
-    ]
-},
-
-  {
-    id: "f8c2d0e4-9b21-4f0b-9c53-0e7adf0cc8b1",
-    image: "images/products/234.webp",
-    name: "2025 15.6'' Laptop, 32GB RAM, 1TB SSD, Quad-Core, FHD, Win11",
-    rating: {
-      stars: 4.0,
-      count: 1822
-    },
-    priceCents: 19982,
-    keywords: [
-      "2025-laptop",
-      "15.6-inch",
-      "windows-11",
-      "1tb-ssd",
-      "32gb-ram",
-      "quad-core",
-      "1080p-fhd",
-      "backlit-keyboard",
-      "fingerprint",
-      "mini-hdmi",
-      "laptop",
-      "tf-card"
-    ]
-},
-
-  {
-    id: "b4e1b9ac-3c0f-4f67-8d6c-9a7dbd7e51c2",
-    image: "images/products/233.webp",
-    name: "15.6\" Laptop Pentium 6500Y, 32GB RAM, 512GB SSD, Win11 Pro",
-    rating: {
-      stars: 4.5,
-      count: 1433
-    },
-    priceCents: 17900,
-    keywords: [
-      "15.6-laptop",
-      "32gb-ram",
-      "512gb-ssd",
-      "pentium-gold-6500y",
-      "win11-pro",
-      "fhd-ips",
-      "type-c",
-      "pd-charging",
-      "space-gray"
-    ]
-},
-
-  {
-    id: "c7f92be1-4df8-4c3e-9b1e-2fa4c76e9d31",
-    image: "images/products/232.webp",
-    name: "SGIN 15.6\" Windows 11 Laptop i3, 16GB RAM, 1TB SSD",
-    rating: {
-      stars: 4.0,
-      count: 1877
-    },
-    priceCents: 19982,
-    keywords: [
-      "sgin-laptop",
-      "15.6-inch",
-      "win-11",
-      "16gb-ram",
-      "1024gb-ssd",
-      "core-i3-10100y",
-      "3.9ghz",
-      "backlit-keyboard",
-      "wifi-6",
-      "ips-fhd",
-      "hdmi",
-      "type-c"
-    ]
-},
-
-  {
-    id: "a3e6d9f2-7bf3-4bd2-9fd8-51c828f7c5b1",
-    image: "images/products/231.webp",
-    name: "OTVOC 15.6\" Windows 11 Laptop",
-    rating: {
-      stars: 4.5,
-      count: 1422
-    },
-    priceCents: 9999,
-    keywords: [
-      "otvoc-laptop",
-      "15.6-inch",
-      "windows-11",
-      "core-cpu",
-      "3.4ghz",
-      "4gb-ram",
-      "128gb-ssd",
-      "2tb",
-      "fhd-ips",
-      "1920x1080",
-      "students",
-      "business"
-    ]
-},
-
-  {
-    id: "f9b27c44-1d8a-4c92-b7ef-647aaf31c92e",
-    image: "images/products/230.webp",
-    name: "2025 Ryzen7 15.6\" Laptop",
-    rating: {
-      stars: 4.0,
-      count: 1874
-    },
-    priceCents: 39984,
-    keywords: [
-      "2025-laptop",
-      "amd-ryzen7",
-      "8-core",
-      "4.3ghz",
-      "amd-radeon",
-      "16gb-ddr4",
-      "512gb-ssd",
-      "wifi6",
-      "15.6-inch",
-      "ips-display",
-      "type-c",
-      "micro-sd",
-      "webcam",
-      "windows-11",
-      "slim-laptop"
-    ]
-},
-
-  {
-    id: "e7d3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/229.webp",
-    name:"14.1\" Quad Core Laptop Notebook",
-    rating: {
-      stars: 4.5,
-      count: 1642
-    },
-    priceCents: 7999,
-    keywords: [
-      "14.1-inch",
-      "laptop-computer",
-      "quad-core",
-      "notebook",
-      "windows-11",
-      "6GB-DDR4",
-      "256GB-SSD",
-      "2.4-5G-WiFi",
-      "BT4.0",
-      "HDMI",
-      "USB-3.0",
-      "large-capacity-battery"
-    ]
-},
-
-  {
-    id: "d9f3c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/228.webp",
-    name: "14\" Triple Laptop Screen Extender",
-    rating: {
-      stars: 5.0,
-      count: 1723
-    },
-    priceCents: 21299,
-    keywords: [
-      "14-inch",
-      "triple-laptop-screen-extender",
-      "1080P",
-      "FHD",
-      "IPS",
-      "ultra-slim",
-      "portable",
-      "dual-monitor",
-      "USB-C",
-      "HDMI",
-      "plug-play",
-      "triple-display",
-      "MacOS",
-      "Windows",
-      "13-17.3-inch-laptops"
-    ]
-},
-
-  {
-    id: "c7f3d1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/227.webp",
-    name: "HP 14\" Laptop i3-8GB 256GB SSD",
-    rating: {
-      stars: 5.0,
-      count: 1786
-    },
-    priceCents: 19449,
-    keywords: [
-      "hp",
-      "14-inch",
-      "laptop",
-      "HD-display",
-      "intel-core-i3-N305",
-      "8GB-RAM",
-      "256GB-SSD",
-      "intel-UHD-graphics",
-      "windows-11-home",
-      "S-mode",
-      "natural-silver",
-      "14-ep0299nr"
-    ]
-},
-
-  {
-    id: "f8d3c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/226.webp",
-    name: "2025 15.6\" Laptop 32GB RAM 1TB SSD Win11",
-    rating: {
-      stars: 5.0,
-      count: 1875
-    },
-    priceCents: 19999,
-    keywords: [
-      "2025",
-      "15.6-inch",
-      "laptop",
-      "windows-11",
-      "1TB-SSD",
-      "32GB-Dual-Channel-RAM",
-      "quad-core-processor",
-      "1080p-FHD-display",
-      "backlit-keyboard",
-      "fingerprint",
-      "webcam",
-      "mini-HDMI",
-      "WiFi5",
-      "BT5"
-    ]
-},
-
-  {
-    id: "d7f3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/225.webp",
-    name: "HP Stream 14\" Laptop 16GB RAM 416GB Storage N150",
-    rating: {
-      stars: 5.0,
-      count: 1804
-    },
-    priceCents: 19900,
-    keywords: [
-      "hp-stream",
-      "14-inch",
-      "HD-BrightView",
-      "laptop",
-      "intel-processor-N150",
-      "16GB-RAM",
-      "416GB-storage",
-      "128GB-eMMC",
-      "288GB-docking-station",
-      "intel-UHD-graphics",
-      "720p-camera",
-      "Wi-Fi",
-      "office-365",
-      "win-11-s",
-      "gold"
-    ]
-},
-
-  {
-    id: "c9f3d1a5-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/224.webp",
-    name: "AOC 15.6'' Laptop 16GB RAM 512GB SSD N95",
-    rating: {
-      stars: 5.0,
-      count: 1901
-    },
-    priceCents: 24199,
-    keywords: [
-      "aoc",
-      "2025-laptop",
-      "15.6-inch",
-      "FHD-screen",
-      "laptop-computer",
-      "work-laptops",
-      "intel-N95",
-      "16GB-RAM",
-      "512GB-SSD",
-      "windows-11",
-      "light",
-      "thin",
-      "metal-shell",
-      "webcam",
-      "Type-C",
-      "USB-3.2"
-    ]
-},
-
-  {
-    id: "e6f3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/223.webp",
-    name: "SGIN 15.6'' Laptop 16GB RAM 1TB SSD N5100",
-    rating: {
-      stars: 5.0,
-      count: 1884
-    },
-    priceCents: 23498,
-    keywords: [
-      "sgin",
-      "15.6-inch",
-      "laptop",
-      "computer",
-      "windows-11",
-      "16GB-RAM",
-      "1024GB-SSD",
-      "celeron-N5100",
-      "WiFi-6",
-      "IPS",
-      "FHD",
-      "180-degree-viewing",
-      "53.2WH-battery",
-      "HDMI",
-      "cooling-fan",
-      "business",
-      "students"
-    ]
-},
-
-  {
-    id: "f9d3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/222.webp",
-    name: "2025 15.6'' Laptop 16GB RAM 512GB SSD N95 Pro",
-    rating: {
-      stars: 5.0,
-      count: 1872
-    },
-    priceCents: 21072,
-    keywords: [
-      "2025",
-      "laptop",
-      "15.6-inch",
-      "IPS",
-      "windows-11-pro",
-      "quad-core-N95",
-      "16GB-DDR4",
-      "512GB-SSD",
-      "metal-shell",
-      "BT5.0",
-      "5G-WiFi",
-      "USB3.2",
-      "Type-C",
-      "webcam",
-      "38Wh-battery"
-    ]
-},
-
-  {
-    id: "d8f3c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/221.webp",
-    name: "2025 17.3'' Laptop 16GB RAM 512GB SSD N95",
-    rating: {
-      stars: 5.0,
-      count: 1854
-    },
-    priceCents: 20099,
-    keywords: [
-      "2025",
-      "new-laptop",
-      "17.3-inch",
-      "FHD-display",
-      "quad-core",
-      "12th-alder-lake-N95",
-      "16GB-RAM",
-      "512GB-ROM",
-      "traditional-laptop",
-      "computer",
-      "6000Mah-battery",
-      "silver"
-    ]
-},
-
-  {
-    id: "e9f3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/220.webp",
-    name: "Naclud 15.6'' Laptop 16GB RAM 1TB SSD i3",
-    rating: {
-      stars: 5.0,
-      count: 1893
-    },
-    priceCents: 50099,
-    keywords: [
-      "naclud",
-      "15.6-inch",
-      "laptop",
-      "computer",
-      "windows-11",
-      "16GB-RAM",
-      "1024GB-SSD",
-      "core-i3",
-      "CPU",
-      "backlit-keyboard",
-      "53.2WH-battery",
-      "WiFi-6",
-      "IPS",
-      "FHD-display",
-      "180-degree-viewing",
-      "HDMI",
-      "Type-C"
-    ]
-},
-
-  {
-    id: "c8d2f1a7-6b4e-4f8c-9d3b-1e7f5a3b8d4c",
-    image: "images/products/219.webp",
-    name: "HP 14'' Laptop 4GB RAM 64GB SSD",
-    rating: {
-      stars: 5.0,
-      count: 1752
-    },
-    priceCents: 9845,
-    keywords: [
-      "hp",
-      "14-laptop",
-      "intel-celeron-N4020",
-      "4GB-RAM",
-      "64GB-storage",
-      "14-inch",
-      "micro-edge",
-      "HD-display",
-      "windows-11",
-      "thin",
-      "portable",
-      "4K-graphics",
-      "microsoft-365",
-      "snowflake-white"
-    ]
-},
-
-  {
-    id: "d9f3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d6c",
-    image: "images/products/218.webp",
-    name: "2025 17.3'' Laptop 16GB RAM 512GB SSD",
-    rating: {
-      stars: 5.0,
-      count: 1847
-    },
-    priceCents: 23499,
-    keywords: [
-      "2025",
-      "new-laptop",
-      "17.3-inch",
-      "FHD-display",
-      "quad-core",
-      "12th-alder-lake-N95",
-      "16GB-RAM",
-      "512GB-ROM",
-      "traditional-laptop",
-      "computer",
-      "6000Mah-battery",
-      "silver"
-    ]
-},
-
-  {
-    id: "f8d3c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d4c",
-    image: "images/products/217.webp",
-    name: "SGIN 15.6'' Laptop 16GB RAM 1TB SSD Win11",
-    rating: {
-      stars: 5.0,
-      count: 1823
-    },
-    priceCents: 20056,
-    keywords: [
-      "sgin",
-      "15.6-inch",
-      "laptop",
-      "computer",
-      "windows-11",
-      "16GB-RAM",
-      "1024GB-SSD",
-      "celeron-N5100",
-      "WiFi-6",
-      "IPS",
-      "FHD",
-      "180-degree-viewing",
-      "53.2WH-battery",
-      "HDMI",
-      "cooling-fan",
-      "business",
-      "students"
-    ]
-},
-
-  {
-    id: "c7d3f1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/216.avif",
-    name: "10'' 6GB RAM Tablet with Stylus",
-    rating: {
-      stars: 5.0,
-      count: 1623
-    },
-    priceCents: 5099,
-    keywords: [
-      "tablet",
-      "10-inch",
-      "6GB-RAM",
-      "128GB-ROM",
-      "1TB-expansion",
-      "quad-core",
-      "2.4G/5G",
-      "WiFi",
-      "IPS",
-      "touch-screen",
-      "stylus",
-      "study",
-      "chase-drama",
-      "game",
-      "christmas-gift",
-      "pad"
-    ]
-},
-
-  {
-    id: "e8f3c1a7-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/215.avif",
-    name: "Fangzheng 15.6'' Ultra-thin Laptop",
-    rating: {
-      stars: 5.0,
-      count: 1784
-    },
-    priceCents: 10010,
-    keywords: [
-      "fangzheng",
-      "15.6-inch",
-      "ultra-thin",
-      "lightweight",
-      "office",
-      "study",
-      "laptop",
-      "pentium-6500Y",
-      "32GB-RAM",
-      "SO-DIMM-2",
-      "512GB-SSD",
-      "dual-screen",
-      "4K",
-      "high-definition",
-      "stereo",
-      "four-speakers",
-      "TYPE-C",
-      "PD",
-      "fast-charging"
-    ]
-},
-
-  {
-    id: "f6c3d1a7-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/214.webp",
-    name: "Zaples Baby Non-Slip Ankle Socks for Toddlers Boys & Girls",
-    rating: {
-      stars: 4.5,
-      count: 1502
-    },
-    priceCents: 1067,
-    keywords: [
-      "zaples",
-      "baby",
-      "non-slip",
-      "grip",
-      "ankle",
-      "socks",
-      "non-skid",
-      "soles",
-      "infants",
-      "toddlers",
-      "kids",
-      "boys",
-      "girls"
-    ]
-},
-
-  {
-    id: "d3f2c1a5-5b4e-4f8c-9d3b-1e7f5a3b8d4c",
-    image: "images/products/213.webp",
-    name: "UTTPLL Toddler Magic Stretch Mittens",
-    rating: {
-      stars: 4.0,
-      count: 1275
-    },
-    priceCents: 299,
-    keywords: [
-      "uttpll",
-      "toddler",
-      "magic",
-      "stretch",
-      "gloves",
-      "mittens",
-      "multicolor",
-      "soft",
-      "knit",
-      "warm",
-      "kids",
-      "thick",
-      "cold",
-      "boys",
-      "girls",
-      "supplies"
-    ]
-},
-
-  {
-    id: "c8f2d1a7-6b4e-4f9a-8c2d-1e7f5a3b8d6c",
-    image: "images/products/212.webp",
-    name: "Fleece Lined Baby Mittens for Boys & Girls",
-    rating: {
-      stars: 4.5,
-      count: 1419
-    },
-    priceCents: 1162,
-    keywords: [
-      "fleece",
-      "lined",
-      "mittens",
-      "baby",
-      "boys",
-      "girls",
-      "toddler",
-      "little",
-      "kids",
-      "winter",
-      "gloves",
-      "children"
-    ]
-},
-
-  {
-    id: "f5d3c1a7-5b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/211.webp",
-    name: "Waterproof Toddler Winter Mittens",
-    rating: {
-      stars: 4.0,
-      count: 1387
-    },
-    priceCents: 599,
-    keywords: [
-      "toddler",
-      "gloves",
-      "waterproof",
-      "winter",
-      "mittens",
-      "kids",
-      "snow",
-      "warm",
-      "baby",
-      "boys",
-      "girls"
-    ]
-},
-
-  {
-    id: "d4f2c1a7-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/210.webp",
-    name: "Kids Winter Beanie & Mittens Set",
-    rating: {
-      stars: 4.5,
-      count: 1462
-    },
-    priceCents: 990,
-    keywords: [
-      "kids",
-      "winter",
-      "beanie",
-      "hat",
-      "mittens",
-      "set",
-      "warm",
-      "fleece",
-      "baby",
-      "toddler",
-      "knitted",
-      "gloves",
-      "boys",
-      "girls"
-    ]
-},
-
-  {
-    id: "e7c3d1a5-5b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/209.webp",
-    name: "Toddlers 9-Pair Grip Socks",
-    rating: {
-      stars: 4.5,
-      count: 1521
-    },
-    priceCents: 1234,
-    keywords: [
-      "toddlers",
-      "kids",
-      "grips",
-      "socks",
-      "warm",
-      "thermal",
-      "winter",
-      "thick",
-      "anti-slip",
-      "non-skid",
-      "ankle",
-      "crew",
-      "9-pairs",
-      "baby",
-      "boys",
-      "girls",
-      "infants"
-    ]
-},
-
-  {
-    id: "c5f2d1a7-6b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/208.webp",
-    name: "HonestBaby 10-Pack Wash Cloths",
-    rating: {
-      stars: 5.0,
-      count: 1634
-    },
-    priceCents: 1499,
-    keywords: [
-      "honestbaby",
-      "10-pack",
-      "terry",
-      "wash",
-      "cloths",
-      "gift-box",
-      "100%-organic",
-      "cotton",
-      "infant",
-      "baby",
-      "boys",
-      "girls",
-      "rainbow-blues",
-      "one-size"
-    ]
-},
-
-  {
-    id: "f3d1c2a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/207.webp",
-    name: "Dinosaur Ear Beanie Hat",
-    rating: {
-      stars: 4.5,
-      count: 1417
-    },
-    priceCents: 999,
-    keywords: [
-      "children",
-      "dinosaur",
-      "ear",
-      "protection",
-      "hat",
-      "beanie",
-      "boys",
-      "girls",
-      "unisex",
-      "winter"
-    ]
-},
-
-  {
-    id: "d7f2c1a5-6b4e-4f8c-9d3b-1e7f5a3b8d4c",
-    image: "images/products/206.webp",
-    name: "UTTPLL Kids Glove Clips",
-    rating: {
-      stars: 4.0,
-      count: 1284
-    },
-    priceCents: 399,
-    keywords: [
-      "uttpll",
-      "glove",
-      "clips",
-      "stainless-steel",
-      "gloves",
-      "kids",
-      "babys",
-      "toddlers",
-      "winter",
-      "boys",
-      "girls",
-      "elastic",
-      "mitten"
-    ]
-},
-
-  {
-    id: "e4c3d1a7-5b4e-4f8c-9d2b-1e7f5a3b8d6c",
-    image: "images/products/205.webp",
-    name: "Toddler Non-Slip Grip Socks",
-    rating: {
-      stars: 4.5,
-      count: 1452
-    },
-    priceCents: 999,
-    keywords: [
-      "toddler",
-      "grip",
-      "socks",
-      "non-slip",
-      "crew",
-      "cute",
-      "seamless",
-      "cotton",
-      "baby",
-      "boys",
-      "girls",
-      "infants",
-      "kids",
-      "9-pairs"
-    ]
-},
-
-  {
-    id: "c9d2f1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/204.webp",
-    name: "Toddler Magic Stretch Mittens",
-    rating: {
-      stars: 4.0,
-      count: 1369
-    },
-    priceCents: 599,
-    keywords: [
-      "satinior",
-      "3-pairs",
-      "toddler",
-      "magic",
-      "stretch",
-      "mittens",
-      "little-girls",
-      "soft",
-      "knit",
-      "baby",
-      "boys",
-      "winter",
-      "knitted",
-      "gloves"
-    ]
-},
-
-  {
-    id: "f2d3c1a5-7b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/203.webp",
-    name: "Resinta Toddler Shirt & Legging Set",
-    rating: {
-      stars: 4.5,
-      count: 1487
-    },
-    priceCents: 964,
-    keywords: [
-      "resinta",
-      "baby",
-      "toddler",
-      "boys",
-      "girls",
-      "cotton",
-      "long-sleeve",
-      "shirt",
-      "legging",
-      "set",
-      "kids",
-      "ribbed",
-      "basic",
-      "pant",
-      "2-piece",
-      "daily-life"
-    ]
-},
-
-  {
-    id: "d5c3f1a7-6b4e-4f9a-8c2d-1e7f5b3a9d4c",
-    image: "images/products/202.webp",
-    name: "Baby Non-Slip Ankle Socks",
-    rating: {
-      stars: 4.0,
-      count: 1345
-    },
-    priceCents: 499,
-    keywords: [
-      "5-pairs",
-      "baby",
-      "boys",
-      "girls",
-      "non-slip",
-      "grip",
-      "ankle",
-      "socks",
-      "infant",
-      "anti-skid",
-      "sticky"
-    ]
-},
-
-  {
-    id: "c7f2d1a5-5b4e-4f8c-9d3b-1e7f5a3b8d6c",
-    image: "images/products/201.webp",
-    name: "Baby Beanie Knit Ski Hat with Cute Face for Girls Boys 0-7 Years",
-    rating: {
-      stars: 4.0,
-      count: 1298
-    },
-    priceCents: 499,
-    keywords: [
-      "baby",
-      "beanie",
-      "knit",
-      "ski",
-      "hat",
-      "cute",
-      "face",
-      "girls",
-      "boys",
-      "0-7-years"
-    ]
-},
-
-  {
-    id: "f3d2c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/200.webp",
-    name:"Baby Fleece Mittens",
-    rating: {
-      stars: 4.0,
-      count: 1327
-    },
-    priceCents: 399,
-    keywords: [
-      "fleece",
-      "lined",
-      "mittens",
-      "baby",
-      "boys",
-      "girls",
-      "toddler",
-      "little",
-      "kids",
-      "winter",
-      "warm",
-      "gloves"
-    ]
-},
-
-  {
-    id: "d4f1c3a7-5b6e-4f8c-9d2b-1e7f5a3b8d6c",
-    image: "images/products/199.webp",
-    name: "American Trends Toddler Mittens",
-    rating: {
-      stars: 4.0,
-      count: 1268
-    },
-    priceCents: 399,
-    keywords: [
-      "american",
-      "trends",
-      "lined",
-      "fleece",
-      "toddler",
-      "mittens",
-      "winter",
-      "warm",
-      "gloves",
-      "child",
-      "ski",
-      "waterproof",
-      "snow",
-      "baby",
-      "boys",
-      "girls"
-    ]
-},
-
-  {
-    id: "b7d3f1c5-6a4e-4f9a-8c2d-1e5f7b3a9d4c",
-    image: "images/products/198.webp",
-    name: "FURTALK Satin Beanie",
-    rating: {
-      stars: 4.5,
-      count: 1492
-    },
-    priceCents: 988,
-    keywords: [
-      "furtalk",
-      "toddler",
-      "beanie",
-      "satin",
-      "lined",
-      "baby",
-      "boys",
-      "girls",
-      "winter",
-      "hats",
-      "pom-pom",
-      "beanies",
-      "kids"
-    ]
-},
-
-  {
-    id: "e5c2d1a7-6b4e-4f8c-9d3b-1e7f5a3b8d4c",
-    image: "images/products/197.webp",
-    name: "Toddler Knit Sweater",
-    rating: {
-      stars: 4.0,
-      count: 1289
-    },
-    priceCents: 299,
-    keywords: [
-      "baby",
-      "girl",
-      "boy",
-      "toddler",
-      "knit",
-      "sweater",
-      "cute",
-      "round-neck",
-      "long-sleeve",
-      "blouse",
-      "pullover",
-      "oversized",
-      "sweatshirt",
-      "warm",
-      "kids",
-      "tops"
-    ]
-},
-
-  {
-    id: "c8f3d1a7-5b4e-4f9a-8c2d-1e5f7b3a9d6c",
-    image: "images/products/196.webp",
-    name: "Toddler Swimsuit Set",
-    rating: {
-      stars: 4.5,
-      count: 1537
-    },
-    priceCents: 1362,
-    keywords: [
-      "toddler",
-      "infant",
-      "baby",
-      "boys",
-      "swimsuit",
-      "kids",
-      "rash-guard",
-      "one-piece",
-      "newborn",
-      "zipper",
-      "bathing-suit",
-      "swimwear",
-      "hat"
-    ]
-},
-
-  {
-    id: "f2d3c1a5-6b4e-4f8c-9d2b-1e7f5a3b8d6c",
-    image: "images/products/195.webp",
-    name:"Tame Baby Hair Gel",
-    rating: {
-      stars: 4.5,
-      count: 1478
-    },
-    priceCents: 892,
-    keywords: [
-      "t-is-for-tame",
-      "taming",
-      "gel",
-      "boys",
-      "girls",
-      "baby",
-      "hair",
-      "styling",
-      "frizz",
-      "control",
-      "flyaways",
-      "natural",
-      "toddler",
-      "kids",
-      "hair-tamer",
-      "flexible",
-      "hold",
-      "3.38fl-oz",
-      "1-pack"
-    ]
-},
-
-  {
-    id: "d3f8c1a5-5b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/194.webp",
-    name: "12-Pack Toddler Grip Socks",
-    rating: {
-      stars: 4.0,
-      count: 1395
-    },
-    priceCents: 799,
-    keywords: [
-      "jakidar",
-      "12-pack",
-      "baby",
-      "toddler",
-      "socks",
-      "non-slip",
-      "grip",
-      "cotton",
-      "crew",
-      "boys",
-      "girls",
-      "infants",
-      "kids"
-    ]
-},
-
-  {
-    id: "e7c1d3f5-6b4e-4f9a-8c2d-1e5f7b3a9d6c",
-    image: "images/products/193.webp",
-    name: "Toddler Sock Shoes Non-Slip",
-    rating: {
-      stars: 4.5,
-      count: 1541
-    },
-    priceCents: 1083,
-    keywords: [
-      "morendl",
-      "toddler",
-      "sock",
-      "shoes",
-      "baby",
-      "walking",
-      "infant",
-      "slippers",
-      "boys",
-      "girls",
-      "non-slip",
-      "sneakers"
-    ]
-},
-
-  {
-    id: "c5d3f1a7-7b4e-4f8c-9d2b-1e7f5a3b8d6c",
-    image: "images/products/192.webp",
-    name:"Baby Grip Socks 12-Pack",
-    rating: {
-      stars: 4.5,
-      count: 1427
-    },
-    priceCents: 600,
-    keywords: [
-      "baby",
-      "girls",
-      "boys",
-      "toddlers",
-      "kids",
-      "grips",
-      "socks",
-      "12-pairs",
-      "non-slip",
-      "anti-skid",
-      "ankle",
-      "no-show",
-      "funny",
-      "cotton",
-      "grippers"
-    ]
-},
-
-  {
-    id: "d8f2c1a5-6b4e-4f9a-8c3d-1e5b7a2f9d6c",
-    image: "images/products/191.webp",
-    name: "Toddler Fleece Joggers",
-    rating: {
-      stars: 4.0,
-      count: 1362
-    },
-    priceCents: 853,
-    keywords: [
-      "toddler",
-      "fleece",
-      "lined",
-      "warm",
-      "joggers",
-      "baby",
-      "boys",
-      "girls",
-      "thermal",
-      "winter",
-      "sweatpants",
-      "kids",
-      "hiking",
-      "pants"
-    ]
-},
-
-  {
-    id: "f6c3d1a7-5b4e-4f8c-9d2b-1e7f5a3b8d4c",
-    image: "images/products/190.webp",
-    name: "Baby Beanie 3-Pack",
-    rating: {
-      stars: 4.5,
-      count: 1475
-    },
-    priceCents: 1342,
-    keywords: [
-      "baby",
-      "beanie",
-      "hat",
-      "3-packs",
-      "cute",
-      "smiley",
-      "face",
-      "toddler",
-      "girls",
-      "boys",
-      "winter",
-      "kids",
-      "cold-weather"
-    ]
-},
-
-  {
-    id: "d2f7c1a5-6b4e-4f9a-8c3d-1e5b7a2f9d4c",
-    image: "images/products/189.webp",
-    name: "Sharpty Kids Hangers",
-    rating: {
-      stars: 4.5,
-      count: 1389
-    },
-    priceCents: 752,
-    keywords: [
-      "sharpty",
-      "kids",
-      "plastic",
-      "hangers",
-      "children",
-      "baby",
-      "toddler",
-      "child",
-      "clothes",
-      "everyday",
-      "standard",
-      "use",
-      "boys",
-      "girls",
-      "closet",
-      "clothing",
-      "pants",
-      "coats",
-      "white",
-      "20-pack"
-    ]
-},
-
-  {
-    id: "b9d3f1c5-6a4e-4f8b-9d2c-1e7f5a3b8d4c",
-    image: "images/products/188.webp",
-    name: "Personalized Baby Blanket",
-    rating: {
-      stars: 5.0,
-      count: 1748
-    },
-    priceCents: 2190,
-    keywords: [
-      "personalized",
-      "baby",
-      "blanket",
-      "name",
-      "handmade",
-      "100%-organic",
-      "cotton",
-      "newborn",
-      "gift",
-      "custom",
-      "knit",
-      "boys",
-      "girls",
-      "kids",
-      "baby-shower",
-      "petal-pink",
-      "petal-whispers"
-    ]
-},
-
-  {
-    id: "e4b7c2d1-5f3a-4f8c-9d6b-1a3f7e5b8c2d",
-    image: "images/products/187.webp",
-    name: "ZOORON Toddler Beanie",
-    rating: {
-      stars: 4.0,
-      count: 1245
-    },
-    priceCents: 342,
-    keywords: [
-      "zooron",
-      "toddler",
-      "beanie",
-      "baby",
-      "boys",
-      "girls",
-      "beanies",
-      "kids",
-      "winter",
-      "hats",
-      "children",
-      "knit",
-      "warm",
-      "caps",
-      "soft",
-      "ski"
-    ]
-},
-
-  {
-    id: "c8d3f1a5-7b4e-4f9a-8c2d-1e5f7b3a9d6c",
-    image: "images/products/186.webp",
-    name: "Hat Warm Fleece Lined Knit Beanies Kids Hats for 3-36 Months",
-    rating: {
-      stars: 4.0,
-      count: 1312
-    },
-    priceCents: 499,
-    keywords: [
-      "baby",
-      "winter",
-      "beanie",
-      "hat",
-      "boys",
-      "girls",
-      "2-pack",
-      "toddler",
-      "warm",
-      "fleece",
-      "lined",
-      "knit",
-      "beanies",
-      "kids",
-      "3-36-months"
-    ]
-},
-
-  {
-    id: "b5f2c7d1-4a6e-4f8b-9d3c-2e7a5f1b8d4c",
-    image: "images/products/185.webp",
-    name: "Hahaland 5-Language Learning Tablet for Toddlers",
-    rating: {
-      stars: 5.0,
-      count: 1623
-    },
-    priceCents: 1214,
-    keywords: [
-      "hahaland",
-      "5-language",
-      "learning",
-      "tablet",
-      "toddlers",
-      "1-3",
-      "new-version",
-      "educational",
-      "toy",
-      "sounds",
-      "speech",
-      "therapy",
-      "early",
-      "development",
-      "boys",
-      "girls",
-      "baby",
-      "toddler",
-      "ages-1-2-3"
-    ]
-},
-
-  {
-    id: "d8f1c3a7-6b4e-4f9a-8c2d-1e5b7a3f9d6c",
-    image: "images/products/184.webp",
-    name: "Jimonda Baby Pajamas",
-    rating: {
-      stars: 4.5,
-      count: 1567
-    },
-    priceCents: 1842,
-    keywords: [
-      "jimonda",
-      "baby",
-      "boys",
-      "girls",
-      "pajama",
-      "sets",
-      "kid",
-      "soft",
-      "sleepwear",
-      "rayon",
-      "bamboo",
-      "short-sleeve",
-      "4-piece",
-      "cool",
-      "jammies",
-      "18M-12Y"
-    ]
-},
-
-  {
-    id: "a1d4f7c2-5b3e-4f8a-9d6c-2e1f7b5a8d3c",
-    image: "images/products/183.webp",
-    name: "Bamboo Toddler Pajamas",
-    rating: {
-      stars: 4.5,
-      count: 1512
-    },
-    priceCents: 1599,
-    keywords: [
-      "bamboo",
-      "viscose",
-      "toddler",
-      "pajamas",
-      "boys",
-      "girls",
-      "baby",
-      "12M-8Y",
-      "pjs",
-      "sets",
-      "kids",
-      "2pcs",
-      "snug",
-      "fit",
-      "long-sleeve",
-      "sleepwear"
-    ]
-},
-
-  {
-    id: "f6c2d1a8-7b4e-4f9a-8c3d-2e5f7b1a9d4c",
-    image: "images/products/182.webp",
-    name: "Vidsel Toddler Beanie Hat",
-    rating: {
-      stars: 4.5,
-      count: 1398
-    },
-    priceCents: 842,
-    keywords: [
-      "vidsel",
-      "100%-cotton",
-      "toddler",
-      "beanie",
-      "hats",
-      "baby",
-      "boys",
-      "girls",
-      "kids",
-      "infant",
-      "winter",
-      "soft",
-      "warm",
-      "knit",
-      "cuffed",
-      "caps"
-    ]
-},
-
-  {
-    id: "d3f7c1a5-5b4e-4f8a-9d2c-1e7b5f3a8d6c",
-    image: "images/products/181.webp",
-    name: "ANTSANG 12 Pairs Grip Socks",
-    rating: {
-      stars: 4.5,
-      count: 1432
-    },
-    priceCents: 1354,
-    keywords: [
-      "antsang",
-      "12-pairs",
-      "baby",
-      "girls",
-      "boys",
-      "toddlers",
-      "kids",
-      "grips",
-      "socks",
-      "crew",
-      "cotton",
-      "non-slip",
-      "anti-skid"
-    ]
-},
-
-  {
-    id: "c7d2f5a9-6b4e-4f8c-9d3b-1e5f7a2c8d4b",
-    image: "images/products/180.webp",
-    name: "ONESING 5 Pairs Mittens",
-    rating: {
-      stars: 4.0,
-      count: 1278
-    },
-    priceCents: 432,
-    keywords: [
-      "onesing",
-      "5-pair",
-      "toddler",
-      "mittens",
-      "black",
-      "baby",
-      "winter",
-      "gloves",
-      "girls",
-      "boys",
-      "warm",
-      "newborn"
-    ]
-},
-
-  {
-    id: "b2e9d3f5-4c6a-4f8b-9d1c-2e7f5a3b8d4c",
-    image: "images/products/179.webp",
-    name: "Zando Baby Beanie Hat",
-    rating: {
-      stars: 4.0,
-      count: 1347
-    },
-    priceCents: 449,
-    keywords: [
-      "zando",
-      "satin",
-      "lined",
-      "baby",
-      "girls",
-      "boys",
-      "toddler",
-      "winter",
-      "hat",
-      "earflap",
-      "infant",
-      "newborn",
-      "beanie",
-      "warm",
-      "knit",
-      "pompom",
-      "silk",
-      "skull",
-      "cap"
-    ]
-},
-
-  {
-    id: "d5f8c2a7-6b4e-4f9a-8c3d-1e7b5a2f9c4d",
-    image: "images/products/178.webp",
-    name: "Mesh Baby Sneakers",
-    rating: {
-      stars: 4.5,
-      count: 1619
-    },
-    priceCents: 1956,
-    keywords: [
-      "mesh",
-      "toddler",
-      "shoes",
-      "baby",
-      "sneakers",
-      "girls",
-      "boys",
-      "sock",
-      "slip-on",
-      "walking",
-      "breathable",
-      "tennis",
-      "non-slip",
-      "slippers",
-      "soft",
-      "rubber",
-      "soles",
-      "6-24-months"
-    ]
-},
-
-  {
-    id: "a9d3f5b1-7c2e-4f8a-9d6b-1e3f7c5a8d2e",
-    image: "images/products/177.webp",
-    name: "Bamboo Toddler Pajamas 2pcs",
-    rating: {
-      stars: 4.5,
-      count: 1537
-    },
-    priceCents: 1752,
-    keywords: [
-      "bamboo",
-      "viscose",
-      "toddler",
-      "pajamas",
-      "boys",
-      "girls",
-      "baby",
-      "12M-8Y",
-      "pjs",
-      "sets",
-      "kids",
-      "snug",
-      "fit",
-      "2pcs",
-      "long-sleeve",
-      "sleepwear"
-    ]
-},
-
-  {
-    id: "f3c9b2d1-6a4e-4f8c-9d3b-2e7a5f1c8d4b",
-    image: "images/products/176.webp",
-    name: "Learning Tablet for Toddlers",
-    rating: {
-      stars: 5.0,
-      count: 1642
-    },
-    priceCents: 1097,
-    keywords: [
-      "learning",
-      "tablet",
-      "toddlers",
-      "1-3",
-      "trilingual",
-      "toys",
-      "sounds",
-      "speech",
-      "therapy",
-      "montessori",
-      "educational",
-      "1-year-old",
-      "boy",
-      "girl",
-      "baby",
-      "musical",
-      "12-18-months",
-      "age-1-2-3",
-      "gifts"
-    ]
-},
-
-  {
-    id: "e1b4c7d3-5f2a-4f8b-9c6e-2a3f7d5b8c1e",
-    image: "images/products/175.webp",
-    name: "4-Pack Toddler Long Sleeve Tees",
-    rating: {
-      stars: 4.5,
-      count: 1529
-    },
-    priceCents: 2085,
-    keywords: [
-      "4-pack",
-      "boys",
-      "long-sleeve",
-      "shirts",
-      "girls",
-      "henley",
-      "tees",
-      "toddler",
-      "baby",
-      "knit",
-      "casual",
-      "tops",
-      "kids",
-      "fall",
-      "clothes",
-      "unisex"
-    ]
-},
-
-  {
-    id: "d7f1c3a5-6b4e-4f9a-8c2d-1e5b7a3f9d6c",
-    image: "images/products/174.webp",
-    name: "3 Pack Baby Beanies",
-    rating: {
-      stars: 4.0,
-      count: 1387
-    },
-    priceCents: 743,
-    keywords: [
-      "3-packs",
-      "baby",
-      "beanie",
-      "cute",
-      "toddler",
-      "beanies",
-      "kids",
-      "winter",
-      "hat",
-      "boys",
-      "girls",
-      "warm",
-      "knit",
-      "infant",
-      "0-8",
-      "years"
-    ]
-},
-
-  {
-    id: "c4e7b2f1-5d3a-4f8c-9b6e-2a1f7d5c8e3b",
-    image: "images/products/173.webp",
-    name: "12 Pairs Baby Socks",
-    rating: {
-      stars: 4.5,
-      count: 1456
-    },
-    priceCents: 842,
-    keywords: [
-      "12-pairs",
-      "baby",
-      "girls",
-      "boys",
-      "toddlers",
-      "kids",
-      "grips",
-      "socks",
-      "non-slip",
-      "anti-skid",
-      "funny",
-      "cartoon",
-      "breathable",
-      "cotton",
-      "crew"
-    ]
-},
-
-  {
-    id: "a8d3f1c5-7b2e-4f9a-8c6d-1e3f5b7a9d4c",
-    image: "images/products/172.webp",
-    name: "Baby Sock Sneakers",
-    rating: {
-      stars: 4.0,
-      count: 1321
-    },
-    priceCents: 599,
-    keywords: [
-      "baby",
-      "sock",
-      "shoes",
-      "walking",
-      "infant",
-      "non-slip",
-      "breathable",
-      "slippers",
-      "soft",
-      "rubber",
-      "sole",
-      "boys",
-      "girls",
-      "sneakers"
-    ]
-},
-
-  {
-    id: "f2c9a7d3-4b6e-4f8a-9d1c-3e5b7a2f6d8c",
-    image: "images/products/171.webp",
-    name: "Interactive Baby Ball",
-    rating: {
-      stars: 4.5,
-      count: 1683
-    },
-    priceCents: 1566,
-    keywords: [
-      "move2play",
-      "hilariously",
-      "interactive",
-      "baby",
-      "ball",
-      "music",
-      "sound",
-      "effects",
-      "first",
-      "birthday",
-      "gift",
-      "toddler",
-      "boys",
-      "girls",
-      "age",
-      "6",
-      "9",
-      "12",
-      "18+",
-      "1",
-      "2+",
-      "year",
-      "old"
-    ]
-},
-
-  {
-    id: "b3e7d1f4-5c2a-4f9b-8d6e-1a3f7c5b9d2e",
-    image: "images/products/170.webp",
-    name: "Toddler Fleece Winter Joggers",
-    rating: {
-      stars: 4.5,
-      count: 1574
-    },
-    priceCents: 1499,
-    keywords: [
-      "toddler",
-      "fleece",
-      "lined",
-      "warm",
-      "snow",
-      "hiking",
-      "pants",
-      "baby",
-      "boys",
-      "girls",
-      "winter",
-      "ski",
-      "sweatpants",
-      "kids",
-      "running",
-      "joggers"
-    ]
-},
-
-  {
-    id: "d9f1c3b7-6e4a-4f8b-9d2c-1a7e5f3b8c6d",
-    image: "images/products/169.webp",
-    name: "Baby Toddler Christmas Jumpsuits",
-    rating: {
-      stars: 5.0,
-      count: 1893
-    },
-    priceCents: 2544,
-    keywords: [
-      "tipsy",
-      "elves",
-      "christmas",
-      "outfits",
-      "babies",
-      "toddlers",
-      "fun",
-      "holiday",
-      "themed",
-      "jumpsuits"
-    ]
-},
-
-  {
-    id: "c7d4e2f8-5a1b-4f6c-9d3e-2b7f1a4c8d5e",
-    image: "images/products/168.webp",
-    name: "Toddler Hiking Joggers",
-    rating: {
-      stars: 4.0,
-      count: 1289
-    },
-    priceCents: 655,
-    keywords: [
-      "toddler",
-      "hiking",
-      "cargo",
-      "pants",
-      "baby",
-      "boys",
-      "girls",
-      "quick",
-      "dry",
-      "joggers",
-      "kids",
-      "pull-on"
-    ]
-},
-
-  {
-    id: "a5c3d8f1-7b2e-4f9a-9d6c-2e1f7b4a8c5d",
-    image: "images/products/167.webp",
-    name: "Baby First Walking Shoes",
-    rating: {
-      stars: 4.5,
-      count: 1462
-    },
-    priceCents: 834,
-    keywords: [
-      "centipede",
-      "demon",
-      "baby",
-      "shoes",
-      "boy",
-      "girl",
-      "first",
-      "walking",
-      "breathable",
-      "barefoot",
-      "infant",
-      "lightweight",
-      "slip-on",
-      "sneakers",
-      "soft",
-      "sock"
-    ]
-},
-
-  {
-    id: "f8a2d5b3-6c4e-4f9a-8d2b-1e7c3f5a9b6d",
-    image: "images/products/166.webp",
-    name: "Magnetic Doodle Board",
-    rating: {
-      stars: 4.0,
-      count: 1376
-    },
-    priceCents: 599,
-    keywords: [
-      "magnetic",
-      "drawing",
-      "doodle",
-      "board",
-      "toddler",
-      "toys",
-      "3",
-      "4",
-      "5",
-      "year",
-      "old",
-      "boys",
-      "girls",
-      "learning",
-      "educational",
-      "baby",
-      "kids",
-      "christmas",
-      "birthday",
-      "gifts"
-    ]
-},
-
-  {
-    id: "e6b1c3d4-7f2a-4a9b-8c5d-1e3f6b7a9d2c",
-    image: "images/products/165.webp",
-    name: "Baby Knit Sweater Pullover",
-    rating: {
-      stars: 4.5,
-      count: 1197
-    },
-    priceCents: 187,
-    keywords: [
-      "baby",
-      "girl",
-      "boy",
-      "knit",
-      "sweater",
-      "blouse",
-      "pullover",
-      "sweatshirt",
-      "warm",
-      "crewneck",
-      "long",
-      "sleeve",
-      "tops",
-      "infant",
-      "toddler"
-    ]
-},
-
-
-  {
-    id: "c9d2f7a5-4b6e-4c8a-9f1d-3e7b2a5c8d4f",
-    image: "images/products/164.webp",
-    name: "Carter's 6-Piece Baby Bodysuit Set",
-    rating: {
-      stars: 5.0,
-      count: 1628
-    },
-    priceCents: 1550,
-    keywords: [
-      "simple",
-      "joys",
-      "carters",
-      "unisex",
-      "baby",
-      "6-piece",
-      "bodysuits",
-      "short",
-      "long",
-      "sleeve",
-      "pants",
-      "set"
-    ]
-},
-
-  {
-    id: "b7e9c4d2-5f1a-4a8b-9c3d-2f6e7a1b8c4d",
-    image: "images/products/163.webp",
-    name: "Baby Boy 3PCS Outfit",
-    rating: {
-      stars: 4.0,
-      count: 1415
-    },
-    priceCents: 863,
-    keywords: [
-      "agapeng",
-      "baby",
-      "boy",
-      "clothes",
-      "newborn",
-      "outfits",
-      "infant",
-      "letter",
-      "print",
-      "romper",
-      "long",
-      "pants",
-      "hat",
-      "3pcs",
-      "clothing"
-    ]
-},
-
-
-  {
-    id: "d5f3a1b8-6c4e-4f7a-9b2d-1e8c3f5a7d9b",
-    image: "images/products/162.webp",
-    name: "Toddler Beanie Hat",
-    rating: {
-      stars: 4.5,
-      count: 1327
-    },
-    priceCents: 790,
-    keywords: [
-      "furtalk",
-      "toddler",
-      "beanie",
-      "baby",
-      "boys",
-      "girls",
-      "beanies",
-      "kids",
-      "winter",
-      "hats",
-      "children",
-      "knit",
-      "warm",
-      "caps"
-    ]
-},
-
-  {
-    id: "f1c8b2d7-3e4a-4f9d-8b6c-2a7d5e1f9b3c",
-    image: "images/products/161.webp",
-    name: "Checkered Baby Blanket",
-    rating: {
-      stars: 5.0,
-      count: 1784
-    },
-    priceCents: 599,
-    keywords: [
-      "yurhap",
-      "checkered",
-      "baby",
-      "blanket",
-      "girls",
-      "pink",
-      "fleece",
-      "boys",
-      "warmer",
-      "comfort",
-      "lightweight",
-      "bed",
-      "toddlers",
-      "infants",
-      "newborn",
-      "30x40"
-    ]
-},
-
-  {
-    id: "a2b9d4e7-8f1c-4c5a-9d3b-6e7f1a2c4b5d",
-    image: "images/products/160.webp",
-    name:  "Baby Winter Beanie Hats",
-    rating: {
-      stars: 4.0,
-      count: 1532
-    },
-    priceCents: 599,
-    keywords: [
-      "baby",
-      "beanie",
-      "hats",
-      "2-pack",
-      "warm",
-      "winter",
-      "boys",
-      "girls",
-      "infant",
-      "fleece",
-      "lined",
-      "toddler",
-      "0-36",
-      "month"
-    ]
-},
-
-
-
-  {
-    id: "e3f7c9a1-2d4b-4f8e-9a12-7b5c3e9f1d2a",
-    image: "images/products/159.webp",
-    name:  "Baby Hiking Jogger Pants",
-    rating: {
-      stars: 4.5,
-      count: 1243
-    },
-    priceCents: 499,
-    keywords: [
-      "baby",
-      "boys",
-      "girls",
-      "hiking",
-      "pants",
-      "lightweight",
-      "athletic",
-      "jogger",
-      "toddler",
-      "quick",
-      "dry",
-      "track",
-      "sweatpants"
-    ]
-},
-
-
-  
-  
-  {
-    id: "e43638ce-6aa0-4b85-b27f-e1d07eb678c6",
-    image: "images/products/athletic-cotton-socks-6-pairs.jpg",
-    name: "Black and Gray Athletic Cotton Socks - 6 Pairs",
-    rating: {
-      stars: 4.5,
-      count: 87
-    },
-    priceCents: 1500,
-    keywords: [
-      "socks",
-      "sports",
-      "apparel"
-    ]
-  },
-  {
-    id: "15b6fc6f-327a-4ec4-896f-486349e85a3d",
-    image: "images/products/intermediate-composite-basketball.jpg",
-    name: "Intermediate Size Basketball",
-    rating: {
-      stars: 4,
-      count: 127
-    },
-    priceCents: 2000,
-    keywords: [
-      "sports",
-      "basketballs"
-    ]
-  },
-  {
-    id: "83d4ca15-0f35-48f5-b7a3-1ea210004f2e",
-    image: "images/products/adults-plain-cotton-tshirt-2-pack-teal.jpg",
-    name: "Adults Plain Cotton T-Shirt - 2 Pack",
-    rating: {
-      stars: 4.5,
-      count: 56
-    },
-    priceCents: 2000,
-    keywords: [
-      "tshirts",
-      "apparel",
-      "mens"
-    ],
-    type: "clothing",
-    sizeChartLink: "images/clothing-size-chart.png"
-  },
-  {
-    id: "54e0eccd-8f36-462b-b68a-8182611d9add",
-    image: "images/products/black-2-slot-toaster.jpg",
-    name: "2 Slot Toaster - Black",
-    rating: {
-      stars: 5,
-      count: 2197
-    },
-    priceCents: 1899,
-    keywords: [
-      "toaster",
-      "kitchen",
-      "appliances"
-    ]
-  },
-  {
-    id: "3ebe75dc-64d2-4137-8860-1f5a963e534b",
-    image: "images/products/6-piece-white-dinner-plate-set.jpg",
-    name: "6 Piece White Dinner Plate Set",
-    rating: {
-      stars: 4,
-      count: 37
-    },
-    priceCents: 1300,
-    keywords: [
-      "plates",
-      "kitchen",
-      "dining"
-    ]
-  },
-  {
-    id: "8c9c52b5-5a19-4bcb-a5d1-158a74287c53",
-    image: "images/products/6-piece-non-stick-baking-set.webp",
-    name: "6-Piece Nonstick, Carbon Steel Oven Bakeware Baking Set",
-    rating: {
-      stars: 4.5,
-      count: 175
-    },
-    priceCents: 1800,
-    keywords: [
-      "kitchen",
-      "cookware"
-    ]
-  },
-  {
-    id: "dd82ca78-a18b-4e2a-9250-31e67412f98d",
-    image: "images/products/plain-hooded-fleece-sweatshirt-yellow.jpg",
-    name: "Plain Hooded Fleece Sweatshirt",
-    rating: {
-      stars: 4.5,
-      count: 317
-    },
-    priceCents: 2000,
-    keywords: [
-      "hoodies",
-      "sweaters",
-      "apparel"
-    ]
-  },
-  {
-    id: "77919bbe-0e56-475b-adde-4f24dfed3a04",
-    image: "images/products/luxury-tower-set-6-piece.jpg",
-    name: "Luxury Towel Set - Graphite Gray",
-    rating: {
-      stars: 4.5,
-      count: 144
-    },
-    priceCents: 2599,
-    keywords: [
-      "bathroom",
-      "washroom",
-      "restroom",
-      "towels",
-      "bath towels"
-    ]
-  },
-  {
-    id: "3fdfe8d6-9a15-4979-b459-585b0d0545b9",
-    image: "images/products/liquid-laundry-detergent-plain.jpg",
-    name: "Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz",
-    rating: {
-      stars: 4.5,
-      count: 305
-    },
-    priceCents: 1000,
-    keywords: [
-      "bathroom",
-      "cleaning"
-    ]
-  },
-  {
-    id: "58b4fc92-e98c-42aa-8c55-b6b79996769a",
-    image: "images/products/knit-athletic-sneakers-gray.jpg",
-    name: "Waterproof Knit Athletic Sneakers - Gray",
-    rating: {
-      stars: 4,
-      count: 89
-    },
-    priceCents: 1800,
-    keywords: [
-      "shoes",
-      "running shoes",
-      "footwear"
-    ]
-  },
-  {
-    id: "5968897c-4d27-4872-89f6-5bcb052746d7",
-    image: "images/products/women-chiffon-beachwear-coverup-black.jpg",
-    name: "Women's Chiffon Beachwear Cover Up - Black",
-    rating: {
-      stars: 4.5,
-      count: 235
-    },
-    priceCents: 2000,
-    keywords: [
-      "robe",
-      "swimsuit",
-      "swimming",
-      "bathing",
-      "apparel"
-    ],
-    type: "clothing",
-    sizeChartLink: "images/clothing-size-chart.png"
-  },
-  {
-    id: "aad29d11-ea98-41ee-9285-b916638cac4a",
-    image: "images/products/round-sunglasses-black.jpg",
-    name: "Round Sunglasses",
-    rating: {
-      stars: 4.5,
-      count: 30
-    },
-    priceCents: 1000,
-    keywords: [
-      "accessories",
-      "shades"
-    ]
-  },
-  {
-    id: "04701903-bc79-49c6-bc11-1af7e3651358",
-    image: "images/products/women-beach-sandals.jpg",
-    name: "Women's Two Strap Buckle Sandals - Tan",
-    rating: {
-      stars: 4.5,
-      count: 562
-    },
-    priceCents: 1300,
-    keywords: [
-      "footwear",
-      "sandals",
-      "womens",
-      "beach",
-      "summer"
-    ]
-  },
-  {
-    id: "901eb2ca-386d-432e-82f0-6fb1ee7bf969",
-    image: "images/products/blackout-curtain-set-beige.webp",
-    name: "Blackout Curtains Set 4-Pack - Beige",
-    rating: {
-      stars: 4.5,
-      count: 232
-    },
-    priceCents: 2000,
-    keywords: [
-      "bedroom",
-      "curtains",
-      "home"
-    ]
-  },
-  {
-    id: "82bb68d7-ebc9-476a-989c-c78a40ee5cd9",
-    image: "images/products/men-slim-fit-summer-shorts-gray.jpg",
-    name: "Men's Slim-Fit Summer Shorts",
-    rating: {
-      stars: 4,
-      count: 160
-    },
-    priceCents: 1399,
-    keywords: [
-      "shorts",
-      "apparel",
-      "mens"
-    ]
-  },
-  {
-    id: "c2a82c5e-aff4-435f-9975-517cfaba2ece",
-    image: "images/products/electric-glass-and-steel-hot-water-kettle.webp",
-    name: "Electric Glass and Steel Hot Tea Water Kettle - 1.7-Liter",
-    rating: {
-      stars: 5,
-      count: 846
-    },
-    priceCents: 2000,
-    keywords: [
-      "water boiler",
-      "appliances",
-      "kitchen"
-    ]
-  },
-  {
-    id: "6b07d4e7-f540-454e-8a1e-363f25dbae7d",
-    image: "images/products/facial-tissue-2-ply-18-boxes.jpg",
-    name: "Ultra Soft Tissue 2-Ply - 18 Box",
-    rating: {
-      stars: 4,
-      count: 99
-    },
-    priceCents: 800,
-    keywords: [
-      "kleenex",
-      "tissues",
-      "kitchen",
-      "tissues box",
-      "napkins"
-    ]
-  },
-  {
-    id: "a82c6bac-3067-4e68-a5ba-d827ac0be010",
-    image: "images/products/straw-sunhat.webp",
-    name: "Straw Lifeguard Sun Hat",
-    rating: {
-      stars: 4,
-      count: 215
-    },
-    priceCents: 1199,
-    keywords: [
-      "hats",
-      "straw hats",
-      "summer",
-      "apparel"
-    ]
-  },
-  {
-    id: "e4f64a65-1377-42bc-89a5-e572d19252e2",
-    image: "images/products/sky-flower-stud-earrings.webp",
-    name: "Sterling Silver Sky Flower Stud Earrings",
-    rating: {
-      stars: 4.5,
-      count: 52
-    },
-    priceCents: 1799,
-    keywords: [
-      "jewelry",
-      "accessories",
-      "womens"
-    ]
-  },
-  {
-    id: "b0f17cc5-8b40-4ca5-9142-b61fe3d98c85",
-    image: "images/products/women-stretch-popover-hoodie-black.jpg",
-    name: "Women's Stretch Popover Hoodie",
-    rating: {
-      stars: 4.5,
-      count: 2465
-    },
-    priceCents: 1374,
-    keywords: [
-      "hooded",
-      "hoodies",
-      "sweaters",
-      "womens",
-      "apparel"
-    ],
-    type: "clothing",
-    sizeChartLink: "images/clothing-size-chart.png"
-  },
-  {
-    id: "a93a101d-79ef-4cf3-a6cf-6dbe532a1b4a",
-    image: "images/products/bathroom-rug.jpg",
-    name: "Bathroom Bath Rug Mat 20 x 31 Inch - Grey",
-    rating: {
-      stars: 4.5,
-      count: 119
-    },
-    priceCents: 1250,
-    keywords: [
-      "bathmat",
-      "bathroom",
-      "home"
-    ]
-  },
-  {
-    id: "4f4fbcc2-4e72-45cc-935c-9e13d79cc57f",
-    image: "images/products/women-knit-ballet-flat-black.jpg",
-    name: "Women's Knit Ballet Flat",
-    rating: {
-      stars: 4,
-      count: 326
-    },
-    priceCents: 2000,
-    keywords: [
-      "shoes",
-      "flats",
-      "womens",
-      "footwear"
-    ]
-  },
-  {
-    id: "8b5a2ee1-6055-422a-a666-b34ba28b76d4",
-    image: "images/products/men-golf-polo-t-shirt-blue.jpg",
-    name: "Men's Regular-Fit Quick-Dry Golf Polo Shirt",
-    rating: {
-      stars: 4.5,
-      count: 2556
-    },
-    priceCents: 1399,
-    keywords: [
-      "tshirts",
-      "shirts",
-      "apparel",
-      "mens"
-    ],
-    type: "clothing",
-    sizeChartLink: "images/clothing-size-chart.png"
-  },
-  {
-    id: "b86ddc8b-3501-4b17-9889-a3bad6fb585f",
-    image: "images/products/trash-can-with-foot-pedal-50-liter.jpg",
-    name: "Trash Can with Foot Pedal - Brushed Stainless Steel",
-    rating: {
-      stars: 4.5,
-      count: 2286
-    },
-    priceCents: 1700,
-    keywords: [
-      "garbage",
-      "bins",
-      "cans",
-      "kitchen"
-    ]
-  },
-  {
-    id: "19c6a64a-5463-4d45-9af8-e41140a4100c",
-    image: "images/products/duvet-cover-set-blue-twin.jpg",
-    name: "Duvet Cover Set with Zipper Closure",
-    rating: {
-      stars: 4,
-      count: 456
-    },
-    priceCents: 2399,
-    keywords: [
-      "bedroom",
-      "bed sheets",
-      "sheets",
-      "covers",
-      "home"
-    ]
-  },
-  {
-    id: "d2785924-743d-49b3-8f03-ec258e640503",
-    image: "images/products/women-chunky-beanie-gray.webp",
-    name: "Women's Chunky Cable Beanie - Gray",
-    rating: {
-      stars: 5,
-      count: 83
-    },
-    priceCents: 850,
-    keywords: [
-      "hats",
-      "winter hats",
-      "beanies",
-      "tuques",
-      "apparel",
-      "womens"
-    ]
-  },
-  {
-    id: "ee1f7c56-f977-40a4-9642-12ba5072e2b0",
-    image: "images/products/men-chino-pants-beige.jpg",
-    name: "Men's Classic-fit Pleated Chino Pants",
-    rating: {
-      stars: 4.5,
-      count: 9017
-    },
-    priceCents: 1490,
-    keywords: [
-      "pants",
-      "apparel",
-      "mens"
-    ]
-  },
-  {
-    id: "1c079479-8586-494f-ab53-219325432536",
-    image: "images/products/men-athletic-shoes-green.jpg",
-    name: "Men's Athletic Sneaker",
-    rating: {
-      stars: 4,
-      count: 229
-    },
-    priceCents: 2099,
-    keywords: [
-      "shoes",
-      "running shoes",
-      "footwear",
-      "mens"
-    ]
-  },
-  {
-    id: "4df68c27-fd59-4a6a-bbd1-e754ddb6d53c",
-    image: "images/products/men-navigator-sunglasses-brown.jpg",
-    name: "Men's Navigator Sunglasses Pilot",
-    rating: {
-      stars: 3.5,
-      count: 42
-    },
-    priceCents: 1000,
-    keywords: [
-      "sunglasses",
-      "glasses",
-      "accessories",
-      "shades"
-    ]
-  },
-  {
-    id: "4e37dd03-3b23-4bc6-9ff8-44e112a92c64",
-    image: "images/products/non-stick-cooking-set-15-pieces.webp",
-    name: "Non-Stick Cookware Set, Pots, Pans and Utensils - 15 Pieces",
-    rating: {
-      stars: 4.5,
-      count: 511
-    },
-    priceCents: 3099,
-    keywords: [
-      "cooking set",
-      "kitchen"
-    ]
-  },
-  {
-    id: "a434b69f-1bc1-482d-9ce7-cd7f4a66ce8d",
-    image: "images/products/vanity-mirror-silver.jpg",
-    name: "Vanity Mirror with Heavy Base - Chrome",
-    rating: {
-      stars: 4.5,
-      count: 130
-    },
-    priceCents: 1649,
-    keywords: [
-      "bathroom",
-      "washroom",
-      "mirrors",
-      "home"
-    ]
-  },
-  {
-    id: "a45cfa0a-66d6-4dc7-9475-e2b01595f7d7",
-    image: "images/products/women-french-terry-fleece-jogger-camo.jpg",
-    name: "Women's Fleece Jogger Sweatpant",
-    rating: {
-      stars: 4.5,
-      count: 248
-    },
-    priceCents: 2400,
-    keywords: [
-      "pants",
-      "sweatpants",
-      "jogging",
-      "apparel",
-      "womens"
-    ]
-  },
-  {
-    id: "d339adf3-e004-4c20-a120-40e8874c66cb",
-    image: "images/products/double-elongated-twist-french-wire-earrings.webp",
-    name: "Double Oval Twist French Wire Earrings - Gold",
-    rating: {
-      stars: 4.5,
-      count: 117
-    },
-    priceCents: 2400,
-    keywords: [
-      "accessories",
-      "womens"
-    ]
-  },
-  {
-    id: "d37a651a-d501-483b-aae6-a9659b0757a0",
-    image: "images/products/round-airtight-food-storage-containers.jpg",
-    name: "Round Airtight Food Storage Containers - 5 Piece",
-    rating: {
-      stars: 4,
-      count: 126
-    },
-    priceCents: 1599,
-    keywords: [
-      "boxes",
-      "food containers",
-      "kitchen"
-    ]
-  },
-  {
-    id: "0d7f9afa-2efe-4fd9-b0fd-ba5663e0a524",
-    image: "images/products/coffeemaker-with-glass-carafe-black.jpg",
-    name: "Coffeemaker with Glass Carafe and Reusable Filter - 25 Oz, Black",
-    rating: {
-      stars: 4.5,
-      count: 1211
-    },
-    priceCents: 2250,
-    keywords: [
-      "coffeemakers",
-      "kitchen",
-      "appliances"
-    ]
-  },
-  {
-    id: "02e3a47e-dd68-467e-9f71-8bf6f723fdae",
-    image: "images/products/blackout-curtains-black.jpg",
-    name: "Blackout Curtains Set 42 x 84-Inch - Black, 2 Panels",
-    rating: {
-      stars: 4.5,
-      count: 363
-    },
-    priceCents: 2599,
-    keywords: [
-      "bedroom",
-      "home"
-    ]
-  },
-  {
-    id: "8a53b080-6d40-4a65-ab26-b24ecf700bce",
-    image: "images/products/cotton-bath-towels-teal.webp",
-    name: "100% Cotton Bath Towels - 2 Pack, Light Teal",
-    rating: {
-      stars: 4.5,
-      count: 93
-    },
-    priceCents: 2010,
-    keywords: [
-      "bathroom",
-      "home",
-      "towels"
-    ]
-  },
-  {
-    id: "10ed8504-57db-433c-b0a3-fc71a35c88a1",
-    image: "images/products/knit-athletic-sneakers-pink.webp",
-    name: "Waterproof Knit Athletic Sneakers - Pink",
-    rating: {
-      stars: 4,
-      count: 89
-    },
-    priceCents: 2090,
-    keywords: [
-      "shoes",
-      "running shoes",
-      "footwear",
-      "womens"
-    ]
-  },
-  {
-    id: "77a845b1-16ed-4eac-bdf9-5b591882113d",
-    image: "images/products/countertop-blender-64-oz.jpg",
-    name: "Countertop Blender - 64oz, 1400 Watts",
-    rating: {
-      stars: 4,
-      count: 3
-    },
-    priceCents: 5047,
-    keywords: [
-      "food blenders",
-      "kitchen",
-      "appliances"
-    ]
-  },
-  {
-    id: "36c64692-677f-4f58-b5ec-0dc2cf109e27",
-    image: "images/products/floral-mixing-bowl-set.jpg",
-    name: "10-Piece Mixing Bowl Set with Lids - Floral",
-    rating: {
-      stars: 5,
-      count: 679
-    },
-    priceCents: 2099,
-    keywords: [
-      "mixing bowls",
-      "baking",
-      "cookware",
-      "kitchen"
-    ]
-  },
-  {
-    id: "aaa65ef3-8d6f-4eb3-bc9b-a6ea49047d8f",
-    image: "images/products/kitchen-paper-towels-30-pack.jpg",
-    name: "2-Ply Kitchen Paper Towels - 30 Pack",
-    rating: {
-      stars: 4.5,
-      count: 1045
-    },
-    priceCents: 890,
-    keywords: [
-      "kitchen",
-      "kitchen towels",
-      "tissues"
-    ]
-  },
-  {
-    id: "bc2847e9-5323-403f-b7cf-57fde044a955",
-    image: "images/products/men-cozy-fleece-zip-up-hoodie-red.jpg",
-    name: "Men's Full-Zip Hooded Fleece Sweatshirt",
-    rating: {
-      stars: 4.5,
-      count: 3157
-    },
-    priceCents: 2400,
-    keywords: [
-      "sweaters",
-      "hoodies",
-      "apparel",
-      "mens"
-    ]
-  },
    {
     id: "ficerd-3pack-tops",
     name: "Ficerd 3 Pack 3/4 Sleeve Tops for Women Round Neck Dressy Basics Tees Casual Trendy Loose Fit T Shirts",
