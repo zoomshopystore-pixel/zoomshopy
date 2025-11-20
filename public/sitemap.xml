@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <url>
     <loc>https://zoomshopy.store/</loc>
     <priority>1.0</priority>
-  </url>
 
+    <!-- Add your homepage image here -->
+    <image:image>
+      <image:loc>https://zoomshopy.store/images/amazon-logo-white.png</image:loc>
+      <image:caption>Zoomshopy Homepage Banner</image:caption>
+      <image:title>Zoomshopy Online Store</image:title>
+    </image:image>
+
+  </url>
 </urlset>
