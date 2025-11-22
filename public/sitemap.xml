@@ -2,16 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
+  <!-- Homepage -->
   <url>
     <loc>https://zoomshopy.store/</loc>
     <priority>1.0</priority>
 
-    <!-- Add your homepage image here -->
     <image:image>
-      <image:loc>https://zoomshopy.store/images/zoom.shopy-mobile.png</image:loc>
-      <image:caption>Zoomshopy Homepage Banner</image:caption>
-      <image:title>Zoomshopy Online Store</image:title>
+      <image:loc>https://zoomshopy.store/images/88.png</image:loc>
+      <image:caption>ZoomShopy Homepage Banner</image:caption>
+      <image:title>ZoomShopy Online Store</image:title>
     </image:image>
-
   </url>
+
+  <!-- Login Page -->
+  <url>
+    <loc>https://zoomshopy.store/signin.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Signup Page -->
+  <url>
+    <loc>https://zoomshopy.store/signup.html</loc>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact Page -->
+  <url>
+    <loc>https://zoomshopy.store/contact.html</loc>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
