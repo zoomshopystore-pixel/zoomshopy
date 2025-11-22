@@ -62,6 +62,721 @@ class Clothing extends Product {
 
 export const products = [
   {
+  id: "f6c2d3b1-4a7e-4f8b-9c5d-2b3e7a1f6d9a",
+  name: "Lenny & Larry's Complete Cookie Chocolate Chip 12ct",
+  priceCents: 1390,
+  image: "images/products/706.webp",
+  rating: {
+    stars: 4.5,
+    count: 1357
+  },
+  keywords: [
+    "lenny",
+    "larry's",
+    "complete",
+    "cookie",
+    "chocolate",
+    "chip",
+    "soft",
+    "baked",
+    "12ct",
+    "4oz",
+    "16g",
+    "ex10/25"
+  ]
+},
+  {
+  id: "e5f9d2c3-4a1e-4f8b-9d5c-3b2e7a1f6d8f",
+  name: "Power Crunch Protein Energy Bar Chocolate Chip",
+  priceCents: 1099,
+  image: "images/products/705.webp",
+  rating: {
+    stars: 4.0,
+    count: 1331
+  },
+  keywords: [
+    "power",
+    "crunch",
+    "protein",
+    "energy",
+    "bar",
+    "chocolate",
+    "chip",
+    "cheesecake",
+    "12 bars",
+    "1.4oz"
+  ]
+},
+  {
+  id: "d4e8f1b2-3a7e-4f8b-9c5d-2b3e7a1f6d7e",
+  name: "3-Tier Rope Wall Hanging Baskets",
+  priceCents: 1199,
+  image: "images/products/704.webp",
+  rating: {
+    stars: 4.5,
+    count: 1276
+  },
+  keywords: [
+    "3-tier",
+    "rope",
+    "baskets",
+    "wall",
+    "hanging",
+    "storage",
+    "tassels",
+    "boho",
+    "2-tone"
+  ]
+},
+  {
+  id: "c3f7d2b1-4a6e-4f8b-9d5c-2b3e7a1f6d5e",
+  name: "Closet Storage Boxes with Lids 4pcs",
+  priceCents: 1599,
+  image: "images/products/703.webp",
+  rating: {
+    stars: 4.0,
+    count: 1318
+  },
+  keywords: [
+    "closet",
+    "storage",
+    "boxes",
+    "lids",
+    "hook",
+    "loop",
+    "4pcs"
+  ]
+},
+  {
+  id: "b2e8f1c3-5a7d-4f8b-9c6e-3b1f6a2d7e5c",
+  name: "Pioneer Woman Sutton 34-Piece Cookware Set",
+  priceCents: 11098,
+  image: "images/products/702.webp",
+  rating: {
+    stars: 4.5,
+    count: 1421
+  },
+  keywords: [
+    "pioneer",
+    "woman",
+    "sutton",
+    "34-piece",
+    "ceramic",
+    "nonstick",
+    "cookware",
+    "bakeware",
+    "set",
+    "beige"
+  ]
+},
+  {
+  id: "a1f7c3b2-4d6e-4f8b-9c5d-2b3e7a1f6d8e",
+  name: "Stainless Steel Cookware Pot Pan Utensils Set",
+  priceCents: 12099,
+  image: "images/products/701.webp",
+  rating: {
+    stars: 5.0,
+    count: 1457
+  },
+  keywords: [
+    "stainless",
+    "steel",
+    "cookware",
+    "pot",
+    "pan",
+    "bowl",
+    "utensils",
+    "kitchen",
+    "fork",
+    "spoon",
+    "knife",
+    "tool",
+    "set"
+  ]
+},
+  {
+  id: "f9d4c2b1-3a6e-4f8b-9c5d-2b3e7a1f6d7c",
+  name: "Non-Stick Pots & Pans Set with Kettle",
+  priceCents: 5000,
+  image: "images/products/700.webp",
+  rating: {
+    stars: 4.5,
+    count: 1389
+  },
+  keywords: [
+    "non-stick",
+    "pots",
+    "pans",
+    "set",
+    "kettle",
+    "utensils",
+    "backpack",
+    "bag"
+  ]
+},
+  {
+  id: "e8c3f1b2-4a7e-4f8b-9d5c-3a2e7b1f6d5c",
+  name: "Portable Cookware Set for 2-3 People",
+  priceCents: 4233,
+  image: "images/products/699.webp",
+  rating: {
+    stars: 4.0,
+    count: 1304
+  },
+  keywords: [
+    "portable",
+    "cookware",
+    "set",
+    "2-3 people",
+    "utensils",
+    "bags"
+  ]
+},
+  {
+  id: "d7f2c4b1-3a6e-4f9b-9c5d-2b3e7a1f6d4c",
+  name: "Serenelife Kitchenware Pots & Pans Set Black Gold",
+  priceCents: 3890,
+  image: "images/products/698.webp",
+  rating: {
+    stars: 4.5,
+    count: 1376
+  },
+  keywords: [
+    "serenelife",
+    "kitchenware",
+    "pots",
+    "pans",
+    "set",
+    "kitchen",
+    "cookware",
+    "black",
+    "non-stick",
+    "gold"
+  ]
+},
+  {
+  id: "c6f9d3b2-4a1e-4f8b-9d5c-3b2e7a1f6d8c",
+  name: "Serenelife Kitchenware Pots & Pans Set",
+  priceCents: 5099,
+  image: "images/products/697.webp",
+  rating: {
+    stars: 5.0,
+    count: 1412
+  },
+  keywords: [
+    "serenelife",
+    "kitchenware",
+    "pots",
+    "pans",
+    "set",
+    "black",
+    "non-stick",
+    "coating",
+    "inside",
+    "15 pcs"
+  ]
+},
+  {
+  id: "b5d8f2c1-3a7e-4f9b-9d6c-2c3e7a1f5d4b",
+  name: "Brush Cleaner Scrubber Home Cleaning Brush",
+  priceCents: 299,
+  image: "images/products/696.webp",
+  rating: {
+    stars: 4.5,
+    count: 1323
+  },
+  keywords: [
+    "brush",
+    "cleaner",
+    "scrubber",
+    "home",
+    "cleaning",
+    "practical"
+  ]
+},
+  {
+  id: "e4c7f1b3-6a2d-4f8b-9c5e-3b1f6a2d7e5c",
+  name: "Drain Cleaner Sticks Odor Remover",
+  priceCents: 199,
+  image: "images/products/695.webp",
+  rating: {
+    stars: 4.0,
+    count: 1279
+  },
+  keywords: [
+    "drain",
+    "cleaner",
+    "sticks",
+    "60/48pcs",
+    "odor",
+    "remover",
+    "pipe",
+    "cleaner"
+  ]
+},
+  {
+  id: "c3f9d2b7-4a1e-4f8b-9d5c-2b3e7a1f6d5b",
+  name: "Colors Window Cleaning Brush Dustpan Set",
+  priceCents: 99,
+  image: "images/products/694.webp",
+  rating: {
+    stars: 4.5,
+    count: 1245
+  },
+  keywords: [
+    "colors",
+    "cleaning",
+    "window",
+    "dustpan",
+    "2 groove",
+    "brush",
+    "scre"
+  ]
+},
+  {
+  id: "f2b8d4c1-3a7e-4f9b-9d5c-2b3e7a1f6d8c",
+  name: "100% Isopropyl Alcohol Refill",
+  priceCents: 499,
+  image: "images/products/693.webp",
+  rating: {
+    stars: 4.0,
+    count: 1307
+  },
+  keywords: [
+    "100%",
+    "isopropyl",
+    "alcohol",
+    "isopropanol",
+    "ipa",
+    "refill",
+    "pure",
+    "rubbing"
+  ]
+},
+  {
+  id: "d9f3c2b7-4e1a-4f8b-9d5c-3a2e7b1f6d4b",
+  name: "Compac Home Plink Garbage Disposal Cleaner",
+  priceCents: 599,
+  image: "images/products/692.webp",
+  rating: {
+    stars: 4.5,
+    count: 1284
+  },
+  keywords: [
+    "compac",
+    "home",
+    "plink",
+    "garbage",
+    "disposal",
+    "cleaner",
+    "freshens",
+    "kitchen",
+    "orange",
+    "20 count"
+  ]
+},
+  {
+  id: "c8e4f1b3-7d2a-4f9b-9c5e-3a1f6b2d7e5c",
+  name: "Finish Dishwasher Soap All-in-One 100pk",
+  priceCents: 1899,
+  image: "images/products/691.webp",
+  rating: {
+    stars: 4.0,
+    count: 1328
+  },
+  keywords: [
+    "finish",
+    "dishwasher",
+    "soap",
+    "washing",
+    "liquid",
+    "power",
+    "essential",
+    "all in one",
+    "100pk",
+    "original"
+  ]
+},
+  {
+  id: "f5c2d8b1-3a7e-4f9b-9d6c-2b1e7a4f5d3c",
+  name: "Drain Cleaner Powerful Clog Remover",
+  priceCents: 1490,
+  image: "images/products/690.webp",
+  rating: {
+    stars: 4.5,
+    count: 1354
+  },
+  keywords: [
+    "drain",
+    "cleaner",
+    "powerful",
+    "clog",
+    "remover",
+    "hair",
+    "grease",
+    "2 bottles",
+    "64 oz"
+  ]
+},
+  {
+  id: "d3f7b1c2-6a4e-4f8b-9c5d-2b3e7a1f6d8c",
+  name: "Leather Colour Restorer Repair Kit",
+  priceCents: 1499,
+  image: "images/products/689.webp",
+  rating: {
+    stars: 4.0,
+    count: 1312
+  },
+  keywords: [
+    "leather",
+    "colour",
+    "restorer",
+    "repair",
+    "faded",
+    "worn",
+    "sofas",
+    "chairs",
+    "bags",
+    "shoes"
+  ]
+},
+  {
+  id: "b4d8f1c3-7e2a-4f9b-8c5d-3a1f6b2d7e4c",
+  name: "Carron Lotus Effect Glass Sealer",
+  priceCents: 1789,
+  image: "images/products/688.webp",
+  rating: {
+    stars: 4.5,
+    count: 1296
+  },
+  keywords: [
+    "carron",
+    "lotus",
+    "effect",
+    "glass",
+    "sealing",
+    "shower",
+    "wall",
+    "acrylic",
+    "limescale",
+    "dirt"
+  ]
+},
+  {
+  id: "e7c3f2b1-4d5a-4f8b-9c6e-1a2b7d3f5c8a",
+  name: "Extendable Microfiber Duster Cleaning Brush",
+  priceCents: 199,
+  image: "images/products/687.webp",
+  rating: {
+    stars: 4.0,
+    count: 1218
+  },
+  keywords: [
+    "extendable",
+    "microfiber",
+    "duster",
+    "dusting",
+    "brush",
+    "cleaning",
+    "tool",
+    "washable"
+  ]
+},
+  {
+  id: "c2f9d4b7-3e1a-4f8b-9d5c-2a3e7b1f6d4c",
+  name: "Double-Sided Scouring Pads Kitchen Sponge",
+  priceCents: 1099,
+  image: "images/products/686.webp",
+  rating: {
+    stars: 4.5,
+    count: 1335
+  },
+  keywords: [
+    "double-sided",
+    "scouring",
+    "pads",
+    "dish",
+    "pan",
+    "washing",
+    "sponge",
+    "kitchen",
+    "cleaning",
+    "tool"
+  ]
+},
+  {
+  id: "a5d8f2c3-7b1e-4f9d-8c2a-5e3f7b9d1a2c",
+  name: "Scrubbing Bubbles Automatic Shower Cleaner Kit",
+  priceCents: 4099,
+  image: "images/products/685.webp",
+  rating: {
+    stars: 4.0,
+    count: 1402
+  },
+  keywords: [
+    "scrubbing",
+    "bubbles",
+    "automatic",
+    "shower",
+    "cleaner",
+    "starter",
+    "kit",
+    "2 bottles",
+    "new",
+    "sealed"
+  ]
+},
+  {
+  id: "f1c7d3b9-2a4e-4f8b-9d5c-3b2e7a1f6d8b",
+  name: "Metal Polish Paste Scratch Remover Set",
+  priceCents: 799,
+  image: "images/products/684.webp",
+  rating: {
+    stars: 4.5,
+    count: 1321
+  },
+  keywords: [
+    "metal",
+    "polish",
+    "paste",
+    "scratch",
+    "remover",
+    "pipe",
+    "infused",
+    "polishing",
+    "pads",
+    "protectant"
+  ]
+},
+  {
+  id: "d8f2c4a7-1b3e-4f9d-9c2a-5e3b7f1d6a4c",
+  name: "Shower Screen Glass Sealer 2-in-1 Set",
+  priceCents: 2099,
+  image: "images/products/683.webp",
+  rating: {
+    stars: 4.0,
+    count: 1257
+  },
+  keywords: [
+    "shower",
+    "screen",
+    "glass",
+    "sealer",
+    "2-in-1",
+    "set",
+    "nano",
+    "cleaner",
+    "lotus",
+    "effect"
+  ]
+},
+  {
+  id: "c7d3e5b1-6f2a-4a8c-9d7b-1e4f6a2b3c5d",
+  name: "Limited Edition Bitcoin Solo Miner Genesis Lux",
+  priceCents: 9078,
+  image: "images/products/682.webp",
+  rating: {
+    stars: 5.0,
+    count: 1489
+  },
+  keywords: [
+    "limited",
+    "edition",
+    "bitcoin",
+    "solo",
+    "miner",
+    "genesis",
+    "lux"
+  ]
+},
+  
+  {
+  id: "f6b2d4a9-3c8e-4f7b-9d5a-2c1e7b4f6d8a",
+  name: "Bitcoin WiFi Lottery Miner Plug & Play",
+  priceCents: 3099,
+  image: "images/products/681.webp",
+  rating: {
+    stars: 4.5,
+    count: 1342
+  },
+  keywords: [
+    "bitcoin",
+    "miner",
+    "wifi",
+    "lottery",
+    "plug",
+    "play",
+    "new",
+    "firmware"
+  ]
+},
+
+  {
+  id: "d4a8f2c3-7b1e-4f9d-8c2a-5e3f7b9d1a6e",
+  name: "Bitcoin Solo Miner Lottery Lux Miner",
+  priceCents: 5000,
+  image: "images/products/680.webp",
+  rating: {
+    stars: 4.0,
+    count: 1278
+  },
+  keywords: [
+    "bitcoin",
+    "solo",
+    "miner",
+    "lottery",
+    "lux",
+    "miner"
+  ]
+},
+  {
+  id: "b3f9e7c1-4d2a-4f8b-9e6c-2a3d7b1f5e4c",
+  name: "Oakley META HSTN Clear Lens",
+  priceCents: 37099,
+  image: "images/products/679.webp",
+  rating: {
+    stars: 5.0,
+    count: 1452
+  },
+  keywords: [
+    "oakley",
+    "meta",
+    "hstn",
+    "clear",
+    "lens",
+    "clear to grey",
+    "transitions"
+  ]
+},
+  {
+  id: "a9d4f6b2-3c7e-4a8b-8f1d-5e2c7b9a4f3d",
+  name: "Meta Ray-Ban Smart Glasses Sand",
+  priceCents: 55000,
+  image: "images/products/678.webp",
+  rating: {
+    stars: 4.5,
+    count: 1365
+  },
+  keywords: [
+    "meta",
+    "ray-ban",
+    "smart",
+    "glasses",
+    "sand",
+    "standard",
+    "band",
+    "size"
+  ]
+},
+  {
+  id: "e5f7c2b3-1a4d-4f8b-9d6e-3c2b7a9f1e5d",
+  name: "Oakley Meta HSTN Glasses Black Clear Lens",
+  priceCents: 10599,
+  image: "images/products/677.webp",
+  rating: {
+    stars: 4.0,
+    count: 1427
+  },
+  keywords: [
+    "oakley",
+    "meta",
+    "hstn",
+    "glasses",
+    "black",
+    "clear",
+    "lens",
+    "new",
+    "no box"
+  ]
+},
+  {
+  id: "c8e4d2b1-7f3a-4a9d-9b5e-2f1c6a8d7e4b",
+  name: "Meta Ray-Ban Ai Smartglasses Large Frames",
+  priceCents: 100000,
+  image: "images/products/676.webp",
+  rating: {
+    stars: 4.5,
+    count: 1386
+  },
+  keywords: [
+    "meta",
+    "ray-ban",
+    "ai",
+    "smartglasses",
+    "large",
+    "frames",
+    "band",
+    "size",
+    "shiny",
+    "black"
+  ]
+},
+  {
+  id: "f2b7c1d4-8a3e-4f9b-9c2d-5e1f7a3b6d8e",
+  name: "Ray-Ban Meta x Coperni Wayfarer Glasses",
+  priceCents: 50098,
+  image: "images/products/675.webp",
+  rating: {
+    stars: 5.0,
+    count: 1573
+  },
+  keywords: [
+    "ray-ban",
+    "meta",
+    "coperni",
+    "limited",
+    "edition",
+    "wayfarer",
+    "glasses",
+    "brand",
+    "new",
+    "sealed",
+    "box"
+  ]
+},
+  {
+  id: "d9a4f2b7-3e1c-4a6b-8f2d-7c1e5b9a2f3d",
+  name: "Meta Glasses Smart Ai 4kHD Camera With 270mAh Blue Light Lens Dual Mic",
+  priceCents: 15099,
+  image: "images/products/674.webp",
+  rating: {
+    stars: 4.5,
+    count: 1421
+  },
+  keywords: [
+    "meta",
+    "glasses",
+    "smart",
+    "ai",
+    "4khd",
+    "camera",
+    "270mah",
+    "blue",
+    "light",
+    "lens",
+    "dual",
+    "mic"
+  ]
+},
+  {
+  id: "e43638ce-6aa0-89",
+  name: "Ray-Ban Meta 1AT2414A00 META GLASSES Wayfarer",
+  priceCents: 5099,
+  image: "images/products/673.webp",
+  rating: {
+    stars: 4.5,
+    count: 1244
+  },
+  keywords: [
+    "ray-ban",
+    "meta",
+    "meta glasses",
+    "wayfarer",
+    "ray-ban meta"
+  ]
+},
+
+  {
   id: "e43638ce-6aa0-672",
   name: "Apple AirPods Pro 2nd Gen USB-C MagSafe",
   priceCents: 10099,
