@@ -62,6 +62,961 @@ class Clothing extends Product {
 
 export const products = [
   {
+  id: "b8f2d3c1-7e41-4f91-9c63-5b7d2c1e8f99",
+  name: "Murray Premium Basketball Marker Board",
+  priceCents: 1763,
+  image: "images/products/748.webp",
+  rating: {
+    stars: 4.5,
+    count: 1489
+  },
+  keywords: [
+    "murray",
+    "sporting",
+    "goods",
+    "premium",
+    "basketball",
+    "marker",
+    "board"
+  ]
+},
+
+  {
+  id: "e5f3c2b1-8d42-4f91-9c63-5a7d2b1e8f98",
+  name: "Lifetime 44-in Basketball Backboard Combo",
+  priceCents: 10000,
+  image: "images/products/747.webp",
+  rating: {
+    stars: 5.0,
+    count: 1927
+  },
+  keywords: [
+    "lifetime",
+    "basketball",
+    "44-in",
+    "backboard",
+    "rim",
+    "net",
+    "combo",
+    "fusion",
+    "shatterproof",
+    "73650"
+  ]
+},
+
+  {
+  id: "c6f2d3b1-7e42-4f91-9c63-5b7d2c1e8f98",
+  name: "Wilson NBA Forge Basketball Size 7",
+  priceCents: 1899,
+  image: "images/products/746.webp",
+  rating: {
+    stars: 4.5,
+    count: 1612
+  },
+  keywords: [
+    "wilson",
+    "nba",
+    "forge",
+    "basketball",
+    "size",
+    "7",
+    "brand",
+    "new",
+    "rare",
+    "blue",
+    "grey",
+    "variant"
+  ]
+},
+
+  {
+  id: "d7f2c3b1-8e41-4f91-9c62-5a7d2b1f8e94",
+  name: "Elite Double Sided Basketball Board",
+  priceCents: 799,
+  image: "images/products/745.webp",
+  rating: {
+    stars: 4.0,
+    count: 1416
+  },
+  keywords: [
+    "elite",
+    "clipboards",
+    "double",
+    "sided",
+    "dry",
+    "erase",
+    "coach",
+    "basketball",
+    "marker",
+    "board",
+    "marker"
+  ]
+},
+
+  {
+  id: "f9d3c2b1-6e52-4f91-9c64-5b7e1d4a8f76",
+  name: "Fila Grant Hill 1 White Basketball Shoes",
+  priceCents: 2000,
+  image: "images/products/744.webp",
+  rating: {
+    stars: 4.5,
+    count: 1578
+  },
+  keywords: [
+    "fila",
+    "grant",
+    "hill",
+    "1",
+    "1bm01253-103",
+    "mens",
+    "white",
+    "athletic",
+    "basketball",
+    "shoes"
+  ]
+},
+
+  {
+  id: "c8f2d3b1-7e42-4f91-9c63-5b7d2c1e8f97",
+  name: "Ice Sense Full Face Armguards Mask",
+  priceCents: 199,
+  image: "images/products/743.webp",
+  rating: {
+    stars: 4.0,
+    count: 1402
+  },
+  keywords: [
+    "ice",
+    "sense",
+    "armguards",
+    "balaclava",
+    "full",
+    "face",
+    "mask",
+    "uv",
+    "protection",
+    "breathable",
+    "fit",
+    "unisex"
+  ]
+},
+
+  {
+  id: "d3f7c2b1-8e52-4f91-9c63-5a7d2b1e9f86",
+  name: "Adidas Crazy Lite AOP Shorts",
+  priceCents: 2000,
+  image: "images/products/742.webp",
+  rating: {
+    stars: 4.5,
+    count: 1553
+  },
+  keywords: [
+    "adidas",
+    "men",
+    "crazy",
+    "lite",
+    "aop",
+    "short",
+    "shorts"
+  ]
+},
+
+  {
+  id: "b5f8d3c2-6e41-4f91-9c62-5d7e1b4a8f74",
+  name: "Glow Replacement Basketball Net Nylon",
+  priceCents: 543,
+  image: "images/products/741.webp",
+  rating: {
+    stars: 4.0,
+    count: 1394
+  },
+  keywords: [
+    "glow",
+    "replacement",
+    "basketball",
+    "net",
+    "nylon",
+    "all",
+    "weather",
+    "hoop",
+    "goal",
+    "standard",
+    "rim",
+    "outdoor"
+  ]
+},
+
+  {
+  id: "e4c7f2b1-7d52-4f91-9c63-5b7d2c1e8f96",
+  name: "Air Jordan 5 Retro OG GS Black Metallic",
+  priceCents: 12087,
+  image: "images/products/740.webp",
+  rating: {
+    stars: 5.0,
+    count: 1872
+  },
+  keywords: [
+    "hf3976-001",
+    "air",
+    "jordan",
+    "5",
+    "retro",
+    "og",
+    "gs",
+    "black",
+    "metallic",
+    "reimagined",
+    "brand",
+    "new"
+  ]
+},
+
+
+  {
+  id: "d2f7c3b1-8e42-4f91-9c64-5a7d2b1f8e93",
+  name: "Indoor Basketball Arcade Game 2 Player",
+  priceCents: 10000,
+  image: "images/products/739.webp",
+  rating: {
+    stars: 5.0,
+    count: 1931
+  },
+  keywords: [
+    "indoor",
+    "basketball",
+    "arcade",
+    "game",
+    "double",
+    "electronic",
+    "hoops",
+    "shot",
+    "2",
+    "player",
+    "5",
+    "balls"
+  ]
+},
+
+  {
+  id: "f8d3c2b1-6e41-4f91-9c62-5b7e1d4a8f75",
+  name: "Uimoso Gym Basketball Wall Padding",
+  priceCents: 1999,
+  image: "images/products/738.webp",
+  rating: {
+    stars: 4.5,
+    count: 1527
+  },
+  keywords: [
+    "uimoso",
+    "gym",
+    "wall",
+    "padding",
+    "durable",
+    "waterproof",
+    "basketball",
+    "mat",
+    "2\"",
+    "thick",
+    "foam",
+    "court"
+  ]
+},
+
+  {
+  id: "c5f8d3b2-7a94-4f92-9c61-6e7c3b1f5a84",
+  name: "Travis Scott Fragment Jordan 1 Low OG",
+  priceCents: 12099,
+  image: "images/products/737.webp",
+  rating: {
+    stars: 5.0,
+    count: 1883
+  },
+  keywords: [
+    "travis",
+    "scot",
+    "fragment",
+    "jordan",
+    "1",
+    "low",
+    "og",
+    "white",
+    "blue",
+    "men's",
+    "dm7866-104",
+    "brand",
+    "new",
+    "nike"
+  ]
+},
+
+  {
+  id: "e3f7d2b1-8c62-4f91-9d73-5a7c3b1e9f85",
+  name: "Nike Air Zoom Vomero 19 Premium",
+  priceCents: 10000,
+  image: "images/products/736.webp",
+  rating: {
+    stars: 5.0,
+    count: 1924
+  },
+  keywords: [
+    "hq2050-005",
+    "nike",
+    "air",
+    "zoom",
+    "vomero",
+    "19",
+    "premium",
+    "black",
+    "brand",
+    "new"
+  ]
+},
+
+  {
+  id: "d7f3c1b4-6e42-4f91-9c61-3b7e2d4a8f64",
+  name: "Air Jordan 1 Low SE All-Star",
+  priceCents: 12033,
+  image: "images/products/735.webp",
+  rating: {
+    stars: 5.0,
+    count: 1867
+  },
+  keywords: [
+    "dd1650-001",
+    "air",
+    "jordan",
+    "1",
+    "low",
+    "se",
+    "all-star",
+    "black"
+  ]
+},
+
+  {
+  id: "f2c9e4b1-7d63-4f91-9c73-5a7d2b1e8f95",
+  name: "Basketball Shooting Rebounder Trainer",
+  priceCents: 19734,
+  image: "images/products/734.webp",
+  rating: {
+    stars: 5.0,
+    count: 1985
+  },
+  keywords: [
+    "basketball",
+    "shooting",
+    "rebounder",
+    "trainer",
+    "hoop",
+    "brand",
+    "new"
+  ]
+},
+
+  {
+  id: "c9d3f2b7-5e41-4f91-9d62-3b7e1c4a8f92",
+  name: "Molten GG7X Official Size 7 Basketball",
+  priceCents: 2019,
+  image: "images/products/733.webp",
+  rating: {
+    stars: 5.0,
+    count: 1726
+  },
+  keywords: [
+    "usa",
+    "molten",
+    "gg7x",
+    "basketball",
+    "competition",
+    "official",
+    "size",
+    "7",
+    "pu",
+    "leather",
+    "match",
+    "training"
+  ]
+},
+
+  {
+  id: "e4f7c2b1-8d63-4f91-9c72-5a7d3b1e9f84",
+  name: "Adidas Select Basketball Crew Socks",
+  priceCents: 1099,
+  image: "images/products/732.webp",
+  rating: {
+    stars: 4.5,
+    count: 1498
+  },
+  keywords: [
+    "adidas",
+    "men",
+    "select",
+    "basketball",
+    "crew",
+    "socks"
+  ]
+},
+
+  {
+  id: "b6e2f3c9-7d41-4f92-9a63-5f7d2b1e8c95",
+  name: "Spalding Indoor/Outdoor Basketball Net",
+  priceCents: 876,
+  image: "images/products/731.webp",
+  rating: {
+    stars: 4.5,
+    count: 1452
+  },
+  keywords: [
+    "spalding",
+    "heavy",
+    "duty",
+    "indoor",
+    "outdoor",
+    "basketball",
+    "net",
+    "white"
+  ]
+},
+
+  {
+  id: "d8f3c7b1-6e42-4f91-9c52-3b7e1d4a8f63",
+  name: "Grip Spritz Basketball Shoe Spray",
+  priceCents: 799,
+  image: "images/products/730.webp",
+  rating: {
+    stars: 4.0,
+    count: 1387
+  },
+  keywords: [
+    "grip",
+    "spritz",
+    "basketball",
+    "shoe",
+    "traction",
+    "spray",
+    "court",
+    "grip"
+  ]
+},
+
+  {
+  id: "c5f8d2b4-7a93-4f82-9d61-6e7c3b1f5a73",
+  name: "Murray Dry-Erase Basketball Board",
+  priceCents: 765,
+  image: "images/products/729.webp",
+  rating: {
+    stars: 4.0,
+    count: 1421
+  },
+  keywords: [
+    "murray",
+    "sporting",
+    "goods",
+    "dry-erase",
+    "double",
+    "sided",
+    "basketball",
+    "marker",
+    "board",
+    "clipboard"
+  ]
+},
+
+  {
+  id: "f3c7e1b5-8d42-4f91-9c63-5a7d2b1e8f94",
+  name: "Basketball Arm Sleeves Black",
+  priceCents: 765,
+  image: "images/products/728.webp",
+  rating: {
+    stars: 4.0,
+    count: 1398
+  },
+  keywords: [
+    "basketball",
+    "arm",
+    "sleeves",
+    "black",
+    "men",
+    "women",
+    "compression",
+    "multi",
+    "color"
+  ]
+},
+
+  {
+  id: "d9e4f3b2-5c71-4f9a-8d62-3b7e1c4a9f85",
+  name: "Adidas NBA LeBron James Jersey 2XL",
+  priceCents: 12099,
+  image: "images/products/727.webp",
+  rating: {
+    stars: 5.0,
+    count: 1932
+  },
+  keywords: [
+    "adidas",
+    "nba",
+    "miami",
+    "heat",
+    "lebron",
+    "james",
+    "bron",
+    "basketball",
+    "jersey",
+    "2xl",
+    "new"
+  ]
+},
+
+  {
+  id: "b4f7d2e1-6c93-4f82-9d71-5e8c3b1f4a62",
+  name: "Under Armour HeatGear Arm Sleeve",
+  priceCents: 899,
+  image: "images/products/726.webp",
+  rating: {
+    stars: 4.0,
+    count: 1415
+  },
+  keywords: [
+    "under",
+    "armour",
+    "performance",
+    "compression",
+    "heatgear",
+    "arm",
+    "sleeve",
+    "shooting",
+    "1388085"
+  ]
+},
+
+  {
+  id: "e2c5f8b1-7d43-4f92-9c81-6f2d8b3c5a97",
+  name: "Adidas Basketball Fleece Joggers",
+  priceCents: 3000,
+  image: "images/products/725.webp",
+  rating: {
+    stars: 4.5,
+    count: 1647
+  },
+  keywords: [
+    "adidas",
+    "men",
+    "basketball",
+    "fleece",
+    "joggers",
+    "gender",
+    "neutral"
+  ]
+},
+
+  {
+  id: "c7d2f1e4-9b63-4a8f-8d52-5f7c3b1a9e47",
+  name: "10PCS UV Cooling Arm Sleeves",
+  priceCents: 599,
+  image: "images/products/724.webp",
+  rating: {
+    stars: 4.0,
+    count: 1532
+  },
+  keywords: [
+    "10pcs",
+    "cooling",
+    "arm",
+    "sleeves",
+    "cover",
+    "uv",
+    "sun",
+    "protection",
+    "outdoor",
+    "sport",
+    "summer",
+    "men",
+    "women"
+  ]
+},
+
+  {
+  id: "f6a9d3c2-8b71-4e93-9f62-3d8e5b1f4c79",
+  name: "Nike Air Zoom Basketball Shoes",
+  priceCents: 6799,
+  image: "images/products/723.webp",
+  rating: {
+    stars: 5.0,
+    count: 1854
+  },
+  keywords: [
+    "nike",
+    "air",
+    "zoom",
+    "basketball",
+    "shoe",
+    "men's",
+    "black",
+    "red",
+    "new",
+    "without",
+    "box"
+  ]
+},
+
+  {
+  id: "d4f2b7c9-5e81-4a92-9f63-7c1e2d8b4a95",
+  name: "10FT Outdoor Adjustable Basketball Hoop",
+  priceCents: 8988,
+  image: "images/products/722.webp",
+  rating: {
+    stars: 5.0,
+    count: 1745
+  },
+  keywords: [
+    "basketball",
+    "hoop",
+    "outdoor",
+    "10ft",
+    "adjustable",
+    "height",
+    "goal",
+    "44\"",
+    "shatterproof",
+    "backboard"
+  ]
+},
+
+  {
+  id: "b9d6e2f3-4c71-4f98-8a52-3f7d9b2c6e84",
+  name: "8-10FT Portable Basketball Hoop System",
+  priceCents: 10000,
+  image: "images/products/721.webp",
+  rating: {
+    stars: 5.0,
+    count: 1923
+  },
+  keywords: [
+    "8-10ft",
+    "portable",
+    "basketball",
+    "hoop",
+    "goals",
+    "system",
+    "height",
+    "adjustable",
+    "youth",
+    "adults"
+  ]
+},
+
+  {
+  id: "e7c1f9b4-6d32-4a8f-9c71-2f8e5b1d4c96",
+  name: "Nike Elite Pro 32L Backpack",
+  priceCents: 7890,
+  image: "images/products/720.webp",
+  rating: {
+    stars: 5.0,
+    count: 1815
+  },
+  keywords: [
+    "nike",
+    "elite",
+    "pro",
+    "basketball",
+    "volleyball",
+    "backpack",
+    "32l",
+    "purple",
+    "black",
+    "fast",
+    "shipping"
+  ]
+},
+
+  {
+  id: "c2e5f8b7-9a41-4d3c-8f62-7b1e4c9d5f28",
+  name: "Adjustable Basketball Hoop Red",
+  priceCents: 3099,
+  image: "images/products/719.webp",
+  rating: {
+    stars: 5.0,
+    count: 1628
+  },
+  keywords: [
+    "adjustable",
+    "height",
+    "3.4-8.5ft",
+    "basketball",
+    "hoop",
+    "portable",
+    "outdoor",
+    "weight",
+    "bag",
+    "red"
+  ]
+},
+
+  {
+  id: "f1b7d3e2-6c84-4f91-9a32-5d7e2b4c8f91",
+  name: "Jolly Pets Soccer Ball 8\" 2-Pack",
+  priceCents: 1999,
+  image: "images/products/718.webp",
+  rating: {
+    stars: 4.5,
+    count: 1472
+  },
+  keywords: [
+    "jolly",
+    "pets",
+    "soccer",
+    "ball",
+    "8\"",
+    "2",
+    "pack"
+  ]
+},
+
+  {
+  id: "d8c4f7a1-5b62-4e9f-8a71-3f2d9b6c4e83",
+  name: "Adidas 3G Speed Reversible Shorts",
+  priceCents: 1199,
+  image: "images/products/717.webp",
+  rating: {
+    stars: 4.5,
+    count: 1365
+  },
+  keywords: [
+    "adidas",
+    "men",
+    "3g",
+    "speed",
+    "reversible",
+    "shorts"
+  ]
+},
+
+  {
+  id: "b3f6d2e8-7a94-4c5b-9f12-6d8e4a2b9c71",
+  name: "5 Pairs UV Cooling Arm Sleeves",
+  priceCents: 299,
+  image: "images/products/716.webp",
+  rating: {
+    stars: 4.0,
+    count: 1427
+  },
+  keywords: [
+    "5",
+    "pairs",
+    "cooling",
+    "arm",
+    "sleeves",
+    "cover",
+    "uv",
+    "sun",
+    "protection",
+    "sports",
+    "outdoor",
+    "men",
+    "women"
+  ]
+},
+
+  {
+  id: "e9d2b6f4-8c73-4f91-90d3-2b1f7a9c5e81",
+  name: "Adidas Crazy Lite Shorts",
+  priceCents: 2689,
+  image: "images/products/715.webp",
+  rating: {
+    stars: 4.5,
+    count: 1542
+  },
+  keywords: [
+    "adidas",
+    "men",
+    "crazy",
+    "lite",
+    "shorts"
+  ]
+},
+
+  {
+  id: "c6b9e3a7-5f42-4d8b-9e21-3f7d8c2a1b64",
+  name: "Wilson Evolution 29.5\" Pro Grip Ball",
+  priceCents: 2589,
+  image: "images/products/714.webp",
+  rating: {
+    stars: 5.0,
+    count: 1684
+  },
+  keywords: [
+    "wilson",
+    "evolution",
+    "29.5",
+    "indoor",
+    "basketball",
+    "pro",
+    "grip",
+    "official",
+    "game",
+    "ball",
+    "premium"
+  ]
+},
+
+  {
+  id: "a8d4f2c9-6e31-4bb7-8fd2-91c7e0b4da53",
+  name: "Wilson Evolution 29.5\" Indoor Basketball",
+  priceCents: 1999,
+  image: "images/products/713.webp",
+  rating: {
+    stars: 4.5,
+    count: 1526
+  },
+  keywords: [
+    "wilson",
+    "men's",
+    "evolution",
+    "game",
+    "basketball",
+    "29.5",
+    "official",
+    "size",
+    "weight",
+    "indoor"
+  ]
+},
+
+  {
+  id: "f2a9c7d1-3e84-4fb2-8a61-92d7af13b4c6",
+  name: "NBA League Pass Premium 2025-2026",
+  priceCents: 2045,
+  image: "images/products/712.webp",
+  rating: {
+    stars: 5.0,
+    count: 1778
+  },
+  keywords: [
+    "nba",
+    "league",
+    "pass",
+    "premium",
+    "2025",
+    "2026"
+  ]
+},
+
+  {
+  id: "d5f81c2a-7ab4-42c9-9f3e-1c2d98e4b7f1",
+  name: "Adidas Crazy Lite AOP Shorts",
+  priceCents: 2099,
+  image: "images/products/711.webp",
+  rating: {
+    stars: 4.5,
+    count: 1634
+  },
+  keywords: [
+    "adidas",
+    "men",
+    "crazy",
+    "lite",
+    "aop",
+    "short",
+    "shorts"
+  ]
+},
+
+  {
+  id: "b7c3e1f4-9a82-4df1-bc67-52e9d34af812",
+  name: "UV Sun Protection Arm Sleeves",
+  priceCents: 199,
+  image: "images/products/710.webp",
+  rating: {
+    stars: 4.0,
+    count: 1483
+  },
+  keywords: [
+    "arm",
+    "sleeves",
+    "uv",
+    "sun",
+    "protection",
+    "cooling",
+    "outdoor",
+    "sports",
+    "men",
+    "women",
+    "1-100"
+  ]
+},
+
+  {
+  id: "e41b7c9f-3ad2-47d6-b8c2-91a8f0d5ce72",
+  name: "Nike SB Dunk Low Mummy",
+  priceCents: 7089,
+  image: "images/products/709.webp",
+  rating: {
+    stars: 5.0,
+    count: 1897
+  },
+  keywords: [
+    "nike",
+    "sb",
+    "dunk",
+    "low",
+    "mummy",
+    "ds",
+    "usa",
+    "seller",
+    "multiple",
+    "sizes",
+    "glow"
+  ]
+},
+
+  {
+  id: "c9e84f7a-2b61-4f3c-9ad7-91f0f4c2ba18",
+  name: "SB Dunk Low Night of Mischief",
+  priceCents: 5099,
+  image: "images/products/708.webp",
+  rating: {
+    stars: 4.5,
+    count: 1724
+  },
+  keywords: [
+    "sb",
+    "dunk",
+    "low",
+    "night",
+    "mischief",
+    "usa",
+    "seller",
+    "multiple",
+    "sizes"
+  ]
+},
+
+  {
+  id: "a3f7d9c2-8b4e-4f63-92f1-7d91e4b2a6c3",
+  name: "Wilson Evolution 29.5\" Indoor Game Ball",
+  priceCents: 2999,
+  image: "images/products/707.webp",
+  rating: {
+    stars: 5.0,
+    count: 1842
+  },
+  keywords: [
+    "wilson",
+    "evolution",
+    "basketball",
+    "29.5",
+    "official",
+    "indoor",
+    "game",
+    "ball",
+    "black",
+    "composite",
+    "leather"
+  ]
+},
+
+  {
   id: "f6c2d3b1-4a7e-4f8b-9c5d-2b3e7a1f6d9a",
   name: "Lenny & Larry's Complete Cookie Chocolate Chip 12ct",
   priceCents: 1390,
