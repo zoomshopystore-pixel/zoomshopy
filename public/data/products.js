@@ -62,6 +62,275 @@ class Clothing extends Product {
 
 export const products = [
   {
+  id: "d8b7f3c1-5a4e-4f9d-9c2a-3e6b1f4c7d8e",
+  name: "28.2Ct Heart Shape Off White Diamond Ring with Free Diamond",
+  priceCents: 23099,
+  image: "images/products/772.webp",
+  rating: {
+    stars: 5.0,
+    count: 1923
+  },
+  keywords: [
+    "diamond",
+    "heart-shape",
+    "off-white",
+    "ring",
+    "28.2ct",
+    "certified",
+    "free",
+    "huge",
+    "low-price"
+  ]
+},
+
+  {
+  id: "f1c3b7d2-6a4e-4f8b-9c2d-3e7a1b5f4c6d",
+  name: "3Ct Heart Cut Lab-Created Canary Diamond Engagement Ring 14K White",
+  priceCents: 5088,
+  image: "images/products/771.webp",
+  rating: {
+    stars: 4.5,
+    count: 1432
+  },
+  keywords: [
+    "diamond",
+    "lab-created",
+    "canary",
+    "heart-cut",
+    "engagement",
+    "ring",
+    "14k",
+    "white",
+    "3ct"
+  ]
+},
+
+  {
+  id: "c5f1d8b3-9a4e-4c7f-8d2b-1e7a3f4b6c5d",
+  name: "32Ct Treated Off White Diamond Engagement Ring 925 Silver",
+  priceCents: 28567,
+  image: "images/products/770.webp",
+  rating: {
+    stars: 5.0,
+    count: 1875
+  },
+  keywords: [
+    "diamond",
+    "treated",
+    "off-white",
+    "engagement",
+    "ring",
+    "925",
+    "silver",
+    "32ct",
+    "certified",
+    "rare"
+  ]
+},
+
+  {
+  id: "a9d4f3b2-7c5e-4f8d-9b2f-3e7a1c5b4d6f",
+  name: "26.85Ct Pink Diamond Solitaire Ring with Free Studs",
+  priceCents: 20099,
+  image: "images/products/769.webp",
+  rating: {
+    stars: 5.0,
+    count: 1984
+  },
+  keywords: [
+    "diamond",
+    "pink",
+    "solitaire",
+    "ring",
+    "studs",
+    "26.85ct",
+    "certified",
+    "rare"
+  ]
+},
+
+  {
+  id: "e2c7f4b1-6d3a-4f8e-9c2f-5b1d3a7e4c9f",
+  name: "4.1Ct Cushion Cut Treated Diamond Ring 925 Silver",
+  priceCents: 11500,
+  image: "images/products/768.webp",
+  rating: {
+    stars: 5.0,
+    count: 1763
+  },
+  keywords: [
+    "diamond",
+    "cushion-cut",
+    "treated",
+    "off-white",
+    "ring",
+    "925",
+    "silver",
+    "4.1ct",
+    "certified"
+  ]
+},
+
+  {
+  id: "b8d4f2c1-7a3e-4f9b-9c2d-1f6a3b7e4c5d",
+  name: "14K Yellow Gold 3-Stone Simulated Diamond Ring",
+  priceCents: 11099,
+  image: "images/products/767.webp",
+  rating: {
+    stars: 4.5,
+    count: 1489
+  },
+  keywords: [
+    "14k",
+    "yellow",
+    "gold",
+    "diamond",
+    "simulated",
+    "3-stone",
+    "round",
+    "cut",
+    "ring"
+  ]
+},
+
+  {
+  id: "d6f1c3b7-8a4e-4f9d-9b2c-3e7a5f1b6d4c",
+  name: "14K Yellow Gold Diamond Nose Ring 18G/20G",
+  priceCents: 1999,
+  image: "images/products/766.webp",
+  rating: {
+    stars: 4.0,
+    count: 1327
+  },
+  keywords: [
+    "diamond",
+    "nose",
+    "ring",
+    "14k",
+    "yellow",
+    "gold",
+    "18g",
+    "20g",
+    "l-shape",
+    "screw"
+  ]
+},
+
+  {
+  id: "f9b3c6d1-7e4a-4f8b-9c2d-1a5f3c7e8b4d",
+  name: "1Ct Lab Grown Diamond Solitaire Engagement Ring 14K White Gold",
+  priceCents: 50094,
+  image: "images/products/765.webp",
+  rating: {
+    stars: 4.5,
+    count: 1621
+  },
+  keywords: [
+    "diamond",
+    "lab-grown",
+    "solitaire",
+    "engagement",
+    "ring",
+    "14k",
+    "white",
+    "gold",
+    "1ct",
+    "igi"
+  ]
+},
+
+  {
+  id: "c7e4b2d1-5a3f-4c9e-8d6b-2f1a3c7e5b9d",
+  name: "10K Yellow Gold Diamond Cut Heart Initial Ring",
+  priceCents: 9039,
+  image: "images/products/764.webp",
+  rating: {
+    stars: 4.0,
+    count: 1254
+  },
+  keywords: [
+    "diamond",
+    "cut",
+    "heart",
+    "initial",
+    "ring",
+    "10k",
+    "yellow",
+    "gold",
+    "band",
+    "6.5"
+  ]
+},
+
+  {
+  id: "a5f2c8d7-9b3e-4a6f-8d1c-7e4b2f9a3c5d",
+  name: "3Ct Moissanite Hidden Halo Engagement Ring 14K",
+  priceCents: 19999,
+  image: "images/products/763.webp",
+  rating: {
+    stars: 5.0,
+    count: 1728
+  },
+  keywords: [
+    "moissanite",
+    "engagement",
+    "ring",
+    "hidden",
+    "halo",
+    "3ct",
+    "marquise",
+    "cut",
+    "14k",
+    "solid"
+  ]
+},
+
+  {
+  id: "d3b6f9a1-8c4e-4f7a-9d1b-2e5c7f3a6b4d",
+  name: "1.5Ct Emerald & Diamond Wedding Ring 14K Yellow Gold",
+  priceCents: 14098,
+  image: "images/products/762.webp",
+  rating: {
+    stars: 4.5,
+    count: 1612
+  },
+  keywords: [
+    "emerald",
+    "diamond",
+    "wedding",
+    "ring",
+    "14k",
+    "yellow",
+    "gold",
+    "emerald-cut",
+    "1.5ct"
+  ]
+},
+
+  {
+  id: "f2a7c9d1-5b3e-4f8c-9d2a-6e1b3f7c4d8a",
+  name: "0.5Ct Diamond Cluster Halo Bridal Ring Set",
+  priceCents: 9099,
+  image: "images/products/761.webp",
+  rating: {
+    stars: 4.0,
+    count: 1389
+  },
+  keywords: [
+    "diamond",
+    "cluster",
+    "halo",
+    "bridal",
+    "ring",
+    "set",
+    "women",
+    "0.5ct",
+    "round",
+    "baguette"
+  ]
+},
+
+  {
   id: "c8f1d4b2-7a3e-4f6c-8d5b-1e9a2c7f4b6d",
   name: "3Ct Treated White Diamond Solitaire Ring 925 Silver",
   priceCents: 5500,
