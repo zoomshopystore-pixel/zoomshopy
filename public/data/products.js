@@ -62,6 +62,273 @@ class Clothing extends Product {
 
 export const products = [
   {
+  id: "c8f1d4b2-7a3e-4f6c-8d5b-1e9a2c7f4b6d",
+  name: "3Ct Treated White Diamond Solitaire Ring 925 Silver",
+  priceCents: 5500,
+  image: "images/products/760.webp",
+  rating: {
+    stars: 4.5,
+    count: 1473
+  },
+  keywords: [
+    "diamond",
+    "treated",
+    "white",
+    "solitaire",
+    "ring",
+    "925",
+    "silver",
+    "3ct",
+    "certified",
+    "round"
+  ]
+},
+
+  {
+  id: "e7c9b1d2-3f4a-4b6e-9d8f-2b5c7a1e4d9f",
+  name: "10Ct Treated Off White Diamond Ring 925 Silver",
+  priceCents: 10000,
+  image: "images/products/759.webp",
+  rating: {
+    stars: 5.0,
+    count: 1987
+  },
+  keywords: [
+    "diamond",
+    "treated",
+    "off-white",
+    "ring",
+    "925",
+    "silver",
+    "10ct",
+    "certified",
+    "gorgeous"
+  ]
+},
+  {
+  id: "b4e7c3f1-6d8a-4f9b-9c2d-1a5f3b7e9c4d",
+  name: "4Ct Diamond Eternity Wedding Band 18K Yellow Gold",
+  priceCents: 29099,
+  image: "images/products/758.webp",
+  rating: {
+    stars: 5.0,
+    count: 1745
+  },
+  keywords: [
+    "diamond",
+    "wedding",
+    "band",
+    "18k",
+    "yellow",
+    "gold",
+    "eternity",
+    "round",
+    "cut",
+    "4ct"
+  ]
+},
+
+  {
+  id: "d1f3b8a4-5c7e-4b6f-9d2a-3f9c1e7b4a5f",
+  name: "2Ct Lab-Created Diamond Wedding Ring 14K White Gold",
+  priceCents: 1999,
+  image: "images/products/757.webp",
+  rating: {
+    stars: 4.5,
+    count: 1324
+  },
+  keywords: [
+    "diamond",
+    "lab-created",
+    "wedding",
+    "ring",
+    "14k",
+    "white",
+    "gold",
+    "round",
+    "designer",
+    "2ct"
+  ]
+},
+
+  {
+  id: "a6c2d9f3-8b4e-4f6a-9c3d-1e7b2a5f4c8d",
+  name: "2Ct Round Created Diamond Solitaire Engagement Ring 14K White Gold",
+  priceCents: 33099,
+  image: "images/products/756.webp",
+  rating: {
+    stars: 4.0,
+    count: 1547
+  },
+  keywords: [
+    "diamond",
+    "solitaire",
+    "engagement",
+    "ring",
+    "14k",
+    "white",
+    "gold",
+    "created",
+    "round",
+    "2ct"
+  ]
+},
+
+  {
+  id: "f3e8a1c7-2d4b-4b6a-9c2e-7a5d3f1b9c4e",
+  name: "3Ct Round Created Diamond Engagement Ring 14K White Gold",
+  priceCents: 51099,
+  image: "images/products/755.webp",
+  rating: {
+    stars: 4.5,
+    count: 1628
+  },
+  keywords: [
+    "diamond",
+    "engagement",
+    "ring",
+    "14k",
+    "white",
+    "gold",
+    "created",
+    "round",
+    "3ct"
+  ]
+},
+
+  {
+  id: "b9f7c4d2-6e1f-4a3b-8e22-9c6f3d1b5a7e",
+  name: "2.75Ct Diamond Engagement Ring 14K Gold Lab Grown",
+  priceCents: 79999,
+  image: "images/products/754.webp",
+  rating: {
+    stars: 5.0,
+    count: 1852
+  },
+  keywords: [
+    "diamond",
+    "engagement",
+    "ring",
+    "14k",
+    "gold",
+    "lab",
+    "grown",
+    "certified",
+    "2.75ct"
+  ]
+},
+
+  {
+  id: "d5b4f1e7-7a2c-4bde-8c91-3f5d7b2c1e4f",
+  name: "3.4Ct Diamond Engagement Ring 14K Gold Lab Grown",
+  priceCents: 99099,
+  image: "images/products/753.webp",
+  rating: {
+    stars: 4.5,
+    count: 1723
+  },
+  keywords: [
+    "diamond",
+    "engagement",
+    "ring",
+    "14k",
+    "gold",
+    "lab",
+    "grown",
+    "certified",
+    "3.4ct"
+  ]
+},
+
+  {
+  id: "f8a61d92-4c3c-4b72-9d35-2eac59e1fb0a",
+  name: "7.5Ct Blue Sapphire & Diamond Ring 14K White Gold",
+  priceCents: 11099,
+  image: "images/products/752.webp",
+  rating: {
+    stars: 5.0,
+    count: 1897
+  },
+  keywords: [
+    "blue",
+    "sapphire",
+    "diamond",
+    "ring",
+    "14k",
+    "white",
+    "gold",
+    "cushion",
+    "cut"
+  ]
+},
+
+  {
+  id: "c27a4f1b-6d8e-4b92-9e8d-4fb7c2fa8b39",
+  name: "5Ct Emerald & Diamond Anniversary Ring 14K White Gold",
+  priceCents: 21099,
+  image: "images/products/751.webp",
+  rating: {
+    stars: 4.0,
+    count: 1534
+  },
+  keywords: [
+    "emerald",
+    "diamond",
+    "anniversary",
+    "ring",
+    "14k",
+    "white",
+    "gold",
+    "ascher",
+    "cut"
+  ]
+},
+
+  {
+  id: "a4d63c2e-0bd7-4c7f-8e47-92f3cfb58d12",
+  name: "3Ct Ruby & Diamond Anniversary Ring 14K Yellow Gold",
+  priceCents: 12099,
+  image: "images/products/750.webp",
+  rating: {
+    stars: 4.5,
+    count: 1786
+  },
+  keywords: [
+    "ruby",
+    "diamond",
+    "anniversary",
+    "ring",
+    "14k",
+    "yellow",
+    "gold",
+    "oval",
+    "cut"
+  ]
+},
+
+  {
+  id: "e93c2f5b-1d47-4f7d-9d1c-bc5c89b2f74d",
+  name: "4Ct Diamond Eternity Band 14K White Gold",
+  priceCents: 23099,
+  image: "images/products/749.webp",
+  rating: {
+    stars: 5.0,
+    count: 1642
+  },
+  keywords: [
+    "diamond",
+    "wedding",
+    "band",
+    "14k",
+    "white",
+    "gold",
+    "eternity",
+    "round",
+    "cut"
+  ]
+},
+
+  {
   id: "b8f2d3c1-7e41-4f91-9c63-5b7d2c1e8f99",
   name: "Murray Premium Basketball Marker Board",
   priceCents: 1763,

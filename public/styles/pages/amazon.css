@@ -352,7 +352,7 @@
 }
 
 .promo-text h1 span {
-  color: #ffd814; /* bright yellow for 50% OFF */
+  color: red; /* bright yellow for 50% OFF */
 }
 
 .promo-text p {
@@ -362,7 +362,7 @@
 
 .promo-button {
   margin-top: 20px;
-  background-color: #ffd814;
+  background-color: gold;
   color: #111;
   border: none;
   padding: 10px 20px;
